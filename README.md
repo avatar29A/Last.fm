@@ -1,7 +1,7 @@
 # Last.fm
 Implementation last.fm on C# language
 
-[![Travis](https://api.travis-ci.org/avatar29A/lastfm.svg)](https://travis-ci.org/avatar29A/Last.fm)
+[![Travis](https://api.travis-ci.org/avatar29A/Last.fm.svg)](https://travis-ci.org/avatar29A/Last.fm)
 
 [![Issues](https://img.shields.io/github/issues/avatar29A/lastfm.svg)](https://github.com/avatar29A/Last.fm/issues)
 
