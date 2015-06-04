@@ -1,4 +1,4 @@
 language: csharp
 solution: Hqub.Lastfm.sln
 script:
-  - xbuild /p:Configuration=Travis Hqub.Lastfm.sln
+  - xbuild /p:Configuration=Release Hqub.Lastfm.sln
