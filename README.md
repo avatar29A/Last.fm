@@ -36,8 +36,8 @@ It'is fork official library https://code.google.com/p/lastfm-sharp/
   public static void Main(string[] args)
     {
       // Get your own API_KEY and API_SECRET from http://www.last.fm/api/account
-      string API_KEY =  "b25b959554ed76058ac220b7b2e0a026";
-      string API_SECRET =   "361505f8eeaf61426ef95a4317482251";
+      string API_KEY =  "YOUR API KEY";
+      string API_SECRET =   "YOUR API SECRET";
       
       // Create your session
       Session session = new Session(API_KEY, API_SECRET);
