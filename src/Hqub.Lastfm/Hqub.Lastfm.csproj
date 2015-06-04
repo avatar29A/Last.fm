@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D85E0F5F-180C-4FA8-B274-18B47F9866C9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hqub.Lastfm</RootNamespace>
+    <AssemblyName>Hqub.Lastfm</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.HttpUtility">
+      <HintPath>..\..\packages\Mono.HttpUtility.1.0.0.1\lib\net40\Mono.HttpUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Lib.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RequestParameters.cs" />
+    <Compile Include="Scrobbling\AuthenticationFailureException.cs" />
+    <Compile Include="Scrobbling\BadAuthenticationDetailsException.cs" />
+    <Compile Include="Scrobbling\BadSessionException.cs" />
+    <Compile Include="Scrobbling\BannedClientException.cs" />
+    <Compile Include="Scrobbling\Connection.cs" />
+    <Compile Include="Scrobbling\Entry.cs" />
+    <Compile Include="Scrobbling\NowplayingTrack.cs" />
+    <Compile Include="Scrobbling\PlaybackSource.cs" />
+    <Compile Include="Scrobbling\Request.cs" />
+    <Compile Include="Scrobbling\ScrobbleManager.cs" />
+    <Compile Include="Scrobbling\ScrobbleMode.cs" />
+    <Compile Include="Scrobbling\ScrobblingException.cs" />
+    <Compile Include="Scrobbling\WrongTimeException.cs" />
+    <Compile Include="Services\Album.cs" />
+    <Compile Include="Services\AlbumImageSize.cs" />
+    <Compile Include="Services\AlbumSearch.cs" />
+    <Compile Include="Services\AlbumWiki.cs" />
+    <Compile Include="Services\Artist.cs" />
+    <Compile Include="Services\ArtistBio.cs" />
+    <Compile Include="Services\ArtistSearch.cs" />
+    <Compile Include="Services\AuthenticatedUser.cs" />
+    <Compile Include="Services\AuthenticationRequiredException.cs" />
+    <Compile Include="Services\Base.cs" />
+    <Compile Include="Services\Country.cs" />
+    <Compile Include="Services\Event.cs" />
+    <Compile Include="Services\EventAttendance.cs" />
+    <Compile Include="Services\Gender.cs" />
+    <Compile Include="Services\Global.cs" />
+    <Compile Include="Services\Group.cs" />
+    <Compile Include="Services\GroupMembers.cs" />
+    <Compile Include="Services\IHasImage.cs" />
+    <Compile Include="Services\IHasURL.cs" />
+    <Compile Include="Services\IHasWeeklyAlbumCharts.cs" />
+    <Compile Include="Services\IHasWeeklyArtistCharts.cs" />
+    <Compile Include="Services\IHasWeeklyTrackCharts.cs" />
+    <Compile Include="Services\ImageSize.cs" />
+    <Compile Include="Services\InvalidPageException.cs" />
+    <Compile Include="Services\IShareable.cs" />
+    <Compile Include="Services\ITaggable.cs" />
+    <Compile Include="Services\Library.cs" />
+    <Compile Include="Services\LibraryAlbum.cs" />
+    <Compile Include="Services\LibraryAlbums.cs" />
+    <Compile Include="Services\LibraryArtist.cs" />
+    <Compile Include="Services\LibraryArtists.cs" />
+    <Compile Include="Services\LibraryItem.cs" />
+    <Compile Include="Services\LibraryTrack.cs" />
+    <Compile Include="Services\LibraryTracks.cs" />
+    <Compile Include="Services\Pages.cs" />
+    <Compile Include="Services\PastEvents.cs" />
+    <Compile Include="Services\Period.cs" />
+    <Compile Include="Services\Playlist.cs" />
+    <Compile Include="Services\Recipients.cs" />
+    <Compile Include="Services\RecommendedArtists.cs" />
+    <Compile Include="Services\RecommendedEvents.cs" />
+    <Compile Include="Services\Request.cs" />
+    <Compile Include="Services\Search.cs" />
+    <Compile Include="Services\ServiceException.cs" />
+    <Compile Include="Services\Session.cs" />
+    <Compile Include="Services\SiteLanguage.cs" />
+    <Compile Include="Services\Tag.cs" />
+    <Compile Include="Services\TagCollection.cs" />
+    <Compile Include="Services\TagSearch.cs" />
+    <Compile Include="Services\Tasteometer.cs" />
+    <Compile Include="Services\TopAlbum.cs" />
+    <Compile Include="Services\TopArtist.cs" />
+    <Compile Include="Services\TopFan.cs" />
+    <Compile Include="Services\TopItem.cs" />
+    <Compile Include="Services\TopTag.cs" />
+    <Compile Include="Services\TopTrack.cs" />
+    <Compile Include="Services\Track.cs" />
+    <Compile Include="Services\TrackSearch.cs" />
+    <Compile Include="Services\TrackWiki.cs" />
+    <Compile Include="Services\User.cs" />
+    <Compile Include="Services\Venue.cs" />
+    <Compile Include="Services\VenuePastEvents.cs" />
+    <Compile Include="Services\VenueSearch.cs" />
+    <Compile Include="Services\WeeklyAlbumChart.cs" />
+    <Compile Include="Services\WeeklyAlbumChartItem.cs" />
+    <Compile Include="Services\WeeklyArtistChart.cs" />
+    <Compile Include="Services\WeeklyArtistChartItem.cs" />
+    <Compile Include="Services\WeeklyChart.cs" />
+    <Compile Include="Services\WeeklyChartItem.cs" />
+    <Compile Include="Services\WeeklyChartTimeSpan.cs" />
+    <Compile Include="Services\WeeklyTrackChart.cs" />
+    <Compile Include="Services\WeeklyTrackChartItem.cs" />
+    <Compile Include="Services\Wiki.cs" />
+    <Compile Include="Services\XSPF.cs" />
+    <Compile Include="Utilities.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lastfm-sharp.pc.in" />
+    <None Include="Makefile.am" />
+    <None Include="Makefile.in" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

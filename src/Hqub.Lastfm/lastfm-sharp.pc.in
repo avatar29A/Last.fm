@@ -1,0 +1,6 @@
+Name: lastfm-sharp
+Description: lastfm-sharp
+Version: 0.1
+
+Requires: 
+Libs: -r:@expanded_libdir@/@PACKAGE@/lastfm-sharp.dll
