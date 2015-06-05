@@ -28,6 +28,7 @@ using System.Text;
 using System.Xml;
 using System.IO;
 using System.Threading;
+using Hqub.Lastfm;
 
 namespace Lastfm.Services
 {
@@ -83,7 +84,7 @@ namespace Lastfm.Services
 				Request.lastCallTime = new Nullable<DateTime>(DateTime.Now);
 			
 			if (DateTime.Now.Subtract(Request.lastCallTime.Value) > new TimeSpan(0, 0, 1))
-				Thread.Sleep(1000);
+				Thread.Sleep(Configure.Delay);
 		}
 
 		public XmlDocument execute()

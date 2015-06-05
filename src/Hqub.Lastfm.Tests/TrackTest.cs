@@ -21,11 +21,13 @@ namespace Hqub.Lastfm.Tests
         [TestMethod]
         public void Search()
         {
-            var trackSearch = new TrackSearch("лесник", Session);
+            var trackSearch = new TrackSearch("пилот", Session);
+            trackSearch.SpecifyItemsPerPage(100);
 
-            var tracks = trackSearch.GetPage(1);
-
-            Assert.AreNotEqual(tracks.Length, 0);
+            for (int i = 1; i < 10; i++)
+            {
+                var tracks = trackSearch.GetPage(i);
+            }
         }
     }
 }
