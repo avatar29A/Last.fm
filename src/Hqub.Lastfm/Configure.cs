@@ -8,6 +8,11 @@ namespace Hqub.Lastfm
 {
    public static class Configure
     {
+       static Configure()
+       {
+           Delay = 1000;
+       }
+
        /// <summary>
        /// Set value delay between requests.
        /// </summary>
