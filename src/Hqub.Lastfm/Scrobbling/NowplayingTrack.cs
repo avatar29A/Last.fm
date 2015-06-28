@@ -29,25 +29,19 @@ namespace Lastfm.Scrobbling
 		public string MBID {get; set;}
 		public int Number {get; set;}
 		
-		private void init()
+		private NowplayingTrack()
 		{
 			Duration = new TimeSpan();
 		}
 		
-		public NowplayingTrack(string artist, string title)
+		public NowplayingTrack(string artist, string title) : this()
 		{
-			// Set initial values
-			init();
-			
 			Artist = artist;
 			Title = title;
 		}
 		
-		public NowplayingTrack(string artist, string title, TimeSpan duration)
+		public NowplayingTrack(string artist, string title, TimeSpan duration) : this()
 		{
-			// Set initial values
-			init();
-			
 			Artist = artist;
 			Title = title;
 			Duration = duration;
