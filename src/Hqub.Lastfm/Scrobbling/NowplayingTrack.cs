@@ -40,10 +40,8 @@ namespace Lastfm.Scrobbling
 			Title = title;
 		}
 		
-		public NowplayingTrack(string artist, string title, TimeSpan duration) : this()
+		public NowplayingTrack(string artist, string title, TimeSpan duration) : this(artist, title)
 		{
-			Artist = artist;
-			Title = title;
 			Duration = duration;
 		}
 	}
