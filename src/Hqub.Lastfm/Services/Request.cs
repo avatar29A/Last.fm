@@ -28,6 +28,7 @@ using System.Text;
 using System.Xml;
 using System.IO;
 using System.Threading;
+using System.Xml.Schema;
 using Hqub.Lastfm;
 
 namespace Lastfm.Services
@@ -129,14 +130,34 @@ namespace Lastfm.Services
 			}
 			
 			XmlDocument doc = new XmlDocument();
-      doc.Load(webresponse.GetResponseStream());
+            XmlSchema schema = new XmlSchema();
+            schema.Namespaces.Add("opensearch", "http://a9.com/-/spec/opensearch/1.1/");
 
-			checkForErrors(doc);
-			
-			return doc;
+		    doc.Schemas.Add(schema);
+
+            using (var reader = new StreamReader(webresponse.GetResponseStream()))
+            {
+                var responseText = AppendOpenSearchHeader(reader.ReadToEnd());
+                doc.LoadXml(responseText);
+
+                checkForErrors(doc);
+
+                return doc;
+            }
 		}
-		
-		private void checkForErrors(XmlDocument document)
+
+	    private string AppendOpenSearchHeader(string xml)
+	    {
+	        if (xml.Contains("xmlns:opensearch="))
+	        {
+	            return xml;
+	        }
+
+	        //Fix: If last.fm don't send opensearch namespace:
+	        return xml.Replace("<results", "<results xmlns:opensearch=\"http://a9.com/-/spec/opensearch/1.1/\"");
+	    }
+
+	    private void checkForErrors(XmlDocument document)
 		{
 			XmlNode n = document.GetElementsByTagName("lfm")[0];
 			
