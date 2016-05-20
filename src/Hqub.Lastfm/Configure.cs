@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Hqub.Lastfm
+namespace Lastfm
 {
    public static class Configure
     {

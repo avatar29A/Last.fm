@@ -29,7 +29,6 @@ using System.Xml;
 using System.IO;
 using System.Threading;
 using System.Xml.Schema;
-using Hqub.Lastfm;
 
 namespace Lastfm.Services
 {
