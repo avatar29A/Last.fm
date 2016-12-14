@@ -22,7 +22,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml;
 using System.Web;
-using Mono.Web;
+using System.Net;
 
 namespace Lastfm.Services
 {
@@ -119,7 +119,7 @@ namespace Lastfm.Services
 		
 		internal string urlSafe(string text)
 		{
-			return HttpUtility.UrlEncode(HttpUtility.UrlEncode(text));
+			return WebUtility.UrlEncode(WebUtility.UrlEncode(text));
 		}
 		
 		internal string getPeriod(Period period)
