@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\Hqub.Lastfm\Hqub.Lastfm.csproj" />
+    <ProjectReference Include="..\Hqub.Lastfm\Hqub.Lastfm.csproj" />
   </ItemGroup>
 
 </Project>

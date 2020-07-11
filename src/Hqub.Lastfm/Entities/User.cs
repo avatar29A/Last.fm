@@ -1,6 +1,7 @@
 namespace Hqub.Lastfm.Entities
 {
     using System;
+    using System.Collections.Generic;
     using System.Runtime.Serialization;
 
     /// <summary>
@@ -27,11 +28,6 @@ namespace Hqub.Lastfm.Entities
         /// Gets or sets the url.
         /// </summary>
         public string Url { get; set; }
-
-        /// <summary>
-        /// Gets or sets the image.
-        /// </summary>
-        public string Image { get; set; }
 
         /// <summary>
         /// Gets or sets the country.
@@ -67,6 +63,11 @@ namespace Hqub.Lastfm.Entities
         /// Gets or sets the type.
         /// </summary>
         public string Type { get; set; }
+
+        /// <summary>
+        /// Gets or sets a list of images.
+        /// </summary>
+        public List<Image> Images { get; set; }
 
         #endregion
 

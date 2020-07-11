@@ -53,11 +53,25 @@
 
         #region Additional info
 
+        /// <summary>
+        /// Gets or sets the artist.
+        /// </summary>
         public Artist Artist { get; set; }
 
+        /// <summary>
+        /// Gets or sets the album.
+        /// </summary>
         public Album Album { get; set; }
 
+        /// <summary>
+        /// Gets or sets the wiki information.
+        /// </summary>
         public Wiki Wiki { get; set; }
+
+        /// <summary>
+        /// Gets or sets a list of images.
+        /// </summary>
+        public List<Image> Images { get; set; }
 
         /// <summary>
         /// Gets or sets a list of tags.
