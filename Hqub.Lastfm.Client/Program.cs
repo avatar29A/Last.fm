@@ -6,7 +6,7 @@ namespace Hqub.Lastfm.Client
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            //new FetchTestData().DownloadAsync(@"./", "---api-key---").Wait();
         }
     }
 }

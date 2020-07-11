@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lfm status="ok">
+  <weeklyalbumchart user="RJ" from="1593777600" to="1594382400">
+    <album rank="1">
+      <artist mbid="">Womb Sounds Heartbeat</artist>
+      <name>Einschlafhilfe Baby Sleepy</name>
+      <mbid></mbid>
+      <playcount>44</playcount>
+      <url>https://www.last.fm/music/Womb+Sounds+Heartbeat/Einschlafhilfe+Baby+Sleepy</url>
+    </album>
+    <album rank="2">
+      <artist mbid="">Postman Pat</artist>
+      <name>Special Delivery Service – The Album</name>
+      <mbid>56d56a6b-82c2-49d8-9606-145de4e4ebe0</mbid>
+      <playcount>4</playcount>
+      <url>https://www.last.fm/music/Postman+Pat/Special+Delivery+Service+%E2%80%93+The+Album</url>
+    </album>
+    <album rank="3">
+      <artist mbid="3e30aebd-0557-4cfd-8fb9-3945afa5d72b">Annie Lennox</artist>
+      <name>Diva</name>
+      <mbid>020a82f5-eb66-4837-a815-77b8b0b8d675</mbid>
+      <playcount>1</playcount>
+      <url>https://www.last.fm/music/Annie+Lennox/Diva</url>
+    </album>
+    <album rank="4">
+      <artist mbid="bd13909f-1c29-4c27-a874-d4aaf27c5b1a">Fleetwood Mac</artist>
+      <name>Greatest Hits</name>
+      <mbid>08e231d6-2b8e-4033-b4ad-318961cea4ca</mbid>
+      <playcount>1</playcount>
+      <url>https://www.last.fm/music/Fleetwood+Mac/Greatest+Hits</url>
+    </album>
+    <album rank="5">
+      <artist mbid="c3c82bdc-d9e7-4836-9746-c24ead47ca19">Mark Ronson</artist>
+      <name>Version (Digital Edition)</name>
+      <mbid></mbid>
+      <playcount>1</playcount>
+      <url>https://www.last.fm/music/Mark+Ronson/Version+(Digital+Edition)</url>
+    </album>
+    <album rank="6">
+      <artist mbid="55704c38-224f-4b75-b29f-d43653f8bc9a">Primal Scream</artist>
+      <name>Screamadelica</name>
+      <mbid>11c68c9c-618e-4572-b70d-7418b85c6ad1</mbid>
+      <playcount>1</playcount>
+      <url>https://www.last.fm/music/Primal+Scream/Screamadelica</url>
+    </album>
+    <album rank="7">
+      <artist mbid="a41ac10f-0a56-4672-9161-b83f9b223559">Van Morrison</artist>
+      <name>Blowin&apos; Your Mind!</name>
+      <mbid>007f4be5-2517-4178-a266-1f389465d4f3</mbid>
+      <playcount>1</playcount>
+      <url>https://www.last.fm/music/Van+Morrison/Blowin%27+Your+Mind!</url>
+    </album>
+  </weeklyalbumchart>
+</lfm>

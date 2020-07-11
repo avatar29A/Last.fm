@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lfm status="ok">
+  <user>
+    <name>RJ</name>
+    <realname>Richard Jones </realname>
+    <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/b26d6fd11de240a1c045dfb5c5d9fe65.png</image>
+    <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/b26d6fd11de240a1c045dfb5c5d9fe65.png</image>
+    <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/b26d6fd11de240a1c045dfb5c5d9fe65.png</image>
+    <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/b26d6fd11de240a1c045dfb5c5d9fe65.png</image>
+    <url>https://www.last.fm/user/RJ</url>
+    <country>United Kingdom</country>
+    <age>0</age>
+    <gender>n</gender>
+    <subscriber>1</subscriber>
+    <playcount>132755</playcount>
+    <playlists>0</playlists>
+    <bootstrap>0</bootstrap>
+    <registered unixtime="1037793040">1037793040</registered>
+    <type>alum</type>
+  </user>
+</lfm>

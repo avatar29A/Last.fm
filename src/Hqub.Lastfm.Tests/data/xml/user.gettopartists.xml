@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lfm status="ok">
+  <topartists user="RJ" page="1" perPage="10" totalPages="1167" total="11662">
+    <artist rank="1">
+      <name>Dream Theater</name>
+      <playcount>1859</playcount>
+      <mbid>28503ab7-8bf2-4666-a7bd-2644bfc7cb1d</mbid>
+      <url>https://www.last.fm/music/Dream+Theater</url>
+      <streamable>0</streamable>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="mega">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+    </artist>
+    <artist rank="2">
+      <name>Dire Straits</name>
+      <playcount>1634</playcount>
+      <mbid>614e3804-7d34-41ba-857f-811bad7c2b7a</mbid>
+      <url>https://www.last.fm/music/Dire+Straits</url>
+      <streamable>0</streamable>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="mega">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+    </artist>
+    <artist rank="3">
+      <name>Snoop Dogg</name>
+      <playcount>1177</playcount>
+      <mbid>f90e8b26-9e52-4669-a5c9-e28529c47894</mbid>
+      <url>https://www.last.fm/music/Snoop+Dogg</url>
+      <streamable>0</streamable>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="mega">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+    </artist>
+    <artist rank="4">
+      <name>Miles Davis</name>
+      <playcount>977</playcount>
+      <mbid>561d854a-6a28-4aa7-8c99-323e6ce46c2a</mbid>
+      <url>https://www.last.fm/music/Miles+Davis</url>
+      <streamable>0</streamable>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="mega">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+    </artist>
+    <artist rank="5">
+      <name>Metallica</name>
+      <playcount>911</playcount>
+      <mbid>65f4f0c5-ef9e-490c-aee3-909e7ae6b2ab</mbid>
+      <url>https://www.last.fm/music/Metallica</url>
+      <streamable>0</streamable>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="mega">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+    </artist>
+    <artist rank="6">
+      <name>Pink Floyd</name>
+      <playcount>845</playcount>
+      <mbid>83d91898-7763-47d7-b03b-b92132375c47</mbid>
+      <url>https://www.last.fm/music/Pink+Floyd</url>
+      <streamable>0</streamable>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="mega">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+    </artist>
+    <artist rank="7">
+      <name>Womb Sounds Heartbeat</name>
+      <playcount>796</playcount>
+      <mbid></mbid>
+      <url>https://www.last.fm/music/Womb+Sounds+Heartbeat</url>
+      <streamable>0</streamable>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="mega">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+    </artist>
+    <artist rank="8">
+      <name>Rage Against the Machine</name>
+      <playcount>763</playcount>
+      <mbid>3798b104-01cb-484c-a3b0-56adc6399b80</mbid>
+      <url>https://www.last.fm/music/Rage+Against+the+Machine</url>
+      <streamable>0</streamable>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="mega">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+    </artist>
+    <artist rank="9">
+      <name>Buckcherry</name>
+      <playcount>752</playcount>
+      <mbid>822e92ef-72ea-42e0-9af1-b987816b487a</mbid>
+      <url>https://www.last.fm/music/Buckcherry</url>
+      <streamable>0</streamable>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="mega">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+    </artist>
+    <artist rank="10">
+      <name>Dr. Dre</name>
+      <playcount>748</playcount>
+      <mbid>5f6ab597-f57a-40da-be9e-adad48708203</mbid>
+      <url>https://www.last.fm/music/Dr.+Dre</url>
+      <streamable>0</streamable>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="mega">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+    </artist>
+  </topartists>
+</lfm>
