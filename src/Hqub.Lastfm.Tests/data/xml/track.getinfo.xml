@@ -1,3 +1,43 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<lfm status="failed"><error code="6">Track not found</error>
+<lfm status="ok"><track><name>Alone Again Or</name>
+<mbid>10e83307-34f9-4adc-9879-4c76f0b60668</mbid>
+<url>https://www.last.fm/music/Calexico/_/Alone+Again+Or</url>
+<duration>205000</duration>
+<streamable fulltrack="0">0</streamable>
+<listeners>76720</listeners>
+<playcount>325993</playcount>
+<artist><name>Calexico</name>
+<mbid>5e372a49-5672-4fb8-ba14-18c90780c4f9</mbid>
+<url>https://www.last.fm/music/Calexico</url>
+</artist>
+<album position="1"><artist>Calexico</artist>
+<title>Convict Pool</title>
+<mbid>8edf887c-f8ee-4663-af02-0a5117acc808</mbid>
+<url>https://www.last.fm/music/Calexico/Convict+Pool</url>
+<image size="small">https://lastfm.freetls.fastly.net/i/u/34s/9221071529f27a21852adcd132f69bad.png</image>
+<image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/9221071529f27a21852adcd132f69bad.png</image>
+<image size="large">https://lastfm.freetls.fastly.net/i/u/174s/9221071529f27a21852adcd132f69bad.png</image>
+<image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/9221071529f27a21852adcd132f69bad.png</image>
+</album>
+<toptags><tag><name>cover</name>
+<url>https://www.last.fm/tag/cover</url>
+</tag>
+<tag><name>Alt-country</name>
+<url>https://www.last.fm/tag/Alt-country</url>
+</tag>
+<tag><name>americana</name>
+<url>https://www.last.fm/tag/americana</url>
+</tag>
+<tag><name>indie</name>
+<url>https://www.last.fm/tag/indie</url>
+</tag>
+<tag><name>covers</name>
+<url>https://www.last.fm/tag/covers</url>
+</tag>
+</toptags>
+<wiki><published>25 Mar 2009, 16:11</published>
+<summary>Love original Alone Again Or from the album Forever Changes  &lt;a href=&quot;http://www.last.fm/music/Calexico/_/Alone+Again+Or&quot;&gt;Read more on Last.fm&lt;/a&gt;.</summary>
+<content>Love original Alone Again Or from the album Forever Changes  &lt;a href=&quot;http://www.last.fm/music/Calexico/_/Alone+Again+Or&quot;&gt;Read more on Last.fm&lt;/a&gt;. User-contributed text is available under the Creative Commons By-SA License; additional terms may apply.</content>
+</wiki>
+</track>
 </lfm>

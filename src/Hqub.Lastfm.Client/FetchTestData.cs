@@ -129,10 +129,10 @@ namespace Hqub.Lastfm.Client
             list.Add("tag.gettoptracks&tag={tag}&limit={limit}");
             list.Add("tag.getweeklychartlist&tag={tag}");
             list.Add("track.getcorrection&artist=guns%20and%20roses&track=Mrbrownstone");
-            list.Add("track.getInfo&artist={artist}&track=believe");
+            list.Add("track.getInfo&artist={artist}&track={track}");
             list.Add("track.getsimilar&artist={artist}&track={track}&limit={limit}");
             list.Add("track.getTags&artist=AC/DC&track=Hells+Bells&user=RJ");
-            list.Add("track.gettoptags&artist={artist}&track=paranoid+android");
+            list.Add("track.gettoptags&artist={artist}&track={track}");
             list.Add("track.search&track={track}&limit={limit}");
             list.Add("user.getfriends&user={user}");
             list.Add("user.getinfo&user={user}");
