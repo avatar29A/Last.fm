@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hqub.Lastfm", "src\Hqub.Las
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hqub.Lastfm.Tests", "src\Hqub.Lastfm.Tests\Hqub.Lastfm.Tests.csproj", "{4E904FC5-FFF4-46C5-9A23-561C09CE7C5F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hqub.Lastfm.Client", "Hqub.Lastfm.Client\Hqub.Lastfm.Client.csproj", "{B5F160EE-64C9-4E53-A2C7-0E3F0E060BC1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hqub.Lastfm.Client", "src\Hqub.Lastfm.Client\Hqub.Lastfm.Client.csproj", "{B5F160EE-64C9-4E53-A2C7-0E3F0E060BC1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
