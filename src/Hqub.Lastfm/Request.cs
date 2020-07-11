@@ -82,6 +82,8 @@ namespace Hqub.Lastfm
                         throw CreateServiceException(stream, response);
                     }
 
+                    await cache.Add(query, stream).ConfigureAwait(false);
+
                     // Reset the stream position, in case the cache forgot to do so!
                     stream.Position = 0;
 
