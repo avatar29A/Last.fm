@@ -1,5 +1,5 @@
 ﻿
-namespace Hqub.Lastfm.Data
+namespace Hqub.Lastfm
 {
     using Hqub.Lastfm.Entities;
     using System;

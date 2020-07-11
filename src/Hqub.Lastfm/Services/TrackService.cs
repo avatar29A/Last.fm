@@ -1,6 +1,5 @@
 ﻿namespace Hqub.Lastfm.Services
 {
-    using Hqub.Lastfm.Data;
     using Hqub.Lastfm.Entities;
     using System;
     using System.Collections.Generic;

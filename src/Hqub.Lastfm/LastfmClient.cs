@@ -133,14 +133,14 @@ namespace Hqub.Lastfm
 
             this.proxy = proxy;
 
-            //Album = new AlbumService(this);
-            //Artist = new ArtistService(this);
-            //Chart = new ChartService(this);
-            //Geo = new GeoService(this);
-            //Library = new LibraryService(this);
-            //Tag = new TagService(this);
+            Album = new AlbumService(this);
+            Artist = new ArtistService(this);
+            Chart = new ChartService(this);
+            Geo = new GeoService(this);
+            Library = new LibraryService(this);
+            Tag = new TagService(this);
             Track = new TrackService(this);
-            //User = new UserService(this);
+            User = new UserService(this);
 
             // Create the HTTP client.
             ConfigurationChanged();
