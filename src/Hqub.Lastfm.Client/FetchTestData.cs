@@ -13,6 +13,16 @@ namespace Hqub.Lastfm.Client
 
         private static List<string> apiEndpoints;
 
+        private static readonly Dictionary<string, string> Data = new Dictionary<string, string>()
+        {
+            { "artist", "Calexico" },
+            { "album", "Feast of Wire" },
+            { "track", "Alone Again Or" },
+            { "limit", "10" },
+            { "tag", "rock" },
+            { "user", "RJ" },
+        };
+
         public async Task DownloadAsync(string targetDirectory, string apiKey)
         {
             if (string.IsNullOrEmpty(targetDirectory))

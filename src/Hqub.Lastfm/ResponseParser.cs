@@ -578,6 +578,10 @@ namespace Hqub.Lastfm
             {
                 track.Tags = ParseTags(e.Descendants("tag"));
             }
+            else if ((e = node.Element("toptags")) != null)
+            {
+                track.Tags = ParseTags(e.Descendants("tag"));
+            }
 
             // End: parse info tags
 
@@ -591,6 +595,23 @@ namespace Hqub.Lastfm
                 {
                     track.Artist = ParseArtist(e);
                 }
+            }
+
+            if ((e = node.Element("album")) != null)
+            {
+                if (!e.HasElements)
+                {
+                    track.Album = new Album() { Name = e.Value };
+                }
+                else
+                {
+                    track.Album = ParseAlbum(e);
+                }
+            }
+
+            if ((e = node.Element("wiki")) != null)
+            {
+                track.Wiki = ParseWiki(e);
             }
 
             track.Images = ParseImages(node.Elements("image"));

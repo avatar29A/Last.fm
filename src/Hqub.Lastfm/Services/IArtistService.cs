@@ -33,7 +33,7 @@
         /// 
         /// https://www.last.fm/api/show/artist.getCorrection
         /// </remarks>
-        Task<Track> GetCorrectionAsync(string artist);
+        Task<Artist> GetCorrectionAsync(string artist);
 
         /// <summary>
         /// Get the metadata for an artist.

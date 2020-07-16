@@ -46,7 +46,6 @@
 
             Assert.NotNull(track.Name);
             Assert.NotNull(track.Url);
-            Assert.NotNull(track.MBID);
 
             Assert.NotNull(track.Artist);
         }
