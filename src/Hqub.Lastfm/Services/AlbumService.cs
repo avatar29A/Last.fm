@@ -56,6 +56,27 @@
         }
 
         /// <inheritdoc />
+        public async Task<List<Tag>> GetTagsAsync(string user, string album, string artist, bool autocorrect = true)
+        {
+            if (string.IsNullOrEmpty(user))
+            {
+                throw new ArgumentException("User name is reqired.", nameof(user));
+            }
+
+            var request = client.CreateRequest("album", "getTags");
+
+            SetParameters(request, artist, album, null, autocorrect);
+
+            request.Parameters["user"] = user;
+
+            var doc = await request.GetAsync();
+
+            var s = ResponseParser.Default;
+
+            return s.ReadObjects<Tag>(doc, "/lfm/tags/tag");
+        }
+
+        /// <inheritdoc />
         public async Task<List<Tag>> GetTopTagsAsync(string album, string artist, bool autocorrect = true)
         {
             var request = client.CreateRequest("album", "getTopTags");

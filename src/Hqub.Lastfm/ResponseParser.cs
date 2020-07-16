@@ -265,6 +265,11 @@ namespace Hqub.Lastfm
                 album.Tags = ParseTags(e.Descendants("tag"));
             }
 
+            if ((e = node.Element("tracks")) != null)
+            {
+                album.Tracks = ParseTracks(e.Descendants("track"));
+            }
+
             // End: parse info tags
 
             if ((e = node.Element("artist")) != null)

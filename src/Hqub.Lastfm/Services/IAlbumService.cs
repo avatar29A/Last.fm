@@ -39,6 +39,21 @@
         Task<Album> GetInfoAsync(string album, string artist, string lang = null, bool autocorrect = true);
 
         /// <summary>
+        /// Get the tags applied by an individual user to an album on Last.fm.
+        /// </summary>
+        /// <param name="user">The user to look up.</param>
+        /// <param name="album">The album name.</param>
+        /// <param name="artist">The artist name.</param>
+        /// <param name="autocorrect">Transform misspelled track names into correct track names (optional).</param>
+        /// <returns></returns>
+        /// <remarks>
+        /// This service does not require authentication.
+        /// 
+        /// https://www.last.fm/api/show/album.getTags
+        /// </remarks>
+        Task<List<Tag>> GetTagsAsync(string user, string album, string artist, bool autocorrect = true);
+
+        /// <summary>
         /// Get the top tags for an album on Last.fm, ordered by popularity.
         /// </summary>
         /// <param name="album">The album name.</param>
