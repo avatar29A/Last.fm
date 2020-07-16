@@ -1,7 +1,6 @@
 namespace Hqub.Lastfm
 {
     using System;
-    using System.Net;
 
     /// <summary>
     /// General utility functions
@@ -10,46 +9,6 @@ namespace Hqub.Lastfm
     {
         public const string LASTFM_SECURE = "https://www.last.fm/";
         public const string LASTFM = "http://www.last.fm/";
-
-        public static string SafeUrl(string text)
-        {
-            return WebUtility.UrlEncode(WebUtility.UrlEncode(text));
-        }
-
-        public static string GetSiteDomain(SiteLanguage language)
-        {
-            switch (language)
-            {
-                case SiteLanguage.English:
-                    return LASTFM_SECURE;
-                case SiteLanguage.German:
-                    return LASTFM_SECURE + "de/";
-                case SiteLanguage.Spanish:
-                    return LASTFM_SECURE + "es/";
-                case SiteLanguage.French:
-                    return LASTFM_SECURE + "fr/";
-                case SiteLanguage.Italian:
-                    return LASTFM_SECURE + "it/";
-                case SiteLanguage.Polish:
-                    return LASTFM_SECURE + "pl/";
-                case SiteLanguage.Portuguese:
-                    return LASTFM_SECURE + "pt/";
-                case SiteLanguage.Swedish:
-                    return LASTFM_SECURE + "sv/";
-                case SiteLanguage.Turkish:
-                    return LASTFM_SECURE + "tr/";
-                case SiteLanguage.Russian:
-                    return LASTFM_SECURE + "ru/";
-                case SiteLanguage.Japanese:
-                    return LASTFM_SECURE + "ja/";
-                case SiteLanguage.Chinese:
-                    return LASTFM_SECURE + "zh/";
-                default:
-                    break;
-            }
-
-            return LASTFM_SECURE;
-        }
 
         public static DateTime TimestampToDateTime(long timestamp, DateTimeKind kind = DateTimeKind.Utc)
         {
