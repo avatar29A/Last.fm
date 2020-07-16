@@ -91,7 +91,6 @@ namespace Hqub.Lastfm.Services
         public async Task<PagedResponse<Track>> GetRecentTracksAsync(string user, DateTime? from = null, DateTime? to = null, int page = 1, int limit = 50)
         {
             // TODO: user.getRecentTracks 'extended' parameter
-            // TODO: user.getRecentTracks 'nowplaying'
 
             if (string.IsNullOrEmpty(user))
             {
@@ -231,8 +230,6 @@ namespace Hqub.Lastfm.Services
             return s.ReadObjects<Tag>(doc, "/lfm/toptags/tag");
         }
 
-        // TODO: user weekly charts - result should include date range (new response type)
-
         /// <inheritdoc />
         public async Task<List<ChartTimeSpan>> GetWeeklyChartListAsync(string user)
         {
@@ -280,7 +277,7 @@ namespace Hqub.Lastfm.Services
 
             var response = new ChartResponse<Album>();
 
-            response.items = s.ReadObjects<Album>(doc, "/lfm/weeklyalbumchart/artalbumist");
+            response.items = s.ReadObjects<Album>(doc, "/lfm/weeklyalbumchart/album");
             response.Chart = s.ParseChartInfo(doc.Root.Element("weeklyalbumchart"));
 
             return response;
@@ -353,42 +350,5 @@ namespace Hqub.Lastfm.Services
 
             return response;
         }
-
-        /*
-
-        /// <summary>
-        /// Returns the track that the user's currently listening to.
-        /// </summary>
-        /// <returns>
-        /// A <see cref="Track"/> if the user is listening to a track, or null if they're not.
-        /// </returns>
-        public Track GetNowPlaying()
-        {
-            // Would return null if no track is now playing.
-
-            RequestParameters p = getParams();
-            p["limit"] = "1";
-
-            XmlDocument doc = request("user.getRecentTracks", p);
-            XmlNode node = doc.GetElementsByTagName("track")[0];
-
-            if (node.Attributes.Count > 0)
-                return new Track(extract(node, "artist"), extract(node, "name"), Session);
-            else
-                return null;
-        }
-
-        /// <summary>
-        /// Returns true if the user's listening right now.
-        /// </summary>
-        /// <returns>
-        /// A <see cref="System.Boolean"/>
-        /// </returns>
-        public bool IsNowListening()
-        {
-            return (GetNowPlaying() != null);
-        }
-
-        //*/
     }
 }

@@ -9,9 +9,12 @@
     /// </summary>
     public interface ITagService
     {
-        // NOTE: Though tag.getSimilar is documented, it doesn't return any data.
-        // 
-        // https://www.last.fm/api/show/tag.getSimilar
+        // NOTE: Though the [tag.getSimilar] API is documented, it doesn't return any data.
+        //       https://www.last.fm/api/show/tag.getSimilar
+
+        // NOTE: The [tag.getWeeklyChartList] API doesn't return any meaningful (tag related)
+        //       data. Use [user.getWeeklyChartList] instead.
+        //       https://www.last.fm/api/show/tag.getWeeklyChartList
 
         /// <summary>
         /// Get the metadata for a tag.
@@ -57,14 +60,13 @@
         /// <summary>
         /// Fetches the top global tags on Last.fm, sorted by popularity (number of times used).
         /// </summary>
-        /// <param name="tag">The tag name.</param>
         /// <returns></returns>
         /// <remarks>
         /// This service does not require authentication.
         /// 
         /// https://www.last.fm/api/show/tag.getTopTags
         /// </remarks>
-        Task<List<Tag>> GetTopTagsAsync(string tag);
+        Task<List<Tag>> GetTopTagsAsync();
 
         /// <summary>
         /// Get the top tracks by a tag on Last.fm, ordered by popularity.

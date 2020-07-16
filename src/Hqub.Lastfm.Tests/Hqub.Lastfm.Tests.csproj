@@ -31,7 +31,6 @@
     <None Remove="data\xml\tag.gettopartists.xml" />
     <None Remove="data\xml\tag.gettoptags.xml" />
     <None Remove="data\xml\tag.gettoptracks.xml" />
-    <None Remove="data\xml\tag.getweeklychartlist.xml" />
     <None Remove="data\xml\track.getcorrection.xml" />
     <None Remove="data\xml\track.getinfo.xml" />
     <None Remove="data\xml\track.getsimilar.xml" />
@@ -78,7 +77,6 @@
     <EmbeddedResource Include="data\xml\tag.gettopartists.xml" />
     <EmbeddedResource Include="data\xml\tag.gettoptags.xml" />
     <EmbeddedResource Include="data\xml\tag.gettoptracks.xml" />
-    <EmbeddedResource Include="data\xml\tag.getweeklychartlist.xml" />
     <EmbeddedResource Include="data\xml\track.getcorrection.xml" />
     <EmbeddedResource Include="data\xml\track.getinfo.xml" />
     <EmbeddedResource Include="data\xml\track.getsimilar.xml" />

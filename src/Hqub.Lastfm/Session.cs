@@ -77,8 +77,6 @@ namespace Hqub.Lastfm
             get { return !string.IsNullOrEmpty(SessionKey); }
         }
 
-        private string token;
-
         /// <summary>
         /// Initializes a new instance of the <see cref="Session"/> class.
         /// </summary>

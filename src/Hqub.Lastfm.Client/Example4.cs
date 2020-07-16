@@ -62,7 +62,7 @@ namespace Hqub.Lastfm.Client
                 Console.WriteLine("    {0,3}  {1} ({2})", i++, item.Name, item.Artist.Name);
             }
 
-            var tags = await client.Tag.GetTopTagsAsync(tag.Name);
+            var tags = await client.Tag.GetTopTagsAsync();
 
             count = Math.Min(limit, tags.Count);
 

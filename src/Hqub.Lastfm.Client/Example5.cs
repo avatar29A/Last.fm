@@ -1,5 +1,6 @@
 ﻿namespace Hqub.Lastfm.Client
 {
+    using Hqub.Lastfm.Entities;
     using System;
     using System.Linq;
     using System.Threading.Tasks;

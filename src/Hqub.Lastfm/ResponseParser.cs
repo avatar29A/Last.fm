@@ -546,7 +546,7 @@ namespace Hqub.Lastfm
 
             if ((e = node.Element("date")) != null)
             {
-                if ((a = e.Attribute("unixtime")) == null)
+                if ((a = e.Attribute("uts")) == null)
                 {
                     track.Date = DateTime.Parse(e.Value, CultureInfo.InvariantCulture);
                 }

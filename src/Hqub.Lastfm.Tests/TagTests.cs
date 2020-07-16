@@ -53,7 +53,7 @@
         [Test]
         public async Task GetTopTags()
         {
-            var tags = await client.Tag.GetTopTagsAsync(data["tag"]);
+            var tags = await client.Tag.GetTopTagsAsync();
 
             Assert.Greater(tags.Count, 0);
         }

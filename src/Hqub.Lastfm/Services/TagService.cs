@@ -75,7 +75,7 @@
         }
 
         /// <inheritdoc />
-        public async Task<List<Tag>> GetTopTagsAsync(string tag)
+        public async Task<List<Tag>> GetTopTagsAsync()
         {
             var request = client.CreateRequest("tag", "getTopTags");
 

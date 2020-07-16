@@ -10,6 +10,8 @@ namespace Hqub.Lastfm.Services
     /// </summary>
     public interface IUserService
     {
+        // TODO: user.getPersonalTags
+
         /// <summary>
         /// Get the metadata for a user.
         /// </summary>

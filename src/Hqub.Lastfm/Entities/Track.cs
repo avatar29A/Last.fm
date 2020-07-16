@@ -44,7 +44,7 @@
         public int Duration { get; set; }
 
         /// <summary>
-        /// Gets or sets the date the track was played (available only for users, i.e. user.getTopTracks).
+        /// Gets or sets the date the track was played (available only for users, i.e. user.getRecentTracks).
         /// </summary>
         [DataMember(Name = "date")]
         public DateTime? Date { get; set; }
