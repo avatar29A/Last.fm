@@ -40,6 +40,19 @@
         Task<Track> GetInfoAsync(string track, string artist, string lang = null, bool autocorrect = true);
 
         /// <summary>
+        /// Use the last.fm corrections data to check whether the supplied track has a correction to a canonical track.
+        /// </summary>
+        /// <param name="track">The track name.</param>
+        /// <param name="artist">The artist name.</param>
+        /// <returns></returns>
+        /// <remarks>
+        /// This service does not require authentication.
+        /// 
+        /// https://www.last.fm/api/show/track.getCorrection
+        /// </remarks>
+        Task<Track> GetCorrectionAsync(string track, string artist);
+
+        /// <summary>
         /// Get all the artists similar to this track.
         /// </summary>
         /// <param name="track">The track name.</param>

@@ -24,6 +24,18 @@
         Task<PagedResponse<Artist>> SearchAsync(string artist, int page = 1, int limit = 30);
 
         /// <summary>
+        /// Use the last.fm corrections data to check whether the supplied artist has a correction to a canonical artist.
+        /// </summary>
+        /// <param name="artist">The artist name.</param>
+        /// <returns></returns>
+        /// <remarks>
+        /// This service does not require authentication.
+        /// 
+        /// https://www.last.fm/api/show/artist.getCorrection
+        /// </remarks>
+        Task<Track> GetCorrectionAsync(string artist);
+
+        /// <summary>
         /// Get the metadata for an artist.
         /// </summary>
         /// <param name="artist">The artist name.</param>

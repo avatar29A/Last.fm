@@ -1,8 +1,8 @@
-﻿using Hqub.Lastfm.Cache;
-
-namespace Hqub.Lastfm.Tests
+﻿namespace Hqub.Lastfm.Tests
 {
+    using Hqub.Lastfm.Cache;
     using System;
+    using System.Collections.Generic;
     using System.IO;
     using System.Reflection;
     using System.Text.RegularExpressions;
@@ -10,6 +10,17 @@ namespace Hqub.Lastfm.Tests
 
     class EmbeddedResourceCache : IRequestCache
     {
+        // The test data used to fetch the XML response data.
+        internal static readonly Dictionary<string, string> Data = new Dictionary<string, string>()
+        {
+            { "artist", "Calexico" },
+            { "album", "Feast of Wire" },
+            { "track", "Alone Again Or" },
+            { "limit", "10" },
+            { "tag", "rock" },
+            { "user", "RJ" },
+        };
+
         private const string PATH_TEMPLATE = "Hqub.Lastfm.Tests.data.xml.{0}.xml";
 
         public Task Add(string request, Stream response)

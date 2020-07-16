@@ -86,6 +86,20 @@
         }
 
         /// <inheritdoc />
+        public async Task<Track> GetCorrectionAsync(string track, string artist)
+        {
+            var request = client.CreateRequest("track", "getCorrection");
+
+            SetParameters(request, track, artist, null);
+
+            var doc = await request.GetAsync();
+
+            var s = ResponseParser.Default;
+
+            return s.ReadObjects<Track>(doc, "/lfm/corrections/correction/track").FirstOrDefault();
+        }
+
+        /// <inheritdoc />
         public async Task<List<Track>> GetSimilarAsync(string track, string artist, int limit = 30, bool autocorrect = true)
         {
             var request = client.CreateRequest("track", "getSimilar");
