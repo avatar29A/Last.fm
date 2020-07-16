@@ -19,6 +19,7 @@
             { "limit", "10" },
             { "tag", "rock" },
             { "user", "RJ" },
+            { "country", "Germany" }
         };
 
         private const string PATH_TEMPLATE = "Hqub.Lastfm.Tests.data.xml.{0}.xml";

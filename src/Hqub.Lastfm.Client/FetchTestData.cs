@@ -21,6 +21,7 @@ namespace Hqub.Lastfm.Client
             { "limit", "10" },
             { "tag", "rock" },
             { "user", "RJ" },
+            { "country", "Germany" }
         };
 
         public async Task DownloadAsync(string targetDirectory, string apiKey)

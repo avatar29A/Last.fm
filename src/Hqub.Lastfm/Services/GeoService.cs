@@ -34,7 +34,7 @@
             var response = new PagedResponse<Artist>();
 
             response.items = s.ReadObjects<Artist>(doc, "/lfm/topartists/artist");
-            response.PageInfo = s.ParsePageInfo(doc.Root.Element("artists"));
+            response.PageInfo = s.ParsePageInfo(doc.Root.Element("topartists"));
 
             return response;
         }
@@ -59,7 +59,7 @@
 
             var response = new PagedResponse<Track>();
 
-            response.items = s.ReadObjects<Track>(doc, "/lfm/toptracks/track");
+            response.items = s.ReadObjects<Track>(doc, "/lfm/tracks/track");
             response.PageInfo = s.ParsePageInfo(doc.Root.Element("tracks"));
 
             return response;
