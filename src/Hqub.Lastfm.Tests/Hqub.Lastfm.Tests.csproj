@@ -27,7 +27,6 @@
     <None Remove="data\xml\geo.gettoptracks.xml" />
     <None Remove="data\xml\library.getartists.xml" />
     <None Remove="data\xml\tag.getinfo.xml" />
-    <None Remove="data\xml\tag.getsimilar.xml" />
     <None Remove="data\xml\tag.gettopalbums.xml" />
     <None Remove="data\xml\tag.gettopartists.xml" />
     <None Remove="data\xml\tag.gettoptags.xml" />
@@ -75,7 +74,6 @@
     <EmbeddedResource Include="data\xml\geo.gettoptracks.xml" />
     <EmbeddedResource Include="data\xml\library.getartists.xml" />
     <EmbeddedResource Include="data\xml\tag.getinfo.xml" />
-    <EmbeddedResource Include="data\xml\tag.getsimilar.xml" />
     <EmbeddedResource Include="data\xml\tag.gettopalbums.xml" />
     <EmbeddedResource Include="data\xml\tag.gettopartists.xml" />
     <EmbeddedResource Include="data\xml\tag.gettoptags.xml" />
