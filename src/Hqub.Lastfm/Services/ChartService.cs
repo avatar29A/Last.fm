@@ -64,7 +64,7 @@
             var response = new PagedResponse<Tag>();
 
             response.items = s.ReadObjects<Tag>(doc, "/lfm/tags/tag");
-            response.PageInfo = s.ParsePageInfo(doc.Root.Element("tracks"));
+            response.PageInfo = s.ParsePageInfo(doc.Root.Element("tags"));
 
             return response;
         }
