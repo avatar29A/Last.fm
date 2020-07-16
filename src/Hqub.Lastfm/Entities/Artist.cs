@@ -51,6 +51,11 @@
         public List<Tag> Tags { get; set; }
 
         /// <summary>
+        /// Gets or sets a list of similar artists.
+        /// </summary>
+        public List<Artist> Similar { get; set; }
+
+        /// <summary>
         /// Gets or sets artist statistics.
         /// </summary>
         public Statistics Statistics { get; set; }

@@ -40,6 +40,12 @@
 
             Assert.Greater(artist.Statistics.PlayCount, 0);
             Assert.Greater(artist.Statistics.Listeners, 0);
+
+            Assert.Greater(artist.Images.Count, 0);
+            Assert.Greater(artist.Similar.Count, 0);
+            Assert.Greater(artist.Tags.Count, 0);
+
+            Assert.NotNull(artist.Biography);
         }
 
         [Test]

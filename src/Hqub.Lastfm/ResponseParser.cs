@@ -359,7 +359,7 @@ namespace Hqub.Lastfm
 
             if ((e = node.Element("similar")) != null)
             {
-                //artist.SimilarArtists = ParseArtists(e.Descendants("artist"));
+                artist.Similar = ParseArtists(e.Descendants("artist"));
             }
 
             if ((e = node.Element("tags")) != null)

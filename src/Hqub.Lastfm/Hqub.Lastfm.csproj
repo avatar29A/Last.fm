@@ -33,9 +33,4 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Cache\" />
-    <Folder Include="Services\" />
-  </ItemGroup>
-
 </Project>
