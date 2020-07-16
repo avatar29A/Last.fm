@@ -10,15 +10,6 @@
         private readonly LastfmClient client;
         private readonly Dictionary<string, string> data;
 
-        /*
-         * 
-            list.Add("track.getcorrection&artist=guns%20and%20roses&track=Mrbrownstone");
-            list.Add("track.getInfo&artist={artist}&track={track}");
-            list.Add("track.getsimilar&artist={artist}&track={track}&limit={limit}");
-            list.Add("track.getTags&artist=AC/DC&track=Hells+Bells&user=RJ");
-            list.Add("track.gettoptags&artist={artist}&track={track}");
-            list.Add("track.search&track={track}&limit={limit}");
-         */
         public TrackTests()
         {
             client = new LastfmClient("---APIKEY---")
