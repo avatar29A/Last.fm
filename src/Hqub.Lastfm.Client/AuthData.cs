@@ -5,8 +5,8 @@ namespace Hqub.Lastfm.Client
     class AuthData
     {
         // Add your credentials for testing or use the command line args.
-        const string TEST_API_KEY = "---api-key---";
-        const string TEST_API_SECRET = "---api-secret---";
+        const string TEST_API_KEY = "";
+        const string TEST_API_SECRET = "";
 
         public string ApiKey { get; set; }
 
@@ -15,6 +15,8 @@ namespace Hqub.Lastfm.Client
         public string User { get; set; }
 
         public string Password { get; set; }
+
+        public string SessionKey { get; set; }
 
         public void Print()
         {
@@ -30,6 +32,19 @@ namespace Hqub.Lastfm.Client
             {
                 Console.WriteLine("Password  : {0}", Password);
             }
+        }
+
+        public static bool Validate(AuthData data, bool userAuth = false)
+        {
+            if (string.IsNullOrEmpty(data.ApiKey))
+            {
+                return false;
+            }
+
+            return userAuth ?
+                !string.IsNullOrEmpty(data.User) &&
+                !string.IsNullOrEmpty(data.Password) &&
+                !string.IsNullOrEmpty(data.ApiSecret) : true;
         }
 
         public static AuthData Create(string[] args)
@@ -59,6 +74,10 @@ namespace Hqub.Lastfm.Client
                     if (i < length - 1) auth.ApiKey = args[++i];
                 }
                 else if (s == "-s" || s == "--api-secret")
+                {
+                    if (i < length - 1) auth.ApiSecret = args[++i];
+                }
+                else if (s == "-sk" || s == "--session-key")
                 {
                     if (i < length - 1) auth.ApiSecret = args[++i];
                 }

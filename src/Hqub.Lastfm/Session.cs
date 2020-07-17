@@ -1,38 +1,14 @@
-
 namespace Hqub.Lastfm
 {
     /// <summary>
     /// Represents your identity tokens provided by Last.fm.
     /// </summary>
     /// <remarks>
-    /// A session with only API Key and API Secret is not authenticated, and it wouldn't let you
-    /// perform write operations on Last.fm. In order to have it authenticated you could do the following:
+    /// A session with only API key and API secret is not authenticated and it wouldn't
+    /// let you perform write operations on Last.fm.  In order to have it authenticated
+    /// you can call
     /// <code>
-    /// using System;
-    /// using Hqub.Lastfm.Service;
-    /// 
-    /// string key = "b25b959554ed76058ac220b7b2e0a026";
-    /// string secret = "361505f8eeaf61426ef95a4317482251";
-    /// 
-    /// var session = Configuration.CreateSession(key, secret);
-    ///  
-    /// // one way is to ask the user for his username and password.
-    /// string username = Console.ReadLine("Please enter your username: ");
-    /// string password = Console.ReadLine("Please enter your password: ");
-    /// 
-    /// // then authenticate.
-    /// session.Authenticate(username, MD5.ComputeHash(password));
-    /// 
-    /// // another way is to let the user authenticate from the Last.fm website.
-    /// string url = session.GetAuthenticationUrl();
-    /// Console.WriteLine("Please open the following url and follow the procedures, then press Enter: " + url);
-    /// 
-    /// // wait for it.
-    /// Console.ReadLine();
-    /// 
-    /// // now that he's done, retreive the session key.
-    /// session.AuthenticateViaWeb();
-    /// 
+    /// client.AuthenticateAsync(username, password);
     /// </code>
     /// </remarks>
     public class Session

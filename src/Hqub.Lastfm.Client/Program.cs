@@ -51,7 +51,11 @@ namespace Hqub.Lastfm.Client
             // For console output floating point numbers with '.'
             Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
 
-            Header("Data");
+            if (!AuthData.Validate(auth))
+            {
+                Console.WriteLine("Error: No API key given");
+                Console.WriteLine("Usage: Hqub.Lastfm.Client.exe --api-key KEY");
+            }
 
             auth.Print();
 
@@ -63,6 +67,7 @@ namespace Hqub.Lastfm.Client
                 Cache = new FileRequestCache(Path.Combine(location, "cache"))
             };
 
+            /*
             Header("Example 1");
             await Example1.Run(client, "Calexico");
 
@@ -77,6 +82,21 @@ namespace Hqub.Lastfm.Client
 
             Header("Example 5");
             await Example5.Run(client, "RJ");
+            //*/
+
+            if (!AuthData.Validate(auth, true))
+            {
+                Console.WriteLine("Error: missing authentication data.");
+                Console.WriteLine("Usage: Hqub.Lastfm.Client.exe --user USER --password PASS --api-key KEY --api-secret SECRET");
+            }
+
+            if (!string.IsNullOrEmpty(auth.SessionKey))
+            {
+                client.Session.SessionKey = auth.SessionKey;
+            }
+
+            Header("Example 6");
+            await Example6.Run(client, auth);
         }
 
         private static void Header(string title)
