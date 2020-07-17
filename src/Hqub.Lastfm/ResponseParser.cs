@@ -237,7 +237,7 @@ namespace Hqub.Lastfm
 
             if ((e = node.Element("track")) != null)
             {
-                scrobble.Name = e.Value;
+                scrobble.Track = e.Value;
 
                 if ((a = e.Attribute("corrected")) != null && a.Value != "0")
                 {
@@ -247,7 +247,7 @@ namespace Hqub.Lastfm
 
             if ((e = node.Element("artist")) != null)
             {
-                scrobble.Artist = new Artist() { Name = e.Value };
+                scrobble.Artist = e.Value;
 
                 if ((a = e.Attribute("corrected")) != null && a.Value != "0")
                 {
@@ -257,7 +257,7 @@ namespace Hqub.Lastfm
 
             if ((e = node.Element("album")) != null)
             {
-                scrobble.Album = new Album() { Name = e.Value };
+                scrobble.Album = e.Value;
 
                 if ((a = e.Attribute("corrected")) != null && a.Value != "0")
                 {
@@ -267,7 +267,7 @@ namespace Hqub.Lastfm
 
             if ((e = node.Element("albumArtist")) != null && scrobble.Album != null)
             {
-                scrobble.Album.Artist = new Artist() { Name = e.Value };
+                scrobble.AlbumArtist = e.Value;
 
                 if ((a = e.Attribute("corrected")) != null && a.Value != "0")
                 {
