@@ -139,7 +139,7 @@ namespace Hqub.Lastfm
             Geo = new GeoService(this);
             Library = new LibraryService(this);
             Tag = new TagService(this);
-            Track = new TrackService(this);
+            Track = new TrackService(this, new ScrobbleManager(this));
             User = new UserService(this);
 
             // Create the HTTP client.

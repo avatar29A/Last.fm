@@ -141,6 +141,30 @@
         Task<bool> UpdateNowPlayingAsync(string track, string artist, int trackNumber = 0, string album = null, string albumArtist = null);
 
         /// <summary>
+        /// Scrobble a track.
+        /// </summary>
+        /// <param name="scrobble">The <see cref="Scrobble"/> item.</param>
+        /// <returns></returns>
+        /// <remarks>
+        /// This service requires authentication.
+        /// 
+        /// https://www.last.fm/api/show/track.scrobble
+        /// </remarks>
+        Task<ScrobbleResponse> ScrobbleAsync(Scrobble scrobble);
+
+        /// <summary>
+        /// Scrobble a batch of tracks.
+        /// </summary>
+        /// <param name="scrobbles">The <see cref="Scrobble"/> list.</param>
+        /// <returns></returns>
+        /// <remarks>
+        /// This service requires authentication.
+        /// 
+        /// https://www.last.fm/api/show/track.scrobble
+        /// </remarks>
+        Task<ScrobbleResponse> ScrobbleAsync(IEnumerable<Scrobble> scrobbles);
+
+        /// <summary>
         /// Tag a track using a list of user supplied tags.
         /// </summary>
         /// <param name="track">The track name.</param>

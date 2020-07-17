@@ -9,10 +9,12 @@
     class TrackService : ITrackService
     {
         private readonly LastfmClient client;
+        private readonly ScrobbleManager scrobbler;
 
-        public TrackService(LastfmClient client)
+        public TrackService(LastfmClient client, ScrobbleManager scrobbler)
         {
             this.client = client;
+            this.scrobbler = scrobbler;
         }
 
         /// <inheritdoc />
@@ -40,31 +42,6 @@
 
             return response;
         }
-
-        /*
-        // https://www.last.fm/api/show/track.scrobble
-        public async static Task<ScrobbleResponse> ScrobbleAsync(IEnumerable<Scrobble> scrobbles)
-        {
-            var request = client.CreateRequest("track", "scrobble");
-
-            var p = request.Parameters;
-
-            int i = 0;
-
-            foreach (var item in scrobbles)
-            {
-                item.SetScrobbleParameters(i++, p);
-            }
-
-            var doc = await request.PostAsync();
-
-            var s = LastFmXmlReader.Default;
-
-            var response = new ScrobbleResponse();
-
-            return response;
-        }
-        //*/
 
         /// <inheritdoc />
         public async Task<Track> GetInfoAsync(string track, string artist, string lang = null, bool autocorrect = true)
@@ -213,6 +190,18 @@
             var s = ResponseParser.Default;
 
             return s.IsStatusOK(doc.Root);
+        }
+
+        /// <inheritdoc />
+        public async Task<ScrobbleResponse> ScrobbleAsync(Scrobble scrobble)
+        {
+            return await ScrobbleAsync(new List<Scrobble>() { scrobble });
+        }
+
+        /// <inheritdoc />
+        public async Task<ScrobbleResponse> ScrobbleAsync(IEnumerable<Scrobble> scrobbles)
+        {
+            return await scrobbler.ScrobbleAsync(scrobbles);
         }
 
         /// <inheritdoc />

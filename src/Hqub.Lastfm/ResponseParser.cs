@@ -202,6 +202,104 @@ namespace Hqub.Lastfm
             return chart;
         }
 
+        #region Reader: Scrobble
+
+        internal ScrobbleResponse ParseScrobbles(XElement node)
+        {
+            XAttribute a;
+
+            var response = new ScrobbleResponse();
+
+            if ((a = node.Attribute("accepted")) != null)
+            {
+                response.Accepted = int.Parse(a.Value);
+            }
+
+            if ((a = node.Attribute("ignored")) != null)
+            {
+                response.Ignored = int.Parse(a.Value);
+            }
+
+            foreach (var e in node.Elements("Scrobble"))
+            {
+                response.Scrobbles.Add(ParseScrobble(e));
+            }
+
+            return response;
+        }
+
+        internal Scrobble ParseScrobble(XElement node)
+        {
+            var scrobble = new Scrobble();
+
+            XElement e;
+            XAttribute a;
+
+            if ((e = node.Element("track")) != null)
+            {
+                scrobble.Name = e.Value;
+
+                if ((a = e.Attribute("corrected")) != null && a.Value != "0")
+                {
+                    scrobble.AddCorrected("track");
+                }
+            }
+
+            if ((e = node.Element("artist")) != null)
+            {
+                scrobble.Artist = new Artist() { Name = e.Value };
+
+                if ((a = e.Attribute("corrected")) != null && a.Value != "0")
+                {
+                    scrobble.AddCorrected("artist");
+                }
+            }
+
+            if ((e = node.Element("album")) != null)
+            {
+                scrobble.Album = new Album() { Name = e.Value };
+
+                if ((a = e.Attribute("corrected")) != null && a.Value != "0")
+                {
+                    scrobble.AddCorrected("album");
+                }
+            }
+
+            if ((e = node.Element("albumArtist")) != null && scrobble.Album != null)
+            {
+                scrobble.Album.Artist = new Artist() { Name = e.Value };
+
+                if ((a = e.Attribute("corrected")) != null && a.Value != "0")
+                {
+                    scrobble.AddCorrected("albumArtist");
+                }
+            }
+
+            if ((e = node.Element("mbid")) != null)
+            {
+                scrobble.MBID = e.Value;
+            }
+
+            if ((e = node.Element("timestamp")) != null)
+            {
+                scrobble.Date = Utilities.TimestampToDateTime(long.Parse(e.Value));
+            }
+
+            if ((e = node.Element("ignoredMessage")) != null)
+            {
+                scrobble.IgnoredMessage = e.Value;
+
+                if ((a = e.Attribute("code")) != null)
+                {
+                    scrobble.ErrorCode = int.Parse(a.Value);
+                }
+            }
+
+            return scrobble;
+        }
+
+        #endregion
+
         #region Reader: Album
 
         private List<Album> ParseAlbums(IEnumerable<XElement> nodes)
@@ -546,13 +644,13 @@ namespace Hqub.Lastfm
 
             if ((e = node.Element("date")) != null)
             {
-                if ((a = e.Attribute("uts")) == null)
+                if ((a = e.Attribute("uts")) != null)
                 {
-                    track.Date = DateTime.Parse(e.Value, CultureInfo.InvariantCulture);
+                    track.Date = Utilities.TimestampToDateTime(long.Parse(a.Value));
                 }
                 else
                 {
-                    track.Date = Utilities.TimestampToDateTime(long.Parse(a.Value));
+                    track.Date = DateTime.Parse(e.Value, CultureInfo.InvariantCulture);
                 }
             }
 
