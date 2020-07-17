@@ -55,6 +55,7 @@ namespace Hqub.Lastfm.Client
             {
                 Console.WriteLine("Error: No API key given");
                 Console.WriteLine("Usage: Hqub.Lastfm.Client.exe --api-key KEY");
+                return;
             }
 
             auth.Print();
@@ -67,7 +68,6 @@ namespace Hqub.Lastfm.Client
                 Cache = new FileRequestCache(Path.Combine(location, "cache"))
             };
 
-            /*
             Header("Example 1");
             await Example1.Run(client, "Calexico");
 
@@ -82,12 +82,12 @@ namespace Hqub.Lastfm.Client
 
             Header("Example 5");
             await Example5.Run(client, "RJ");
-            //*/
 
             if (!AuthData.Validate(auth, true))
             {
                 Console.WriteLine("Error: missing authentication data.");
                 Console.WriteLine("Usage: Hqub.Lastfm.Client.exe --user USER --password PASS --api-key KEY --api-secret SECRET");
+                return;
             }
 
             if (!string.IsNullOrEmpty(auth.SessionKey))

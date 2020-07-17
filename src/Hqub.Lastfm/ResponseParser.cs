@@ -220,7 +220,7 @@ namespace Hqub.Lastfm
                 response.Ignored = int.Parse(a.Value);
             }
 
-            foreach (var e in node.Elements("Scrobble"))
+            foreach (var e in node.Elements("scrobble"))
             {
                 response.Scrobbles.Add(ParseScrobble(e));
             }

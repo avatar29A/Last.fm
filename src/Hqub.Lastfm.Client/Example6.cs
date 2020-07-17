@@ -16,6 +16,8 @@ namespace Hqub.Lastfm.Client
 
             var scrobble = new Scrobble()
             {
+                Artist = "Unknown Artist",
+                Track = "Awesome Track #1",
                 Date = DateTime.Now - TimeSpan.FromMinutes(10)
             };
 

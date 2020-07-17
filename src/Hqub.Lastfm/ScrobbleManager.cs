@@ -42,14 +42,14 @@ namespace Hqub.Lastfm
 
         public void SetScrobbleParameters(RequestParameters p, int i, Scrobble s)
         {
-            if (string.IsNullOrEmpty(s.Artist?.Name))
+            if (string.IsNullOrEmpty(s.Artist))
             {
                 throw new ArgumentNullException("Artist");
             }
 
-            if (string.IsNullOrEmpty(s.Name))
+            if (string.IsNullOrEmpty(s.Track))
             {
-                throw new ArgumentNullException("Name");
+                throw new ArgumentNullException("Track");
             }
 
             if (s.Date == null)
@@ -59,13 +59,13 @@ namespace Hqub.Lastfm
 
             string index = string.Format("[{0}]", i);
 
-            p.Add("artist" + index, s.Artist.Name);
-            p.Add("track" + index, s.Name);
+            p.Add("artist" + index, s.Artist);
+            p.Add("track" + index, s.Track);
             p.Add("timestamp" + index, Utilities.DateTimeToUtcTimestamp(s.Date.Value).ToString());
 
-            if (!string.IsNullOrEmpty(s.Album?.Name))
+            if (!string.IsNullOrEmpty(s.Album))
             {
-                p.Add("album" + index, s.Album.Name);
+                p.Add("album" + index, s.Album);
             }
 
             if (!s.ChosenByUser)
@@ -73,21 +73,24 @@ namespace Hqub.Lastfm
                 p.Add("chosenByUser" + index, "0");
             }
 
-            // TODO: scrobble trackNumber?
-
             if (!string.IsNullOrEmpty(s.MBID))
             {
                 p.Add("mbid" + index, s.MBID);
             }
 
-            if (!string.IsNullOrEmpty(s.Album?.Artist?.Name))
+            if (!string.IsNullOrEmpty(s.AlbumArtist))
             {
-                p.Add("albumArtist" + index, s.Album.Artist.Name);
+                p.Add("albumArtist" + index, s.AlbumArtist);
             }
 
             if (s.Duration > 0)
             {
                 p.Add("duration" + index, s.Duration.ToString());
+            }
+
+            if (s.TrackNumber > 0)
+            {
+                p.Add("trackNumber" + index, s.TrackNumber.ToString());
             }
         }
     }

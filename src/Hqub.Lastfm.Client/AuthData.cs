@@ -20,17 +20,26 @@ namespace Hqub.Lastfm.Client
 
         public void Print()
         {
-            Console.WriteLine("API key   : {0}", ApiKey);
-            Console.WriteLine("API secret: {0}", ApiSecret);
-
-            if (!string.IsNullOrEmpty(User))
+            Console.WriteLine("API key    : {0}", ApiKey);
+            
+            if (!string.IsNullOrEmpty(ApiSecret))
             {
-                Console.WriteLine("User      : {0}", User);
+                Console.WriteLine("API secret : {0}", ApiSecret);
+            }
+
+            if (!string.IsNullOrEmpty(SessionKey))
+            {
+                Console.WriteLine("Session key: {0}", SessionKey);
             }
 
             if (!string.IsNullOrEmpty(User))
             {
-                Console.WriteLine("Password  : {0}", Password);
+                Console.WriteLine("User       : {0}", User);
+            }
+
+            if (!string.IsNullOrEmpty(User))
+            {
+                Console.WriteLine("Password   : {0}", Password);
             }
         }
 
@@ -41,10 +50,17 @@ namespace Hqub.Lastfm.Client
                 return false;
             }
 
-            return userAuth ?
-                !string.IsNullOrEmpty(data.User) &&
-                !string.IsNullOrEmpty(data.Password) &&
-                !string.IsNullOrEmpty(data.ApiSecret) : true;
+            if (!userAuth)
+            {
+                return true;
+            }
+
+            if (!string.IsNullOrEmpty(data.ApiSecret))
+            {
+                return true;
+            }
+
+            return !string.IsNullOrEmpty(data.User) && !string.IsNullOrEmpty(data.Password);
         }
 
         public static AuthData Create(string[] args)
@@ -79,7 +95,7 @@ namespace Hqub.Lastfm.Client
                 }
                 else if (s == "-sk" || s == "--session-key")
                 {
-                    if (i < length - 1) auth.ApiSecret = args[++i];
+                    if (i < length - 1) auth.SessionKey = args[++i];
                 }
             }
 

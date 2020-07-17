@@ -52,7 +52,7 @@
         /// <summary>
         /// Gets or sets a value indicating whether the user chose this song (optional).
         /// </summary>
-        public bool ChosenByUser { get; set; }
+        public bool ChosenByUser { get; set; } = true;
 
         #endregion
 
