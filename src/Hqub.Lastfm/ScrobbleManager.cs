@@ -52,7 +52,7 @@ namespace Hqub.Lastfm
                 throw new ArgumentNullException("Track");
             }
 
-            if (s.Date == null)
+            if (s.Date == default)
             {
                 throw new ArgumentNullException("TimeStamp");
             }
@@ -61,7 +61,7 @@ namespace Hqub.Lastfm
 
             p.Add("artist" + index, s.Artist);
             p.Add("track" + index, s.Track);
-            p.Add("timestamp" + index, Utilities.DateTimeToUtcTimestamp(s.Date.Value).ToString());
+            p.Add("timestamp" + index, Utilities.DateTimeToUtcTimestamp(s.Date).ToString());
 
             if (!string.IsNullOrEmpty(s.Album))
             {

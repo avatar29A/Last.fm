@@ -93,6 +93,11 @@ namespace Hqub.Lastfm
         public IRequestCache Cache { get; set; }
 
         /// <summary>
+        /// Gets or sets the <see cref="IScrobbleCache"/>.
+        /// </summary>
+        public IScrobbleCache ScrobbleCache { get; set; }
+
+        /// <summary>
         /// Initializes a new instance of the <see cref="LastfmClient"/> class.
         /// </summary>
         /// <param name="apiKey">The last.fm API key.</param>

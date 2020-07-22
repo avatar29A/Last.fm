@@ -22,7 +22,11 @@
         /// <summary>
         /// Gets or sets the date the track was played.
         /// </summary>
-        public DateTime? Date { get; set; }
+        /// <remarks>
+        /// Last.fm allows scrobbling tracks from the past 2 weeks.
+        /// Any tracks older than 2 weeks will be ignored.
+        /// </remarks>
+        public DateTime Date { get; set; }
 
         /// <summary>
         /// Gets or sets the album (optional).
