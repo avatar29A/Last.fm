@@ -187,7 +187,7 @@ namespace Hqub.Lastfm.Client
 
                 var name = GetCacheFileName(path, buffer, size);
 
-                using (var stream = File.OpenWrite(Path.Combine(path, name)))
+                using (var stream = File.Create(Path.Combine(path, name)))
                 using (var writer = new BinaryWriter(stream))
                 {
                     writer.Write(DateTimeToUtcTimestamp(DateTime.Now));
