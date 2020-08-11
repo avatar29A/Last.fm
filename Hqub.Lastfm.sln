@@ -1,11 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hqub.Lastfm", "src\Hqub.Lastfm\Hqub.Lastfm.csproj", "{D85E0F5F-180C-4FA8-B274-18B47F9866C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hqub.Lastfm", "src\Hqub.Lastfm\Hqub.Lastfm.csproj", "{D85E0F5F-180C-4FA8-B274-18B47F9866C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hqub.Lastfm.Tests", "src\Hqub.Lastfm.Tests\Hqub.Lastfm.Tests.csproj", "{4E904FC5-FFF4-46C5-9A23-561C09CE7C5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hqub.Lastfm.Tests", "src\Hqub.Lastfm.Tests\Hqub.Lastfm.Tests.csproj", "{4E904FC5-FFF4-46C5-9A23-561C09CE7C5F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hqub.Lastfm.Client", "src\Hqub.Lastfm.Client\Hqub.Lastfm.Client.csproj", "{B5F160EE-64C9-4E53-A2C7-0E3F0E060BC1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{005EEC69-8F90-4F91-A1A5-982F5965D687}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,8 +26,15 @@ Global
 		{D85E0F5F-180C-4FA8-B274-18B47F9866C9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4E904FC5-FFF4-46C5-9A23-561C09CE7C5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4E904FC5-FFF4-46C5-9A23-561C09CE7C5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5F160EE-64C9-4E53-A2C7-0E3F0E060BC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5F160EE-64C9-4E53-A2C7-0E3F0E060BC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5F160EE-64C9-4E53-A2C7-0E3F0E060BC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5F160EE-64C9-4E53-A2C7-0E3F0E060BC1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BA4CBABA-D260-431F-A818-BA8B3A62D032}
 	EndGlobalSection
 EndGlobal

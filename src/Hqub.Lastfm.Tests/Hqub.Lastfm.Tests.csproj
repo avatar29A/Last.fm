@@ -1,90 +1,111 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4E904FC5-FFF4-46C5-9A23-561C09CE7C5F}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Hqub.Lastfm.Tests</RootNamespace>
-    <AssemblyName>Hqub.Lastfm.Tests</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
-    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
-    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
-    <IsCodedUITest>False</IsCodedUITest>
-    <TestProjectType>UnitTest</TestProjectType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
+
   <ItemGroup>
-    <Reference Include="System" />
+    <None Remove="data\xml\album.getinfo.xml" />
+    <None Remove="data\xml\album.gettags.xml" />
+    <None Remove="data\xml\album.gettoptags.xml" />
+    <None Remove="data\xml\album.search.xml" />
+    <None Remove="data\xml\artist.getcorrection.xml" />
+    <None Remove="data\xml\artist.getinfo.xml" />
+    <None Remove="data\xml\artist.getsimilar.xml" />
+    <None Remove="data\xml\artist.gettags.xml" />
+    <None Remove="data\xml\artist.gettopalbums.xml" />
+    <None Remove="data\xml\artist.gettoptags.xml" />
+    <None Remove="data\xml\artist.gettoptracks.xml" />
+    <None Remove="data\xml\artist.search.xml" />
+    <None Remove="data\xml\chart.gettopartists.xml" />
+    <None Remove="data\xml\chart.gettoptags.xml" />
+    <None Remove="data\xml\chart.gettoptracks.xml" />
+    <None Remove="data\xml\error.xml" />
+    <None Remove="data\xml\geo.gettopartists.xml" />
+    <None Remove="data\xml\geo.gettoptracks.xml" />
+    <None Remove="data\xml\library.getartists.xml" />
+    <None Remove="data\xml\tag.getinfo.xml" />
+    <None Remove="data\xml\tag.gettopalbums.xml" />
+    <None Remove="data\xml\tag.gettopartists.xml" />
+    <None Remove="data\xml\tag.gettoptags.xml" />
+    <None Remove="data\xml\tag.gettoptracks.xml" />
+    <None Remove="data\xml\track.getcorrection.xml" />
+    <None Remove="data\xml\track.getinfo.xml" />
+    <None Remove="data\xml\track.getsimilar.xml" />
+    <None Remove="data\xml\track.gettags.xml" />
+    <None Remove="data\xml\track.gettoptags.xml" />
+    <None Remove="data\xml\track.search.xml" />
+    <None Remove="data\xml\user.getfriends.xml" />
+    <None Remove="data\xml\user.getinfo.xml" />
+    <None Remove="data\xml\user.getlovedtracks.xml" />
+    <None Remove="data\xml\user.getpersonaltags.xml" />
+    <None Remove="data\xml\user.getrecenttracks.xml" />
+    <None Remove="data\xml\user.gettopalbums.xml" />
+    <None Remove="data\xml\user.gettopartists.xml" />
+    <None Remove="data\xml\user.gettoptags.xml" />
+    <None Remove="data\xml\user.gettoptracks.xml" />
+    <None Remove="data\xml\user.getweeklyalbumchart.xml" />
+    <None Remove="data\xml\user.getweeklyartistchart.xml" />
+    <None Remove="data\xml\user.getweeklychartlist.xml" />
+    <None Remove="data\xml\user.getweeklytrackchart.xml" />
   </ItemGroup>
-  <Choose>
-    <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
-      <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
-      </ItemGroup>
-    </When>
-    <Otherwise>
-      <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
-      </ItemGroup>
-    </Otherwise>
-  </Choose>
+
   <ItemGroup>
-    <Compile Include="BaseTest.cs" />
-    <Compile Include="TrackTest.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="data\xml\album.getinfo.xml" />
+    <EmbeddedResource Include="data\xml\album.gettags.xml" />
+    <EmbeddedResource Include="data\xml\album.gettoptags.xml" />
+    <EmbeddedResource Include="data\xml\album.search.xml" />
+    <EmbeddedResource Include="data\xml\artist.getcorrection.xml" />
+    <EmbeddedResource Include="data\xml\artist.getinfo.xml" />
+    <EmbeddedResource Include="data\xml\artist.getsimilar.xml" />
+    <EmbeddedResource Include="data\xml\artist.gettags.xml" />
+    <EmbeddedResource Include="data\xml\artist.gettopalbums.xml" />
+    <EmbeddedResource Include="data\xml\artist.gettoptags.xml" />
+    <EmbeddedResource Include="data\xml\artist.gettoptracks.xml" />
+    <EmbeddedResource Include="data\xml\artist.search.xml" />
+    <EmbeddedResource Include="data\xml\chart.gettopartists.xml" />
+    <EmbeddedResource Include="data\xml\chart.gettoptags.xml" />
+    <EmbeddedResource Include="data\xml\chart.gettoptracks.xml" />
+    <EmbeddedResource Include="data\xml\error.xml" />
+    <EmbeddedResource Include="data\xml\geo.gettopartists.xml" />
+    <EmbeddedResource Include="data\xml\geo.gettoptracks.xml" />
+    <EmbeddedResource Include="data\xml\library.getartists.xml" />
+    <EmbeddedResource Include="data\xml\tag.getinfo.xml" />
+    <EmbeddedResource Include="data\xml\tag.gettopalbums.xml" />
+    <EmbeddedResource Include="data\xml\tag.gettopartists.xml" />
+    <EmbeddedResource Include="data\xml\tag.gettoptags.xml" />
+    <EmbeddedResource Include="data\xml\tag.gettoptracks.xml" />
+    <EmbeddedResource Include="data\xml\track.getcorrection.xml" />
+    <EmbeddedResource Include="data\xml\track.getinfo.xml" />
+    <EmbeddedResource Include="data\xml\track.getsimilar.xml" />
+    <EmbeddedResource Include="data\xml\track.gettags.xml" />
+    <EmbeddedResource Include="data\xml\track.gettoptags.xml" />
+    <EmbeddedResource Include="data\xml\track.search.xml" />
+    <EmbeddedResource Include="data\xml\user.getfriends.xml" />
+    <EmbeddedResource Include="data\xml\user.getinfo.xml" />
+    <EmbeddedResource Include="data\xml\user.getlovedtracks.xml" />
+    <EmbeddedResource Include="data\xml\user.getpersonaltags.xml" />
+    <EmbeddedResource Include="data\xml\user.getrecenttracks.xml" />
+    <EmbeddedResource Include="data\xml\user.gettopalbums.xml" />
+    <EmbeddedResource Include="data\xml\user.gettopartists.xml" />
+    <EmbeddedResource Include="data\xml\user.gettoptags.xml" />
+    <EmbeddedResource Include="data\xml\user.gettoptracks.xml" />
+    <EmbeddedResource Include="data\xml\user.getweeklyalbumchart.xml" />
+    <EmbeddedResource Include="data\xml\user.getweeklyartistchart.xml" />
+    <EmbeddedResource Include="data\xml\user.getweeklychartlist.xml" />
+    <EmbeddedResource Include="data\xml\user.getweeklytrackchart.xml" />
   </ItemGroup>
+
   <ItemGroup>
-    <ProjectReference Include="..\Hqub.Lastfm\Hqub.Lastfm.csproj">
-      <Project>{d85e0f5f-180c-4fa8-b274-18b47f9866c9}</Project>
-      <Name>Hqub.Lastfm</Name>
-    </ProjectReference>
+    <PackageReference Include="nunit" Version="3.10.1" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.10.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.8.0" />
   </ItemGroup>
-  <Choose>
-    <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
-      <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-          <Private>False</Private>
-        </Reference>
-        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-          <Private>False</Private>
-        </Reference>
-        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-          <Private>False</Private>
-        </Reference>
-        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-          <Private>False</Private>
-        </Reference>
-      </ItemGroup>
-    </When>
-  </Choose>
-  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
+
+  <ItemGroup>
+    <ProjectReference Include="..\Hqub.Lastfm\Hqub.Lastfm.csproj" />
+  </ItemGroup>
+
 </Project>
