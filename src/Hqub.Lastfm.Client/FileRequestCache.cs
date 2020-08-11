@@ -24,22 +24,13 @@ namespace Hqub.Lastfm.Client
         private readonly string path;
 
         public FileRequestCache()
+            : this(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "lastfm", "cache"))
         {
-            var appdata = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-
-            this.Timeout = TimeSpan.FromHours(24.0);
-
-            this.path = Path.Combine(appdata, "lastfm", "cache");
-
-            if (!Directory.Exists(path))
-            {
-                Directory.CreateDirectory(path);
-            }
         }
 
         public FileRequestCache(string path)
         {
-            this.Timeout = TimeSpan.FromHours(24.0);
+            Timeout = TimeSpan.FromHours(24.0);
 
             this.path = path;
 

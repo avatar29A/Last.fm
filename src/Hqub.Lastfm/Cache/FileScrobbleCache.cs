@@ -164,7 +164,7 @@ namespace Hqub.Lastfm.Cache
 
         private string Fix(string s)
         {
-            return s == null ? "" : s.Replace(';', ',');
+            return s == null ? "" : s.Replace(';', ',').Replace('\n', ' ').Replace('\r', ' ');
         }
     }
 }
