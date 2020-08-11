@@ -4,6 +4,7 @@ namespace Hqub.Lastfm
     using Hqub.Lastfm.Entities;
     using System;
     using System.Collections.Generic;
+    using System.Linq;
     using System.Threading.Tasks;
 
     class ScrobbleManager
@@ -19,9 +20,51 @@ namespace Hqub.Lastfm
 
         public async Task<ScrobbleResponse> ScrobbleAsync(IEnumerable<Scrobble> scrobbles)
         {
-            // TODO: scrobble limit.
-            // TODO: scrobble caching.
+            var _ = await SendCachedScrobblesAsync();
 
+            return await SendScrobblesAsync(scrobbles.ToList());
+        }
+
+        public async Task<ScrobbleResponse> SendCachedScrobblesAsync()
+        {
+            var cache = client.ScrobbleCache;
+
+            if (cache == null) return new ScrobbleResponse();
+
+            var scrobbles = (await client.ScrobbleCache.Get(true)).ToList();
+
+            var response = await SendScrobblesAsync(scrobbles);
+
+            if (response.Accepted < scrobbles.Count)
+            {
+                // Only re-add scrobbles that were rejected due to server error.
+                // See https://www.last.fm/api/scrobbling#id3
+                await cache.Add(response.Scrobbles.Where(s => IsServerError(s.ErrorCode)));
+            }
+
+            return response;
+        }
+
+        internal async Task<ScrobbleResponse> SendScrobblesAsync(List<Scrobble> scrobbles)
+        {
+            var response = new ScrobbleResponse();
+
+            int i = 0, count = scrobbles.Count;
+
+            while (i * MAX_SCROBBLES < count)
+            {
+                var batch = scrobbles.Skip(i * MAX_SCROBBLES).Take(MAX_SCROBBLES);
+
+                await SendScrobbleBatchAsync(batch.ToList(), response);
+
+                i++;
+            }
+
+            return response;
+        }
+
+        internal async Task SendScrobbleBatchAsync(List<Scrobble> scrobbles, ScrobbleResponse response)
+        {
             var request = client.CreateRequest("track.scrobble");
 
             var p = request.Parameters;
@@ -33,14 +76,20 @@ namespace Hqub.Lastfm
                 SetScrobbleParameters(p, i++, item);
             }
 
+            // TODO: should exceptions be catched here?
+
             var doc = await request.PostAsync();
 
             var s = ResponseParser.Default;
 
-            return s.ParseScrobbles(doc.Element("lfm").Element("scrobbles"));
+            var r = s.ParseScrobbles(doc.Element("lfm").Element("scrobbles"));
+
+            response.Accepted += r.Accepted;
+            response.Ignored += r.Ignored;
+            response.Scrobbles.AddRange(r.Scrobbles);
         }
 
-        public void SetScrobbleParameters(RequestParameters p, int i, Scrobble s)
+        internal void SetScrobbleParameters(RequestParameters p, int i, Scrobble s)
         {
             if (string.IsNullOrEmpty(s.Artist))
             {
@@ -92,6 +141,11 @@ namespace Hqub.Lastfm
             {
                 p.Add("trackNumber" + index, s.TrackNumber.ToString());
             }
+        }
+
+        private bool IsServerError(int code)
+        {
+            return code == 11 || code == 16;
         }
     }
 }

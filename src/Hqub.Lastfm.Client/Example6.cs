@@ -33,12 +33,14 @@ namespace Hqub.Lastfm.Client
                 Date = DateTime.Now - TimeSpan.FromDays(15)
             });
 
+            Console.Write("Scrobbling {0} tracks: ", scrobbles.Count);
+
             // Both requests will fail for different reasons. Unfortunately the Last.fm
             // API won't give a hint what went wrong ...
 
             var response = await client.Track.ScrobbleAsync(scrobbles);
 
-            Console.WriteLine("accepted: {0}, ignored: {1}", response.Accepted, response.Ignored);
+            Console.WriteLine("accepted = {0}, ignored = {1}", response.Accepted, response.Ignored);
         }
     }
 }

@@ -44,6 +44,8 @@ namespace Hqub.Lastfm.Cache
         /// <inheritdoc/>
         public async Task Add(IEnumerable<Scrobble> scrobbles)
         {
+            if (!scrobbles.Any()) return;
+
             using (var writer = new StreamWriter(path, true))
             {
                 foreach (var s in scrobbles)
@@ -57,6 +59,11 @@ namespace Hqub.Lastfm.Cache
         public async Task<IEnumerable<Scrobble>> Get(bool remove)
         {
             var scrobbles = new List<Scrobble>();
+
+            if (!File.Exists(path))
+            {
+                return scrobbles;
+            }
 
             using (var reader = new StreamReader(path))
             {
@@ -81,6 +88,8 @@ namespace Hqub.Lastfm.Cache
         /// <inheritdoc/>
         public async Task Remove(IEnumerable<Scrobble> scrobbles)
         {
+            if (!File.Exists(path)) return;
+
             // Using date as dictionary key should be safe.
             var map = scrobbles.ToDictionary(s => s.Date);
 
