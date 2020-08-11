@@ -1,53 +1,30 @@
-# Last.fm
-Implementation last.fm on C# language
+Last.fm
+============
 
-[![Travis](https://api.travis-ci.org/avatar29A/Last.fm.svg)](https://travis-ci.org/avatar29A/Last.fm)
-[![NuGet](https://img.shields.io/nuget/dt/Hqub.Last.fm.svg)](https://www.nuget.org/packages/Hqub.Last.fm/1.0.0)
-[![Issues](https://img.shields.io/github/issues/avatar29A/last.fm.svg)](https://github.com/avatar29A/Last.fm/issues)
+[![Build Status](https://img.shields.io/travis/avatar29A/Last.fm.svg?style=flat-square)](https://travis-ci.org/avatar29A/Last.fm)
+[![NuGet](https://img.shields.io/nuget/v/Hqub.Last.fm.svg?style=flat-square)](https://www.nuget.org/packages/Hqub.Last.fm)
+[![Issues](https://img.shields.io/github/issues/avatar29A/Last.fm.svg?style=flat-square)](https://github.com/avatar29A/Last.fm/issues)
 
-It'is fork official library https://code.google.com/p/lastfm-sharp/
+Implementation of the Last.fm API (requires .NET framework 4.5 or above).
 
-##Examples:
+## Features
 
-######Get Track.
+- Supports all available API endpoints (album, artist, chart, geo, library, tag, track, user).
+- Supports authenticated requests.
+- Supports scrobbling.
 
-```c#
-  public static void Main(string[] args)
-    {
-      // Get your own API_KEY and API_SECRET from http://www.last.fm/api/account
-      string API_KEY =  "YOUR API KEY";
-      string API_SECRET =   "YOUR API SECRET";
-      
-      // Create your session
-      Session session = new Session(API_KEY, API_SECRET);
-      
-      // Set this static property to a System.Net.IWebProxy object
-      Lastfm.ProxySupport.Proxy = new System.Net.WebProxy("221.2.216.38", 8080);
-      
-      // Test it out...
-      Track track = new Track("david arnold", "the hot fuzz suite", session);
-      Console.WriteLine(track.GetAlbum());
-    }
-```
+More information about the Last.fm webservice can be found [here](https://www.last.fm/api/intro).
 
-######Search tracks.
+## Examples
+
+To get started, create an instance of the `LastfmClient` class and select an API endpoint, for example to search for tracks similar to a given track:
 
 ```c#
-  public static void Main(string[] args)
-    {
-      // Get your own API_KEY and API_SECRET from http://www.last.fm/api/account
-      string API_KEY =  "YOUR API KEY";
-      string API_SECRET =   "YOUR API SECRET";
-      
-      // Create your session
-      Session session = new Session(API_KEY, API_SECRET);
-      
-      // Set this static property to a System.Net.IWebProxy object
-      Lastfm.ProxySupport.Proxy = new System.Net.WebProxy("221.2.216.38", 8080);
-      
-      // Test it out...
-       var trackSearch = new TrackSearch("лесник", Session);
+// You need an API key to make requests to the Last.fm API.
+var client = new LastfmClient(LASTFM_API_KEY);
 
-       var tracks = trackSearch.GetPage(1);
-    }
+// Find similar tracks.
+var tracks = await client.Track.GetSimilarAsync(track, artist);
 ```
+
+For more details, take a look at the [Hqub.Lastfm.Client](https://github.com/avatar29A/Last.fm/tree/master/src/Hqub.Lastfm.Client) example project.
