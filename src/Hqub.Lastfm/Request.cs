@@ -179,7 +179,7 @@ namespace Hqub.Lastfm
 
             var e = ParseResponseError(doc);
 
-            return new ServiceException(e.Error, response.StatusCode, e.Message ?? response.ReasonPhrase);
+            return new ServiceException(method, e.Error, response.StatusCode, e.Message ?? response.ReasonPhrase);
         }
 
         private ResponseError ParseResponseError(XDocument doc)

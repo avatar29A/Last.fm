@@ -9,35 +9,44 @@ namespace Hqub.Lastfm
     public class ServiceException : Exception
     {
         /// <summary>
-        /// The last.fm error code.
+        /// Gets the last.fm service method that caused the exception.
+        /// </summary>
+        public string Method { get; private set; }
+
+        /// <summary>
+        /// Gets the last.fm error code.
         /// </summary>
         public int ErrorCode { get; private set; }
 
         /// <summary>
-        /// The HTTP status code.
+        /// Gets the HTTP status code.
         /// </summary>
         public HttpStatusCode StatusCode { get; private set; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="ServiceException"/> class.
         /// </summary>
+        /// <param name="method">The Last.fm service method that failed.</param>
         /// <param name="error">The error code.</param>
         /// <param name="message">The error message.</param>
-        public ServiceException(int error, string message) : base(message)
+        public ServiceException(string method, int error, string message) : base(message)
         {
-            this.ErrorCode = error;
+            Method = method;
+            ErrorCode = error;
         }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="ServiceException"/> class.
         /// </summary>
+        /// <param name="method">The last.fm service method that failed.</param>
         /// <param name="error">The error code.</param>
         /// <param name="statusCode">The HTTP status code.</param>
         /// <param name="message">The error message.</param>
-        public ServiceException(int error, HttpStatusCode statusCode, string message) : base(message)
+        public ServiceException(string method, int error, HttpStatusCode statusCode, string message) : base(message)
         {
-            this.ErrorCode = error;
-            this.StatusCode = statusCode;
+            Method = method;
+            ErrorCode = error;
+            StatusCode = statusCode;
         }
 
         /// <summary>
