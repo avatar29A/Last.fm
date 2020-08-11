@@ -163,7 +163,7 @@ namespace Hqub.Lastfm
         /// </remarks>
         public async Task AuthenticateAsync(string username, string password)
         {
-            var request = CreateRequest("auth", "getMobileSession");
+            var request = CreateRequest("auth.getMobileSession");
 
             request.Parameters["username"] = username;
             request.Parameters["password"] = password;
@@ -187,7 +187,7 @@ namespace Hqub.Lastfm
         /// </remarks>
         public async Task<string> GetWebAuthenticationUrlAsync()
         {
-            var request = CreateRequest("auth", "getToken");
+            var request = CreateRequest("auth.getToken");
 
             var doc = await request.PostAsync();
 
@@ -201,7 +201,7 @@ namespace Hqub.Lastfm
         /// </summary>
         public async Task AuthenticateViaWebAsync()
         {
-            var request = CreateRequest("auth", "getSession");
+            var request = CreateRequest("auth.getSession");
 
             request.Parameters["token"] = token;
 
@@ -214,9 +214,9 @@ namespace Hqub.Lastfm
 
         #endregion
 
-        internal Request CreateRequest(string service, string method)
+        internal Request CreateRequest(string method)
         {
-            return new Request(service, method, client, Session, Cache);
+            return new Request(method, client, Session, Cache);
         }
 
         private void ConfigurationChanged(IWebProxy proxy = null, bool automaticDecompression = true)

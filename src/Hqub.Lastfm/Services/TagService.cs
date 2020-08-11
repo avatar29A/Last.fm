@@ -16,7 +16,7 @@
         /// <inheritdoc />
         public async Task<Tag> GetInfoAsync(string tag, string lang = null)
         {
-            var request = client.CreateRequest("tag", "getInfo");
+            var request = client.CreateRequest("tag.getInfo");
 
             request.Parameters["tag"] = tag;
 
@@ -35,7 +35,7 @@
         /// <inheritdoc />
         public async Task<PagedResponse<Album>> GetTopAlbumsAsync(string tag, int page = 1, int limit = 50)
         {
-            var request = client.CreateRequest("tag", "getTopAlbums");
+            var request = client.CreateRequest("tag.getTopAlbums");
 
             request.Parameters["tag"] = tag;
 
@@ -56,7 +56,7 @@
         /// <inheritdoc />
         public async Task<PagedResponse<Artist>> GetTopArtistsAsync(string tag, int page = 1, int limit = 50)
         {
-            var request = client.CreateRequest("tag", "getTopArtists");
+            var request = client.CreateRequest("tag.getTopArtists");
 
             request.Parameters["tag"] = tag;
 
@@ -77,7 +77,7 @@
         /// <inheritdoc />
         public async Task<List<Tag>> GetTopTagsAsync()
         {
-            var request = client.CreateRequest("tag", "getTopTags");
+            var request = client.CreateRequest("tag.getTopTags");
 
             var doc = await request.GetAsync();
 
@@ -89,7 +89,7 @@
         /// <inheritdoc />
         public async Task<PagedResponse<Track>> GetTopTracksAsync(string tag, int page = 1, int limit = 50)
         {
-            var request = client.CreateRequest("tag", "getTopTracks");
+            var request = client.CreateRequest("tag.getTopTracks");
 
             request.Parameters["tag"] = tag;
 

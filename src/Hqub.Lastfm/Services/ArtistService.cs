@@ -18,7 +18,7 @@
         /// <inheritdoc />
         public async Task<PagedResponse<Artist>> SearchAsync(string artist, int page = 1, int limit = 30)
         {
-            var request = client.CreateRequest("artist", "search");
+            var request = client.CreateRequest("artist.search");
 
             SetParameters(request, artist, null, false);
 
@@ -39,7 +39,7 @@
         /// <inheritdoc />
         public async Task<Artist> GetInfoAsync(string artist, string lang = null, bool autocorrect = true)
         {
-            var request = client.CreateRequest("artist", "getInfo");
+            var request = client.CreateRequest("artist.getInfo");
 
             SetParameters(request, artist, null, autocorrect);
 
@@ -58,7 +58,7 @@
         /// <inheritdoc />
         public async Task<Artist> GetCorrectionAsync(string artist)
         {
-            var request = client.CreateRequest("artist", "getCorrection");
+            var request = client.CreateRequest("artist.getCorrection");
 
             SetParameters(request, artist, null);
 
@@ -72,7 +72,7 @@
         /// <inheritdoc />
         public async Task<List<Artist>> GetSimilarAsync(string artist, int limit = 30, bool autocorrect = true)
         {
-            var request = client.CreateRequest("artist", "getSimilar");
+            var request = client.CreateRequest("artist.getSimilar");
 
             SetParameters(request, artist, null, autocorrect);
 
@@ -93,7 +93,7 @@
                 throw new ArgumentException("User name is reqired.", nameof(user));
             }
 
-            var request = client.CreateRequest("artist", "getTags");
+            var request = client.CreateRequest("artist.getTags");
 
             SetParameters(request, artist, null, autocorrect);
 
@@ -109,7 +109,7 @@
         /// <inheritdoc />
         public async Task<PagedResponse<Album>> GetTopAlbumsAsync(string artist, bool autocorrect = true, int page = 1, int limit = 50)
         {
-            var request = client.CreateRequest("artist", "getTopAlbums");
+            var request = client.CreateRequest("artist.getTopAlbums");
 
             SetParameters(request, artist, null, autocorrect);
 
@@ -130,7 +130,7 @@
         /// <inheritdoc />
         public async Task<List<Tag>> GetTopTagsAsync(string artist, bool autocorrect = true)
         {
-            var request = client.CreateRequest("artist", "getTopTags");
+            var request = client.CreateRequest("artist.getTopTags");
 
             SetParameters(request, artist, null, autocorrect);
 
@@ -144,7 +144,7 @@
         /// <inheritdoc />
         public async Task<PagedResponse<Track>> GetTopTracksAsync(string artist, bool autocorrect = true, int page = 1, int limit = 50)
         {
-            var request = client.CreateRequest("artist", "getTopTracks");
+            var request = client.CreateRequest("artist.getTopTracks");
 
             SetParameters(request, artist, null, autocorrect);
 
@@ -167,7 +167,7 @@
         /// <inheritdoc />
         public async Task<bool> AddTagsAsync(string artist, IEnumerable<string> tags)
         {
-            var request = client.CreateRequest("artist", "addTags");
+            var request = client.CreateRequest("artist.addTags");
 
             request.EnsureAuthenticated();
 
@@ -185,7 +185,7 @@
         /// <inheritdoc />
         public async Task<bool> RemoveTagAsync(string artist, string tag)
         {
-            var request = client.CreateRequest("artist", "removeTag");
+            var request = client.CreateRequest("artist.removeTag");
 
             request.EnsureAuthenticated();
 
@@ -206,7 +206,7 @@
         {
             if (string.IsNullOrEmpty(artist))
             {
-                throw new ArgumentNullException("Name");
+                throw new ArgumentNullException(nameof(artist));
             }
 
             request.Parameters["artist"] = artist;

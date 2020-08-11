@@ -21,7 +21,7 @@
                 throw new ArgumentNullException("country");
             }
 
-            var request = client.CreateRequest("geo", "getTopArtists");
+            var request = client.CreateRequest("geo.getTopArtists");
 
             request.Parameters["country"] = country;
 
@@ -47,7 +47,7 @@
                 throw new ArgumentNullException("country");
             }
 
-            var request = client.CreateRequest("geo", "getTopTracks");
+            var request = client.CreateRequest("geo.getTopTracks");
 
             request.Parameters["country"] = country;
 

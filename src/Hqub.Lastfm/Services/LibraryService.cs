@@ -21,7 +21,7 @@
                 throw new ArgumentException("The user name is required.", nameof(user));
             }
 
-            var request = client.CreateRequest("library", "getArtists");
+            var request = client.CreateRequest("library.getArtists");
 
             request.Parameters["user"] = user;
 

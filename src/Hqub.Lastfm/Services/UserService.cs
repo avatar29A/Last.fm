@@ -17,9 +17,9 @@ namespace Hqub.Lastfm.Services
         /// <inheritdoc />
         public async Task<User> GetInfoAsync(string user)
         {
-            var request = client.CreateRequest("user", "getInfo");
+            var request = client.CreateRequest("user.getInfo");
 
-            request.Parameters["user"] = user;
+            SetUser(request, user);
 
             var doc = await request.GetAsync();
 
@@ -31,14 +31,9 @@ namespace Hqub.Lastfm.Services
         /// <inheritdoc />
         public async Task<PagedResponse<User>> GetFriendsAsync(string user, bool recenttracks = false, int page = 1, int limit = 50)
         {
-            if (string.IsNullOrEmpty(user))
-            {
-                throw new ArgumentException("The user name is required.", nameof(user));
-            }
+            var request = client.CreateRequest("user.getFriends");
 
-            var request = client.CreateRequest("user", "getFriends");
-
-            request.Parameters["user"] = user;
+            SetUser(request, user);
 
             if (recenttracks)
             {
@@ -62,14 +57,9 @@ namespace Hqub.Lastfm.Services
         /// <inheritdoc />
         public async Task<PagedResponse<Track>> GetLovedTracksAsync(string user, int page = 1, int limit = 50)
         {
-            if (string.IsNullOrEmpty(user))
-            {
-                throw new ArgumentException("The user name is required.", nameof(user));
-            }
+            var request = client.CreateRequest("user.getLovedTracks");
 
-            var request = client.CreateRequest("user", "getLovedTracks");
-
-            request.Parameters["user"] = user;
+            SetUser(request, user);
 
             request.SetPagination(limit, 50, page, 1);
 
@@ -92,14 +82,9 @@ namespace Hqub.Lastfm.Services
         {
             // TODO: user.getRecentTracks 'extended' parameter
 
-            if (string.IsNullOrEmpty(user))
-            {
-                throw new ArgumentException("The user name is required.", nameof(user));
-            }
+            var request = client.CreateRequest("user.getRecentTracks");
 
-            var request = client.CreateRequest("user", "getRecentTracks");
-
-            request.Parameters["user"] = user;
+            SetUser(request, user);
 
             request.SetPagination(limit, 50, page, 1);
 
@@ -128,14 +113,10 @@ namespace Hqub.Lastfm.Services
         /// <inheritdoc />
         public async Task<PagedResponse<Album>> GetTopAlbumsAsync(string user, Period period = Period.Overall, int page = 1, int limit = 50)
         {
-            if (string.IsNullOrEmpty(user))
-            {
-                throw new ArgumentException("The user name is required.", nameof(user));
-            }
+            var request = client.CreateRequest("user.getTopAlbums");
 
-            var request = client.CreateRequest("user", "getTopAlbums");
+            SetUser(request, user);
 
-            request.Parameters["user"] = user;
             request.Parameters["period"] = Utilities.GetPeriod(period);
 
             request.SetPagination(limit, 50, page, 1);
@@ -160,9 +141,10 @@ namespace Hqub.Lastfm.Services
                 throw new ArgumentException("The user name is required.", nameof(user));
             }
 
-            var request = client.CreateRequest("user", "getTopArtists");
+            var request = client.CreateRequest("user.getTopArtists");
 
-            request.Parameters["user"] = user;
+            SetUser(request, user);
+
             request.Parameters["period"] = Utilities.GetPeriod(period);
 
             request.SetPagination(limit, 50, page, 1);
@@ -182,14 +164,10 @@ namespace Hqub.Lastfm.Services
         /// <inheritdoc />
         public async Task<PagedResponse<Track>> GetTopTracksAsync(string user, Period period = Period.Overall, int page = 1, int limit = 50)
         {
-            if (string.IsNullOrEmpty(user))
-            {
-                throw new ArgumentException("The user name is required.", nameof(user));
-            }
+            var request = client.CreateRequest("user.getTopTracks");
 
-            var request = client.CreateRequest("user", "getTopTracks");
+            SetUser(request, user);
 
-            request.Parameters["user"] = user;
             request.Parameters["period"] = Utilities.GetPeriod(period);
 
             request.SetPagination(limit, 50, page, 1);
@@ -209,14 +187,9 @@ namespace Hqub.Lastfm.Services
         /// <inheritdoc />
         public async Task<List<Tag>> GetTopTagsAsync(string user, int limit = 0)
         {
-            if (string.IsNullOrEmpty(user))
-            {
-                throw new ArgumentException("The user name is required.", nameof(user));
-            }
+            var request = client.CreateRequest("user.getTopTags");
 
-            var request = client.CreateRequest("user", "getTopTags");
-
-            request.Parameters["user"] = user;
+            SetUser(request, user);
 
             if (limit > 0)
             {
@@ -233,14 +206,9 @@ namespace Hqub.Lastfm.Services
         /// <inheritdoc />
         public async Task<List<ChartTimeSpan>> GetWeeklyChartListAsync(string user)
         {
-            if (string.IsNullOrEmpty(user))
-            {
-                throw new ArgumentException("The user name is required.", nameof(user));
-            }
+            var request = client.CreateRequest("user.getWeeklyChartList");
 
-            var request = client.CreateRequest("user", "getWeeklyChartList");
-
-            request.Parameters["user"] = user;
+            SetUser(request, user);
 
             var doc = await request.GetAsync();
 
@@ -252,14 +220,9 @@ namespace Hqub.Lastfm.Services
         /// <inheritdoc />
         public async Task<ChartResponse<Album>> GetWeeklyAlbumChartAsync(string user, DateTime? from = null, DateTime? to = null)
         {
-            if (string.IsNullOrEmpty(user))
-            {
-                throw new ArgumentException("The user name is required.", nameof(user));
-            }
+            var request = client.CreateRequest("user.getWeeklyAlbumChart");
 
-            var request = client.CreateRequest("user", "getWeeklyAlbumChart");
-
-            request.Parameters["user"] = user;
+            SetUser(request, user);
 
             if (from.HasValue)
             {
@@ -286,14 +249,9 @@ namespace Hqub.Lastfm.Services
         /// <inheritdoc />
         public async Task<ChartResponse<Artist>> GetWeeklyArtistChartAsync(string user, DateTime? from = null, DateTime? to = null)
         {
-            if (string.IsNullOrEmpty(user))
-            {
-                throw new ArgumentException("The user name is required.", nameof(user));
-            }
+            var request = client.CreateRequest("user.getWeeklyArtistChart");
 
-            var request = client.CreateRequest("user", "getWeeklyArtistChart");
-
-            request.Parameters["user"] = user;
+            SetUser(request, user);
 
             if (from.HasValue)
             {
@@ -320,14 +278,9 @@ namespace Hqub.Lastfm.Services
         /// <inheritdoc />
         public async Task<ChartResponse<Track>> GetWeeklyTrackChartAsync(string user, DateTime? from = null, DateTime? to = null)
         {
-            if (string.IsNullOrEmpty(user))
-            {
-                throw new ArgumentException("The user name is required.", nameof(user));
-            }
+            var request = client.CreateRequest("user.getWeeklyTrackChart");
 
-            var request = client.CreateRequest("user", "getWeeklyTrackChart");
-
-            request.Parameters["user"] = user;
+            SetUser(request, user);
 
             if (from.HasValue)
             {
@@ -349,6 +302,21 @@ namespace Hqub.Lastfm.Services
             response.Chart = s.ParseChartInfo(doc.Root.Element("weeklytrackchart"));
 
             return response;
+        }
+
+        private void SetUser(Request request, string user)
+        {
+            bool empty = string.IsNullOrEmpty(user);
+
+            if (empty && !client.Session.Authenticated)
+            {
+                throw new ArgumentException("The user name is required.", nameof(user));
+            }
+
+            if (!empty)
+            {
+                request.Parameters["user"] = user;
+            }
         }
     }
 }

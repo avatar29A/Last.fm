@@ -22,7 +22,7 @@ namespace Hqub.Lastfm
             // TODO: scrobble limit.
             // TODO: scrobble caching.
 
-            var request = client.CreateRequest("track", "scrobble");
+            var request = client.CreateRequest("track.scrobble");
 
             var p = request.Parameters;
 

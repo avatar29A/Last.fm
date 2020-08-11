@@ -31,9 +31,9 @@ namespace Hqub.Lastfm
 
         public RequestParameters Parameters { get; private set; }
 
-        public Request(string service, string method, HttpClient client, Session session, IRequestCache cache)
+        public Request(string method, HttpClient client, Session session, IRequestCache cache)
         {
-            this.method = service + "." + method;
+            this.method = method;
             this.session = session;
             this.client = client;
             this.cache = cache ?? NullCache.Default;

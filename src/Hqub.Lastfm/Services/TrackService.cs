@@ -20,7 +20,7 @@
         /// <inheritdoc />
         public async Task<PagedResponse<Track>> SearchAsync(string track, string artist = null, int page = 1, int limit = 30)
         {
-            var request = client.CreateRequest("track", "search");
+            var request = client.CreateRequest("track.search");
 
             request.Parameters["track"] = track;
 
@@ -46,7 +46,7 @@
         /// <inheritdoc />
         public async Task<Track> GetInfoAsync(string track, string artist, string lang = null, bool autocorrect = true)
         {
-            var request = client.CreateRequest("track", "getInfo");
+            var request = client.CreateRequest("track.getInfo");
 
             SetParameters(request, track, artist, null, autocorrect);
 
@@ -65,7 +65,7 @@
         /// <inheritdoc />
         public async Task<Track> GetCorrectionAsync(string track, string artist)
         {
-            var request = client.CreateRequest("track", "getCorrection");
+            var request = client.CreateRequest("track.getCorrection");
 
             SetParameters(request, track, artist, null);
 
@@ -79,7 +79,7 @@
         /// <inheritdoc />
         public async Task<List<Track>> GetSimilarAsync(string track, string artist, int limit = 30, bool autocorrect = true)
         {
-            var request = client.CreateRequest("track", "getSimilar");
+            var request = client.CreateRequest("track.getSimilar");
 
             SetParameters(request, track, artist, null, autocorrect);
 
@@ -100,7 +100,7 @@
                 throw new ArgumentException("User name is reqired.", nameof(user));
             }
 
-            var request = client.CreateRequest("track", "getTags");
+            var request = client.CreateRequest("track.getTags");
 
             SetParameters(request, track, artist, null, autocorrect);
 
@@ -116,7 +116,7 @@
         /// <inheritdoc />
         public async Task<List<Tag>> GetTopTagsAsync(string track, string artist, bool autocorrect = true)
         {
-            var request = client.CreateRequest("track", "getTopTags");
+            var request = client.CreateRequest("track.getTopTags");
 
             SetParameters(request, track, artist, null, autocorrect);
 
@@ -132,7 +132,7 @@
         /// <inheritdoc />
         public async Task<bool> LoveAsync(string track, string artist)
         {
-            var request = client.CreateRequest("track", "love");
+            var request = client.CreateRequest("track.love");
 
             request.EnsureAuthenticated();
 
@@ -148,7 +148,7 @@
         /// <inheritdoc />
         public async Task<bool> UnloveAsync(string track, string artist)
         {
-            var request = client.CreateRequest("track", "unlove");
+            var request = client.CreateRequest("track.unlove");
 
             request.EnsureAuthenticated();
 
@@ -164,7 +164,7 @@
         /// <inheritdoc />
         public async Task<bool> UpdateNowPlayingAsync(string track, string artist, int trackNumber = 0, string album = null, string albumArtist = null)
         {
-            var request = client.CreateRequest("track", "updateNowPlaying");
+            var request = client.CreateRequest("track.updateNowPlaying");
 
             request.EnsureAuthenticated();
 
@@ -207,7 +207,7 @@
         /// <inheritdoc />
         public async Task<bool> AddTagsAsync(string track, string artist, IEnumerable<string> tags)
         {
-            var request = client.CreateRequest("track", "addTags");
+            var request = client.CreateRequest("track.addTags");
 
             request.EnsureAuthenticated();
 
@@ -225,7 +225,7 @@
         /// <inheritdoc />
         public async Task<bool> RemoveTagAsync(string track, string artist, string tag)
         {
-            var request = client.CreateRequest("track", "removeTag");
+            var request = client.CreateRequest("track.removeTag");
 
             request.EnsureAuthenticated();
 
@@ -246,12 +246,12 @@
         {
             if (string.IsNullOrEmpty(track))
             {
-                throw new ArgumentException("Track name is required.", "track");
+                throw new ArgumentException("Track name is required.", nameof(track));
             }
 
             if (string.IsNullOrEmpty(artist))
             {
-                throw new ArgumentException("Artist name is required.", "artist");
+                throw new ArgumentException("Artist name is required.", nameof(artist));
             }
 
             request.Parameters["artist"] = artist;

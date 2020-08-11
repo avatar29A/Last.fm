@@ -15,7 +15,7 @@
         /// <inheritdoc />
         public async Task<PagedResponse<Artist>> GetTopArtistsAsync(int page = 1, int limit = 50)
         {
-            var request = client.CreateRequest("chart", "getTopArtists");
+            var request = client.CreateRequest("chart.getTopArtists");
 
             request.SetPagination(limit, 50, page, 1);
 
@@ -34,7 +34,7 @@
         /// <inheritdoc />
         public async Task<PagedResponse<Track>> GetTopTracksAsync(int page = 1, int limit = 50)
         {
-            var request = client.CreateRequest("chart", "getTopTracks");
+            var request = client.CreateRequest("chart.getTopTracks");
 
             request.SetPagination(limit, 50, page, 1);
 
@@ -53,7 +53,7 @@
         /// <inheritdoc />
         public async Task<PagedResponse<Tag>> GetTopTagsAsync(int page = 1, int limit = 50)
         {
-            var request = client.CreateRequest("chart", "getTopTags");
+            var request = client.CreateRequest("chart.getTopTags");
 
             request.SetPagination(limit, 50, page, 1);
 

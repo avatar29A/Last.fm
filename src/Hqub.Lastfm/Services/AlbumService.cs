@@ -18,7 +18,7 @@
         /// <inheritdoc />
         public async Task<PagedResponse<Album>> SearchAsync(string album, int page = 1, int limit = 30)
         {
-            var request = client.CreateRequest("album", "search");
+            var request = client.CreateRequest("album.search");
 
             request.Parameters["album"] = album;
 
@@ -39,7 +39,7 @@
         /// <inheritdoc />
         public async Task<Album> GetInfoAsync(string album, string artist, string lang = null, bool autocorrect = true)
         {
-            var request = client.CreateRequest("album", "getInfo");
+            var request = client.CreateRequest("album.getInfo");
 
             SetParameters(request, album, artist, null, autocorrect);
 
@@ -63,7 +63,7 @@
                 throw new ArgumentException("User name is reqired.", nameof(user));
             }
 
-            var request = client.CreateRequest("album", "getTags");
+            var request = client.CreateRequest("album.getTags");
 
             SetParameters(request, artist, album, null, autocorrect);
 
@@ -79,7 +79,7 @@
         /// <inheritdoc />
         public async Task<List<Tag>> GetTopTagsAsync(string album, string artist, bool autocorrect = true)
         {
-            var request = client.CreateRequest("album", "getTopTags");
+            var request = client.CreateRequest("album.getTopTags");
 
             SetParameters(request, album, artist, null, autocorrect);
 
@@ -95,7 +95,7 @@
         /// <inheritdoc />
         public async Task<bool> AddTagsAsync(string album, string artist, IEnumerable<string> tags)
         {
-            var request = client.CreateRequest("album", "addTags");
+            var request = client.CreateRequest("album.addTags");
 
             request.EnsureAuthenticated();
 
@@ -113,7 +113,7 @@
         /// <inheritdoc />
         public async Task<bool> RemoveTagAsync(string album, string artist, string tag)
         {
-            var request = client.CreateRequest("album", "removeTag");
+            var request = client.CreateRequest("album.removeTag");
 
             request.EnsureAuthenticated();
 
@@ -134,12 +134,12 @@
         {
             if (string.IsNullOrEmpty(artist))
             {
-                throw new ArgumentNullException("artist");
+                throw new ArgumentNullException(nameof(artist));
             }
 
             if (string.IsNullOrEmpty(album))
             {
-                throw new ArgumentNullException("album");
+                throw new ArgumentNullException(nameof(album));
             }
 
             request.Parameters["artist"] = artist;
