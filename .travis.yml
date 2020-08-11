@@ -1,4 +1,12 @@
 language: csharp
 solution: Hqub.Lastfm.sln
+mono: none
+sudo: required
+dist: xenial
+dotnet: 3.1
 script:
-  - xbuild /p:Configuration=Release Hqub.Lastfm.sln
+  - dotnet restore
+  - dotnet test src/Hqub.Lastfm.Tests/Hqub.Lastfm.Tests.csproj
+global:
+    - DOTNET_SKIP_FIRST_TIME_EXPERIENCE=true
+    - DOTNET_CLI_TELEMETRY_OPTOUT=1
