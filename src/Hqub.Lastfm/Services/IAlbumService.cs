@@ -28,7 +28,6 @@
         /// </summary>
         /// <param name="artist">The artist name.</param>
         /// <param name="album">The album name.</param>
-        /// <param name="lang">The language to return the biography in, expressed as an ISO 639 alpha-2 code (optional).</param>
         /// <param name="autocorrect">Transform misspelled album names into correct album names (optional).</param>
         /// <returns></returns>
         /// <remarks>
@@ -36,7 +35,7 @@
         /// 
         /// https://www.last.fm/api/show/album.getInfo
         /// </remarks>
-        Task<Album> GetInfoAsync(string artist, string album, string lang = null, bool autocorrect = true);
+        Task<Album> GetInfoAsync(string artist, string album, bool autocorrect = true);
 
         /// <summary>
         /// Get the tags applied by an individual user to an album on Last.fm.

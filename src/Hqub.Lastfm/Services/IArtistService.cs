@@ -39,7 +39,6 @@
         /// Get the metadata for an artist.
         /// </summary>
         /// <param name="artist">The artist name.</param>
-        /// <param name="lang">The language to return the biography in, expressed as an ISO 639 alpha-2 code (optional).</param>
         /// <param name="autocorrect">Transform misspelled artist names into correct artist names (optional).</param>
         /// <returns></returns>
         /// <remarks>
@@ -47,7 +46,7 @@
         /// 
         /// https://www.last.fm/api/show/artist.getInfo
         /// </remarks>
-        Task<Artist> GetInfoAsync(string artist, string lang = null, bool autocorrect = true);
+        Task<Artist> GetInfoAsync(string artist, bool autocorrect = true);
 
         /// <summary>
         /// Get all the artists similar to this artist.

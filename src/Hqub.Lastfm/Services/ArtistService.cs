@@ -37,15 +37,15 @@
         }
 
         /// <inheritdoc />
-        public async Task<Artist> GetInfoAsync(string artist, string lang = null, bool autocorrect = true)
+        public async Task<Artist> GetInfoAsync(string artist, bool autocorrect = true)
         {
             var request = client.CreateRequest("artist.getInfo");
 
             SetParameters(request, artist, null, autocorrect);
 
-            if (!string.IsNullOrEmpty(lang))
+            if (!string.IsNullOrEmpty(client.Language))
             {
-                request.Parameters["lang"] = lang;
+                request.Parameters["lang"] = client.Language;
             }
 
             var doc = await request.GetAsync();

@@ -29,7 +29,6 @@
         /// </summary>
         /// <param name="track">The track name.</param>
         /// <param name="artist">The artist name.</param>
-        /// <param name="lang">The language to return the biography in, expressed as an ISO 639 alpha-2 code (optional).</param>
         /// <param name="autocorrect">Transform misspelled track names into correct track names (optional).</param>
         /// <returns></returns>
         /// <remarks>
@@ -37,7 +36,7 @@
         /// 
         /// https://www.last.fm/api/show/track.getInfo
         /// </remarks>
-        Task<Track> GetInfoAsync(string track, string artist, string lang = null, bool autocorrect = true);
+        Task<Track> GetInfoAsync(string track, string artist, bool autocorrect = true);
 
         /// <summary>
         /// Use the last.fm corrections data to check whether the supplied track has a correction to a canonical track.

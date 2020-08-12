@@ -37,15 +37,15 @@
         }
 
         /// <inheritdoc />
-        public async Task<Album> GetInfoAsync(string artist, string album, string lang = null, bool autocorrect = true)
+        public async Task<Album> GetInfoAsync(string artist, string album, bool autocorrect = true)
         {
             var request = client.CreateRequest("album.getInfo");
 
             SetParameters(request, artist, album, null, autocorrect);
 
-            if (!string.IsNullOrEmpty(lang))
+            if (!string.IsNullOrEmpty(client.Language))
             {
-                request.Parameters["lang"] = lang;
+                request.Parameters["lang"] = client.Language;
             }
 
             var doc = await request.GetAsync();

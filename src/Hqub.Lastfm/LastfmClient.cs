@@ -74,6 +74,11 @@ namespace Hqub.Lastfm
         public static string UserAgent { get { return "Hqub.Lastfm/2.0"; } }
 
         /// <summary>
+        /// Gets or sets the language to return a biography in (ISO 639 alpha-2 code).
+        /// </summary>
+        public string Language { get; set; }
+
+        /// <summary>
         /// Gets the last.fm client session.
         /// </summary>
         public Session Session { get; private set; }

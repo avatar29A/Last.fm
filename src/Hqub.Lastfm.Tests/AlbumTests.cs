@@ -23,7 +23,7 @@
         [Test]
         public async Task TestGetInfo()
         {
-            var album = await client.Album.GetInfoAsync(data["album"], data["artist"]);
+            var album = await client.Album.GetInfoAsync(data["artist"], data["album"]);
 
             Assert.NotNull(album.Name);
             Assert.NotNull(album.Url);
@@ -42,7 +42,7 @@
         [Test]
         public async Task TestGetTags()
         {
-            var tags = await client.Album.GetTagsAsync("RJ", "Californication", "Red Hot Chili Peppers");
+            var tags = await client.Album.GetTagsAsync("Red Hot Chili Peppers", "Californication", "RJ");
 
             Assert.GreaterOrEqual(tags.Count, 0);
             //Assert.Greater(tags.Count, 0); // TODO: find user/album with tags
@@ -51,7 +51,7 @@
         [Test]
         public async Task GetTopTags()
         {
-            var tags = await client.Album.GetTopTagsAsync(data["album"], data["artist"]);
+            var tags = await client.Album.GetTopTagsAsync(data["artist"], data["album"]);
 
             Assert.Greater(tags.Count, 0);
         }

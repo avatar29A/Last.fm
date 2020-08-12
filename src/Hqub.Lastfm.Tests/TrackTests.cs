@@ -33,7 +33,7 @@
         [Test]
         public async Task TestGetCorrection()
         {
-            var track = await client.Track.GetCorrectionAsync("guns%20and%20roses", "Mrbrownston");
+            var track = await client.Track.GetCorrectionAsync("Mrbrownston", "guns%20and%20roses");
 
             Assert.NotNull(track.Name);
             Assert.NotNull(track.Url);
