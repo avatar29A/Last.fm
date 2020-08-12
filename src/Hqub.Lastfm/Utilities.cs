@@ -2,9 +2,6 @@ namespace Hqub.Lastfm
 {
     using System;
 
-    /// <summary>
-    /// General utility functions
-    /// </summary>
     static class Utilities
     {
         public const string LASTFM_SECURE = "https://www.last.fm/";

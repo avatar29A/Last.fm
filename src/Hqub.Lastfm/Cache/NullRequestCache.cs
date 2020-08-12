@@ -7,14 +7,14 @@ namespace Hqub.Lastfm.Cache
     /// <summary>
     /// A cache that does not cache anything.
     /// </summary>
-    public class NullCache : IRequestCache
+    public class NullRequestCache : IRequestCache
     {
         /// <summary>
-        /// Gets the default <see cref="NullCache"/> instance.
+        /// Gets the default <see cref="NullRequestCache"/> instance.
         /// </summary>
-        public static NullCache Default { get; } = new NullCache();
+        public static NullRequestCache Default { get; } = new NullRequestCache();
 
-        private NullCache()
+        private NullRequestCache()
         {
         }
 

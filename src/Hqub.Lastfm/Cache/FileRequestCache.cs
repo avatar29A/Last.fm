@@ -1,7 +1,6 @@
 ﻿
-namespace Hqub.Lastfm.Client
+namespace Hqub.Lastfm.Cache
 {
-    using Hqub.Lastfm.Cache;
     using System;
     using System.IO;
     using System.Text;
@@ -23,11 +22,18 @@ namespace Hqub.Lastfm.Client
 
         private readonly string path;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="FileRequestCache"/> class.
+        /// </summary>
         public FileRequestCache()
             : this(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "lastfm", "cache"))
         {
         }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="FileRequestCache"/> class.
+        /// </summary>
+        /// <param name="path">The local path of the cache.</param>
         public FileRequestCache(string path)
         {
             Timeout = TimeSpan.FromHours(24.0);
@@ -40,11 +46,13 @@ namespace Hqub.Lastfm.Client
             }
         }
 
+        /// <inheritdoc />
         public async Task Add(string request, Stream response)
         {
             await CacheEntry.Write(path, request, response);
         }
 
+        /// <inheritdoc />
         public Task<bool> TryGetCachedItem(string request, out Stream stream)
         {
             var item = CacheEntry.Read(path, request);
@@ -68,6 +76,10 @@ namespace Hqub.Lastfm.Client
             return Task.FromResult(true);
         }
 
+        /// <summary>
+        /// Remove all expired entries from the cache.
+        /// </summary>
+        /// <returns>The number of expired entries.</returns>
         public int Cleanup()
         {
             int count = 0;
@@ -79,12 +91,16 @@ namespace Hqub.Lastfm.Client
                 if ((now - CacheEntry.GetTimestamp(file)) > Timeout)
                 {
                     File.Delete(file);
+                    count++;
                 }
             }
 
             return count;
         }
 
+        /// <summary>
+        /// Remove all cache entries.
+        /// </summary>
         public void Clear()
         {
             // If the path is used for cache only, we could just as well delete the directory.
@@ -140,7 +156,7 @@ namespace Hqub.Lastfm.Client
 
                     long timestamp = reader.ReadInt64();
 
-                    entry.TimeStamp = TimestampToDateTime(timestamp, DateTimeKind.Utc);
+                    entry.TimeStamp = Utilities.TimestampToDateTime(timestamp, DateTimeKind.Utc);
 
                     reader.Read(buffer, 0, REQUEST_LENGTH);
 
@@ -181,9 +197,8 @@ namespace Hqub.Lastfm.Client
                 using (var stream = File.Create(Path.Combine(path, name)))
                 using (var writer = new BinaryWriter(stream))
                 {
-                    writer.Write(DateTimeToUtcTimestamp(DateTime.Now));
+                    writer.Write(Utilities.DateTimeToUtcTimestamp(DateTime.Now));
                     writer.Write(buffer);
-
                     writer.Flush();
 
                     await response.CopyToAsync(writer.BaseStream);
@@ -203,7 +218,7 @@ namespace Hqub.Lastfm.Client
                     timestamp = reader.ReadInt64();
                 }
 
-                return TimestampToDateTime(timestamp, DateTimeKind.Utc);
+                return Utilities.TimestampToDateTime(timestamp, DateTimeKind.Utc);
             }
 
             private static string GetCacheFileName(string path, byte[] buffer, int size)
@@ -214,15 +229,16 @@ namespace Hqub.Lastfm.Client
             #region Helper methods
 
             /// <summary>
-            /// Returns hash of a string (based on MD5, but only 16 instead of 32 bytes).
+            /// Returns the hash of a string (based on MD5, but only 16 instead of 32 bytes).
             /// </summary>
-            /// <param name="text">Input string.</param>
+            /// <param name="bytes">Input bytes.</param>
+            /// <param name="count">The number of bytes to consider.</param>
             /// <returns>MD5 hash.</returns>
-            private static string GetHash(byte[] bytes, int size)
+            private static string GetHash(byte[] bytes, int count)
             {
                 var md5 = CryptoMD5.Create();
 
-                bytes = md5.ComputeHash(bytes, 0, size);
+                bytes = md5.ComputeHash(bytes, 0, count);
 
                 var buffer = new StringBuilder();
 
@@ -232,25 +248,6 @@ namespace Hqub.Lastfm.Client
                 }
 
                 return buffer.ToString();
-            }
-
-            private static DateTime TimestampToDateTime(long timestamp, DateTimeKind kind)
-            {
-                return new DateTime(1970, 1, 1, 0, 0, 0, 0, kind).AddSeconds(timestamp).ToLocalTime();
-            }
-
-            private static long DateTimeToUtcTimestamp(DateTime dateTime)
-            {
-                DateTime baseDate = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
-
-                TimeSpan span = dateTime.ToUniversalTime() - baseDate;
-
-                return (long)span.TotalSeconds;
-            }
-
-            private static long GetUnixTimestamp()
-            {
-                return DateTimeToUtcTimestamp(DateTime.Now);
             }
 
             #endregion

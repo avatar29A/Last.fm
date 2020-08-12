@@ -36,7 +36,7 @@ namespace Hqub.Lastfm
             this.method = method;
             this.session = session;
             this.client = client;
-            this.cache = cache ?? NullCache.Default;
+            this.cache = cache ?? NullRequestCache.Default;
 
             Parameters = new RequestParameters();
             Parameters["method"] = this.method;
