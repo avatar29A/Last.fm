@@ -15,7 +15,7 @@ namespace Hqub.Lastfm.Client
             var album = albums[0];
             var artist = album.Artist.Name;
 
-            var info = await client.Album.GetInfoAsync(album.Name, artist);
+            var info = await client.Album.GetInfoAsync(artist, album.Name);
 
             Console.WriteLine();
             Console.WriteLine("Statistics for '{0}':", album.Name);
@@ -23,7 +23,7 @@ namespace Hqub.Lastfm.Client
             Console.WriteLine("    Playcount = {0}", info.Statistics.PlayCount);
             Console.WriteLine("    Listeners = {0}", info.Statistics.Listeners);
 
-            var tags = await client.Album.GetTopTagsAsync(album.Name, artist);
+            var tags = await client.Album.GetTopTagsAsync(artist, album.Name);
 
             int count = Math.Min(limit, tags.Count);
 
