@@ -86,7 +86,7 @@
         }
 
         /// <inheritdoc />
-        public async Task<List<Tag>> GetTagsAsync(string user, string artist, bool autocorrect = true)
+        public async Task<List<Tag>> GetTagsAsync(string artist, string user, bool autocorrect = true)
         {
             if (string.IsNullOrEmpty(user))
             {

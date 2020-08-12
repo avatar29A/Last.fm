@@ -66,8 +66,8 @@
         /// <summary>
         /// Get the tags applied by an individual user to an artist on Last.fm.
         /// </summary>
-        /// <param name="user">The user to look up.</param>
         /// <param name="artist">The artist name.</param>
+        /// <param name="user">The user to look up.</param>
         /// <param name="autocorrect">Transform misspelled track names into correct track names (optional).</param>
         /// <returns></returns>
         /// <remarks>
@@ -75,7 +75,7 @@
         /// 
         /// https://www.last.fm/api/show/artist.getTags
         /// </remarks>
-        Task<List<Tag>> GetTagsAsync(string user, string artist, bool autocorrect = true);
+        Task<List<Tag>> GetTagsAsync(string artist, string user, bool autocorrect = true);
 
         /// <summary>
         /// Get the top albums for an artist on Last.fm, ordered by popularity.

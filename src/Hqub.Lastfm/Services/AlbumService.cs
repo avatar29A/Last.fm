@@ -37,11 +37,11 @@
         }
 
         /// <inheritdoc />
-        public async Task<Album> GetInfoAsync(string album, string artist, string lang = null, bool autocorrect = true)
+        public async Task<Album> GetInfoAsync(string artist, string album, string lang = null, bool autocorrect = true)
         {
             var request = client.CreateRequest("album.getInfo");
 
-            SetParameters(request, album, artist, null, autocorrect);
+            SetParameters(request, artist, album, null, autocorrect);
 
             if (!string.IsNullOrEmpty(lang))
             {
@@ -56,7 +56,7 @@
         }
 
         /// <inheritdoc />
-        public async Task<List<Tag>> GetTagsAsync(string user, string album, string artist, bool autocorrect = true)
+        public async Task<List<Tag>> GetTagsAsync(string artist, string album, string user, bool autocorrect = true)
         {
             if (string.IsNullOrEmpty(user))
             {
@@ -77,11 +77,11 @@
         }
 
         /// <inheritdoc />
-        public async Task<List<Tag>> GetTopTagsAsync(string album, string artist, bool autocorrect = true)
+        public async Task<List<Tag>> GetTopTagsAsync(string artist, string album, bool autocorrect = true)
         {
             var request = client.CreateRequest("album.getTopTags");
 
-            SetParameters(request, album, artist, null, autocorrect);
+            SetParameters(request, artist, album, null, autocorrect);
 
             var doc = await request.GetAsync();
 
@@ -130,7 +130,7 @@
 
         #endregion
 
-        private void SetParameters(Request request, string album, string artist, string mbid, bool autocorrect = false)
+        private void SetParameters(Request request, string artist, string album, string mbid, bool autocorrect = false)
         {
             if (string.IsNullOrEmpty(artist))
             {
