@@ -25,4 +25,4 @@ jobs:
       - name: Build
         run: dotnet build Hqub.Lastfm.sln --configuration Release --no-restore
       - name: Test
-        run: dotnet test Hqub.Lastfm.sln --no-restore --verbosity normal
+        run: dotnet test ./src/Hqub.Lastfm.Tests/Hqub.Lastfm.Tests.csproj --no-restore --verbosity normal
