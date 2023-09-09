@@ -23,6 +23,6 @@ jobs:
       - name: Install dependencies
         run: dotnet restore Hqub.Lastfm.sln
       - name: Build
-        run: dotnet build Hqub.Lastfm.sln --configuration Release --no-restore
+        run: dotnet build Hqub.Lastfm.sln --configuration Release
       - name: Test
-        run: dotnet test ./src/Hqub.Lastfm.Tests/Hqub.Lastfm.Tests.csproj --no-restore --verbosity normal
+        run: dotnet test ./src/Hqub.Lastfm.Tests/Hqub.Lastfm.Tests.csproj --verbosity normal
