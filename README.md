@@ -1,11 +1,11 @@
 Last.fm
 ============
 
-[![Build Status](https://img.shields.io/travis/avatar29A/Last.fm.svg?style=flat-square)](https://travis-ci.org/avatar29A/Last.fm)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/avatar29A/Last.fm/dotnet.yml?style=flat-square)](https://github.com/avatar29A/Last.fm/actions/workflows/dotnet.yml)
 [![NuGet](https://img.shields.io/nuget/v/Hqub.Last.fm.svg?style=flat-square)](https://www.nuget.org/packages/Hqub.Last.fm)
 [![Issues](https://img.shields.io/github/issues/avatar29A/Last.fm.svg?style=flat-square)](https://github.com/avatar29A/Last.fm/issues)
 
-Implementation of the Last.fm API (requires .NET framework 4.5 or above).
+Implementation of the Last.fm API for .NET Standard 2.0 or above.
 
 ## Features
 
