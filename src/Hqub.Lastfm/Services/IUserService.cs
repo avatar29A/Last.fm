@@ -22,7 +22,7 @@ namespace Hqub.Lastfm.Services
         /// 
         /// https://www.last.fm/api/show/user.getInfo
         /// </remarks>
-        Task<User> GetInfoAsync(string user);
+        Task<User> GetInfoAsync(string user = null);
 
         /// <summary>
         /// Gets a paginated list of the user's friends on Last.fm.
@@ -37,7 +37,7 @@ namespace Hqub.Lastfm.Services
         /// 
         /// https://www.last.fm/api/show/user.getFriends
         /// </remarks>
-        Task<PagedResponse<User>> GetFriendsAsync(string user, bool recenttracks = false, int page = 1, int limit = 50);
+        Task<PagedResponse<User>> GetFriendsAsync(string user = null, bool recenttracks = false, int page = 1, int limit = 50);
 
         /// <summary>
         /// Gets a paginated list of the tracks recently loved by a user. 
@@ -51,7 +51,7 @@ namespace Hqub.Lastfm.Services
         /// 
         /// https://www.last.fm/api/show/user.getLovedTracks
         /// </remarks>
-        Task<PagedResponse<Track>> GetLovedTracksAsync(string user, int page = 1, int limit = 50);
+        Task<PagedResponse<Track>> GetLovedTracksAsync(string user = null, int page = 1, int limit = 50);
 
         // TODO: user.getPersonalTags
 
@@ -69,7 +69,7 @@ namespace Hqub.Lastfm.Services
         /// 
         /// https://www.last.fm/api/show/user.getRecentTracks
         /// </remarks>
-        Task<PagedResponse<Track>> GetRecentTracksAsync(string user, DateTime? from = null, DateTime? to = null, int page = 1, int limit = 50);
+        Task<PagedResponse<Track>> GetRecentTracksAsync(string user = null, DateTime? from = null, DateTime? to = null, int page = 1, int limit = 50);
 
         /// <summary>
         /// Gets a paginated list of top albums listened to by a user.
@@ -84,7 +84,7 @@ namespace Hqub.Lastfm.Services
         /// 
         /// https://www.last.fm/api/show/user.getTopAlbums
         /// </remarks>
-        Task<PagedResponse<Album>> GetTopAlbumsAsync(string user, Period period = Period.Overall, int page = 1, int limit = 50);
+        Task<PagedResponse<Album>> GetTopAlbumsAsync(string user = null, Period period = Period.Overall, int page = 1, int limit = 50);
 
         /// <summary>
         /// Gets a paginated list of top artists listened to by a user.
@@ -99,7 +99,7 @@ namespace Hqub.Lastfm.Services
         /// 
         /// https://www.last.fm/api/show/user.getTopArtists
         /// </remarks>
-        Task<PagedResponse<Artist>> GetTopArtistsAsync(string user, Period period = Period.Overall, int page = 1, int limit = 50);
+        Task<PagedResponse<Artist>> GetTopArtistsAsync(string user = null, Period period = Period.Overall, int page = 1, int limit = 50);
 
         /// <summary>
         /// Gets a paginated list of top tracks listened to by a user.
@@ -114,7 +114,7 @@ namespace Hqub.Lastfm.Services
         /// 
         /// https://www.last.fm/api/show/user.getTopTracks
         /// </remarks>
-        Task<PagedResponse<Track>> GetTopTracksAsync(string user, Period period = Period.Overall, int page = 1, int limit = 50);
+        Task<PagedResponse<Track>> GetTopTracksAsync(string user = null, Period period = Period.Overall, int page = 1, int limit = 50);
 
         /// <summary>
         /// Gets a paginated list of top tags used by this user. 
@@ -127,7 +127,7 @@ namespace Hqub.Lastfm.Services
         /// 
         /// https://www.last.fm/api/show/user.getTopTags
         /// </remarks>
-        Task<List<Tag>> GetTopTagsAsync(string user, int limit = 0);
+        Task<List<Tag>> GetTopTagsAsync(string user = null, int limit = 0);
 
         // TODO: user weekly charts - result should include date range (new response type)
 
@@ -142,7 +142,7 @@ namespace Hqub.Lastfm.Services
         /// 
         /// https://www.last.fm/api/show/user.getWeeklyChartList
         /// </remarks>
-        Task<List<ChartTimeSpan>> GetWeeklyChartListAsync(string user);
+        Task<List<ChartTimeSpan>> GetWeeklyChartListAsync(string user = null);
 
         /// <summary>
         /// Get an album chart for a user profile, for a given date range.
@@ -158,7 +158,7 @@ namespace Hqub.Lastfm.Services
         /// 
         /// https://www.last.fm/api/show/user.getWeeklyAlbumChart
         /// </remarks>
-        Task<ChartResponse<Album>> GetWeeklyAlbumChartAsync(string user, DateTime? from = null, DateTime? to = null);
+        Task<ChartResponse<Album>> GetWeeklyAlbumChartAsync(string user = null, DateTime? from = null, DateTime? to = null);
 
         /// <summary>
         /// Get an artist chart for a user profile, for a given date range.
@@ -174,7 +174,7 @@ namespace Hqub.Lastfm.Services
         /// 
         /// https://www.last.fm/api/show/user.getWeeklyArtistChart
         /// </remarks>
-        Task<ChartResponse<Artist>> GetWeeklyArtistChartAsync(string user, DateTime? from = null, DateTime? to = null);
+        Task<ChartResponse<Artist>> GetWeeklyArtistChartAsync(string user = null, DateTime? from = null, DateTime? to = null);
 
         /// <summary>
         /// Get a track chart for a user profile, for a given date range.
@@ -190,6 +190,6 @@ namespace Hqub.Lastfm.Services
         /// 
         /// https://www.last.fm/api/show/user.getWeeklyTrackChart
         /// </remarks>
-        Task<ChartResponse<Track>> GetWeeklyTrackChartAsync(string user, DateTime? from = null, DateTime? to = null);
+        Task<ChartResponse<Track>> GetWeeklyTrackChartAsync(string user = null, DateTime? from = null, DateTime? to = null);
     }
 }
