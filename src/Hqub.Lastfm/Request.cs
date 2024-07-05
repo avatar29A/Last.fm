@@ -58,6 +58,11 @@ namespace Hqub.Lastfm
 
         public async Task<XDocument> GetAsync(CancellationToken ct = default, bool secure = false)
         {
+            if (session.Authenticated)
+            {
+                Parameters["sk"] = session.SessionKey;
+            }
+            
             try
             {
                 var query = Parameters.ToString();
