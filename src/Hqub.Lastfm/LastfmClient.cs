@@ -216,7 +216,7 @@ namespace Hqub.Lastfm
 
             token = null;
 
-            Session.SessionKey = doc.Root.Element("key").Value;
+            Session.SessionKey = doc.Root.Element("session").Element("key").Value;
         }
 
         #endregion
