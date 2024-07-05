@@ -136,7 +136,7 @@ namespace Hqub.Lastfm
         {
             var sb = new StringBuilder();
 
-            foreach (var item in Parameters)
+            foreach (var item in Parameters.OrderBy(r=>r.Key))
             {
                 sb.Append(item.Key);
                 sb.Append(item.Value);
