@@ -210,6 +210,8 @@ namespace Hqub.Lastfm
 
             request.Parameters["token"] = token;
 
+            request.Sign();
+
             var doc = await request.PostAsync();
 
             token = null;
