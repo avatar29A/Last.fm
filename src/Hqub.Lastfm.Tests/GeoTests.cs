@@ -25,7 +25,7 @@
         {
             var artists = await client.Geo.GetTopArtistsAsync(data["country"], limit: 10);
 
-            Assert.Greater(artists.Count, 0);
+            Assert.That(artists, Is.Not.Empty);
         }
 
         [Test]
@@ -33,7 +33,7 @@
         {
             var tracks = await client.Geo.GetTopTracksAsync(data["country"], limit: 10);
 
-            Assert.Greater(tracks.Count, 0);
+            Assert.That(tracks, Is.Not.Empty);
         }
     }
 }

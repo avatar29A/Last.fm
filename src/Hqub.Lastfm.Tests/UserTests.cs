@@ -25,7 +25,7 @@
         {
             var users = await client.User.GetFriendsAsync(data["user"]);
 
-            Assert.Greater(users.Count, 0);
+            Assert.That(users, Is.Not.Empty);
         }
 
         [Test]
@@ -33,14 +33,14 @@
         {
             var user = await client.User.GetInfoAsync(data["user"]);
 
-            Assert.NotNull(user.Name);
-            Assert.NotNull(user.RealName);
-            Assert.NotNull(user.Url);
-            Assert.NotNull(user.Country);
-            Assert.NotNull(user.Type);
+            Assert.That(user.Name, Is.Not.Null);
+            Assert.That(user.RealName, Is.Not.Null);
+            Assert.That(user.Url, Is.Not.Null);
+            Assert.That(user.Country, Is.Not.Null);
+            Assert.That(user.Type, Is.Not.Null);
 
-            Assert.Greater(user.Playcount, 0);
-            Assert.Greater(user.Images.Count, 0);
+            Assert.That(user.Playcount, Is.GreaterThan(0));
+            Assert.That(user.Images, Is.Not.Empty);
         }
 
         [Test]
@@ -48,7 +48,7 @@
         {
             var albums = await client.User.GetTopAlbumsAsync(data["user"]);
 
-            Assert.Greater(albums.Count, 0);
+            Assert.That(albums, Is.Not.Empty);
         }
 
         [Test]
@@ -56,7 +56,7 @@
         {
             var artists = await client.User.GetTopArtistsAsync(data["user"]);
 
-            Assert.Greater(artists.Count, 0);
+            Assert.That(artists, Is.Not.Empty);
         }
 
         [Test]
@@ -64,7 +64,7 @@
         {
             var tags = await client.User.GetTopTagsAsync(data["user"]);
 
-            Assert.Greater(tags.Count, 0);
+            Assert.That(tags, Is.Not.Empty);
         }
 
         [Test]
@@ -72,7 +72,7 @@
         {
             var tracks = await client.User.GetTopTracksAsync(data["user"]);
 
-            Assert.Greater(tracks.Count, 0);
+            Assert.That(tracks, Is.Not.Empty);
         }
 
         [Test]
@@ -80,7 +80,7 @@
         {
             var tracks = await client.User.GetLovedTracksAsync(data["user"]);
 
-            Assert.Greater(tracks.Count, 0);
+            Assert.That(tracks, Is.Not.Empty);
         }
 
         [Test]
@@ -88,11 +88,11 @@
         {
             var tracks = await client.User.GetRecentTracksAsync(data["user"]);
 
-            Assert.Greater(tracks.Count, 0);
+            Assert.That(tracks, Is.Not.Empty);
 
             var track = tracks[0];
 
-            Assert.NotNull(track.Date);
+            Assert.That(track.Date, Is.Not.Null);
         }
 
         [Test]
@@ -100,7 +100,7 @@
         {
             var list = await client.User.GetWeeklyChartListAsync(data["user"]);
 
-            Assert.Greater(list.Count, 0);
+            Assert.That(list, Is.Not.Empty);
         }
 
         [Test]
@@ -108,7 +108,7 @@
         {
             var albums = await client.User.GetWeeklyAlbumChartAsync(data["user"]);
 
-            Assert.Greater(albums.Count, 0);
+            Assert.That(albums, Is.Not.Empty);
         }
 
         [Test]
@@ -116,7 +116,7 @@
         {
             var artists = await client.User.GetWeeklyArtistChartAsync(data["user"]);
 
-            Assert.Greater(artists.Count, 0);
+            Assert.That(artists, Is.Not.Empty);
         }
 
         [Test]
@@ -124,7 +124,7 @@
         {
             var tracks = await client.User.GetWeeklyTrackChartAsync(data["user"]);
 
-            Assert.Greater(tracks.Count, 0);
+            Assert.That(tracks, Is.Not.Empty);
         }
     }
 }
