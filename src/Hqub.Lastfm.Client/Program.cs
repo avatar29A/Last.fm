@@ -2,7 +2,6 @@
 using System;
 using System.Globalization;
 using System.IO;
-using System.Net;
 using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
@@ -13,7 +12,7 @@ namespace Hqub.Lastfm.Client
     {
         private static void Main(string[] args)
         {
-            //new FetchTestData().DownloadAsync(@"./", "---api-key---").Wait();
+            //FetchTestData.DownloadAsync(@"./", "---api-key---").Wait();
 
             try
             {
@@ -46,8 +45,8 @@ namespace Hqub.Lastfm.Client
 
         private static async Task RunExamples(AuthData auth)
         {
-            // Make sure that TLS 1.2 is available.
-            ServicePointManager.SecurityProtocol |= SecurityProtocolType.Tls12;
+            Console.WriteLine("Hqub.Lastfm version: " + LastfmClient.Version);
+            Console.WriteLine();
 
             // For console output floating point numbers with '.'
             Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;

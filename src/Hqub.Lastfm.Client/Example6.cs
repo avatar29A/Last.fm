@@ -15,23 +15,24 @@ namespace Hqub.Lastfm.Client
                 await client.AuthenticateAsync(auth.User, auth.Password);
             }
 
-            var scrobbles = new List<Scrobble>();
-
-            // Fail reason: unknown artist.
-            scrobbles.Add(new Scrobble()
+            var scrobbles = new List<Scrobble>
             {
-                Artist = "Unknown Artist",
-                Track = "Awesome Track",
-                Date = DateTime.Now - TimeSpan.FromMinutes(10)
-            });
+                // Fail reason: unknown artist.
+                new Scrobble()
+                {
+                    Artist = "Unknown Artist",
+                    Track = "Awesome Track",
+                    Date = DateTime.Now - TimeSpan.FromMinutes(10)
+                },
 
-            // Fail reason: timestamp too far in the past.
-            scrobbles.Add(new Scrobble()
-            {
-                Artist = "Queen",
-                Track = "Somebody to Love",
-                Date = DateTime.Now - TimeSpan.FromDays(15)
-            });
+                // Fail reason: time stamp too far in the past.
+                new Scrobble()
+                {
+                    Artist = "Queen",
+                    Track = "Somebody to Love",
+                    Date = DateTime.Now - TimeSpan.FromDays(15)
+                }
+            };
 
             Console.Write("Scrobbling {0} tracks: ", scrobbles.Count);
 

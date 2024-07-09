@@ -95,9 +95,9 @@ namespace Hqub.Lastfm
                     return GetXDocument(stream);
                 }
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                throw e;
+                throw;
             }
         }
 
