@@ -12,12 +12,12 @@
         /// Gets or sets the listeners count.
         /// </summary>
         [DataMember(Name = "listeners")]
-        public int Listeners { get; set; }
+        public long Listeners { get; set; }
 
         /// <summary>
         /// Gets or sets the play count.
         /// </summary>
         [DataMember(Name = "playcount")]
-        public int PlayCount { get; set; }
+        public long PlayCount { get; set; }
     }
 }
