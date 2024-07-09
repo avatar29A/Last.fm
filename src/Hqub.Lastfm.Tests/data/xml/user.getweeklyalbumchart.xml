@@ -1,54 +1,355 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <lfm status="ok">
-  <weeklyalbumchart user="RJ" from="1593777600" to="1594382400">
+  <weeklyalbumchart user="RJ" from="1719748800" to="1720353600">
     <album rank="1">
-      <artist mbid="">Womb Sounds Heartbeat</artist>
-      <name>Einschlafhilfe Baby Sleepy</name>
-      <mbid></mbid>
-      <playcount>44</playcount>
-      <url>https://www.last.fm/music/Womb+Sounds+Heartbeat/Einschlafhilfe+Baby+Sleepy</url>
+      <artist mbid="280d9262-c2fd-4875-a971-13a28a22f18b">Brooklyn Funk Essentials</artist>
+      <name>Make Them Like It</name>
+      <mbid>404c2d48-b258-4d7f-80ca-aadd604efe80</mbid>
+      <playcount>4</playcount>
+      <url>https://www.last.fm/music/Brooklyn+Funk+Essentials/Make+Them+Like+It</url>
     </album>
     <album rank="2">
-      <artist mbid="">Postman Pat</artist>
-      <name>Special Delivery Service – The Album</name>
-      <mbid>56d56a6b-82c2-49d8-9606-145de4e4ebe0</mbid>
-      <playcount>4</playcount>
-      <url>https://www.last.fm/music/Postman+Pat/Special+Delivery+Service+%E2%80%93+The+Album</url>
+      <artist mbid="280d9262-c2fd-4875-a971-13a28a22f18b">Brooklyn Funk Essentials</artist>
+      <name>Cool And Steady And Easy</name>
+      <mbid>9a57f8c9-6383-42c1-8c52-bb4918ccf610</mbid>
+      <playcount>3</playcount>
+      <url>https://www.last.fm/music/Brooklyn+Funk+Essentials/Cool+And+Steady+And+Easy</url>
     </album>
     <album rank="3">
-      <artist mbid="3e30aebd-0557-4cfd-8fb9-3945afa5d72b">Annie Lennox</artist>
-      <name>Diva</name>
-      <mbid>020a82f5-eb66-4837-a815-77b8b0b8d675</mbid>
-      <playcount>1</playcount>
-      <url>https://www.last.fm/music/Annie+Lennox/Diva</url>
+      <artist mbid="084308bd-1654-436f-ba03-df6697104e19">Green Day</artist>
+      <name>Dookie</name>
+      <mbid>17ca17ed-f061-4d5b-97e2-848d85e47d95</mbid>
+      <playcount>3</playcount>
+      <url>https://www.last.fm/music/Green+Day/Dookie</url>
     </album>
     <album rank="4">
-      <artist mbid="bd13909f-1c29-4c27-a874-d4aaf27c5b1a">Fleetwood Mac</artist>
-      <name>Greatest Hits</name>
-      <mbid>08e231d6-2b8e-4033-b4ad-318961cea4ca</mbid>
-      <playcount>1</playcount>
-      <url>https://www.last.fm/music/Fleetwood+Mac/Greatest+Hits</url>
+      <artist mbid="5ccb9a53-092d-4806-b337-470a582893d7">Lit</artist>
+      <name>A Place in the Sun</name>
+      <mbid>13061c2c-21b0-4d43-99ab-7a0262322a4f</mbid>
+      <playcount>3</playcount>
+      <url>https://www.last.fm/music/Lit/A+Place+in+the+Sun</url>
     </album>
     <album rank="5">
-      <artist mbid="c3c82bdc-d9e7-4836-9746-c24ead47ca19">Mark Ronson</artist>
-      <name>Version (Digital Edition)</name>
+      <artist mbid="4bdcee62-4902-4773-8cd1-e252e2e31225">Alanis Morissette</artist>
+      <name>Jagged Little Pill (2015 Remaster)</name>
       <mbid></mbid>
-      <playcount>1</playcount>
-      <url>https://www.last.fm/music/Mark+Ronson/Version+(Digital+Edition)</url>
+      <playcount>2</playcount>
+      <url>https://www.last.fm/music/Alanis+Morissette/Jagged+Little+Pill+(2015+Remaster)</url>
     </album>
     <album rank="6">
-      <artist mbid="55704c38-224f-4b75-b29f-d43653f8bc9a">Primal Scream</artist>
-      <name>Screamadelica</name>
-      <mbid>11c68c9c-618e-4572-b70d-7418b85c6ad1</mbid>
-      <playcount>1</playcount>
-      <url>https://www.last.fm/music/Primal+Scream/Screamadelica</url>
+      <artist mbid="516cef4d-0718-4007-9939-f9b38af3f784">Fall Out Boy</artist>
+      <name>From Under the Cork Tree</name>
+      <mbid>0fe68756-b05e-43da-a702-b450e897e5d6</mbid>
+      <playcount>2</playcount>
+      <url>https://www.last.fm/music/Fall+Out+Boy/From+Under+the+Cork+Tree</url>
     </album>
     <album rank="7">
-      <artist mbid="a41ac10f-0a56-4672-9161-b83f9b223559">Van Morrison</artist>
-      <name>Blowin&apos; Your Mind!</name>
-      <mbid>007f4be5-2517-4178-a266-1f389465d4f3</mbid>
+      <artist mbid="67f66c07-6e61-4026-ade5-7e782fad3a5d">Foo Fighters</artist>
+      <name>Foo Fighters</name>
+      <mbid>1d2ec012-4d4f-39ff-8dcf-10ca19612519</mbid>
+      <playcount>2</playcount>
+      <url>https://www.last.fm/music/Foo+Fighters/Foo+Fighters</url>
+    </album>
+    <album rank="8">
+      <artist mbid="67f66c07-6e61-4026-ade5-7e782fad3a5d">Foo Fighters</artist>
+      <name>The Colour and the Shape</name>
+      <mbid>02084fd8-5bce-3495-9e9f-86261dcb59a2</mbid>
+      <playcount>2</playcount>
+      <url>https://www.last.fm/music/Foo+Fighters/The+Colour+and+the+Shape</url>
+    </album>
+    <album rank="9">
+      <artist mbid="67f66c07-6e61-4026-ade5-7e782fad3a5d">Foo Fighters</artist>
+      <name>There Is Nothing Left to Lose</name>
+      <mbid>12b54c44-8e71-4cda-9bb2-937fe3faa85d</mbid>
+      <playcount>2</playcount>
+      <url>https://www.last.fm/music/Foo+Fighters/There+Is+Nothing+Left+to+Lose</url>
+    </album>
+    <album rank="10">
+      <artist mbid="6ffb8ea9-2370-44d8-b678-e9237bbd347b">Kings of Leon</artist>
+      <name>Only by the Night</name>
+      <mbid>1a158952-0a0d-372f-a37f-325c50641b8a</mbid>
+      <playcount>2</playcount>
+      <url>https://www.last.fm/music/Kings+of+Leon/Only+by+the+Night</url>
+    </album>
+    <album rank="11">
+      <artist mbid="1bcb61f3-ca9c-4a26-b16e-0547ad6c21be">Spin Doctors</artist>
+      <name>Pocket Full Of Kryptonite (Anniversary Edition)</name>
+      <mbid></mbid>
+      <playcount>2</playcount>
+      <url>https://www.last.fm/music/Spin+Doctors/Pocket+Full+Of+Kryptonite+(Anniversary+Edition)</url>
+    </album>
+    <album rank="12">
+      <artist mbid="">Sublime</artist>
+      <name>Sublime</name>
+      <mbid>03b864cd-7761-314c-a892-05a89ddff00d</mbid>
+      <playcount>2</playcount>
+      <url>https://www.last.fm/music/Sublime/Sublime</url>
+    </album>
+    <album rank="13">
+      <artist mbid="efef848b-63e4-4323-8ef7-69a48fbdd51d">4 Non Blondes</artist>
+      <name>Bigger, Better, Faster, More !</name>
+      <mbid></mbid>
       <playcount>1</playcount>
-      <url>https://www.last.fm/music/Van+Morrison/Blowin%27+Your+Mind!</url>
+      <url>https://www.last.fm/music/4+Non+Blondes/Bigger,+Better,+Faster,+More+!</url>
+    </album>
+    <album rank="14">
+      <artist mbid="66c662b6-6e2f-4930-8610-912e24c63ed1">AC/DC</artist>
+      <name>Back in Black</name>
+      <mbid>0368e093-ac44-40cb-9aef-52da0126807f</mbid>
+      <playcount>1</playcount>
+      <url>https://www.last.fm/music/AC%2FDC/Back+in+Black</url>
+    </album>
+    <album rank="15">
+      <artist mbid="6b28ecf0-94e6-48bb-aa2a-5ede325b675b">Blues Traveler</artist>
+      <name>Four</name>
+      <mbid>02d006e9-3deb-489b-b7f7-b77b78ecefe3</mbid>
+      <playcount>1</playcount>
+      <url>https://www.last.fm/music/Blues+Traveler/Four</url>
+    </album>
+    <album rank="16">
+      <artist mbid="280d9262-c2fd-4875-a971-13a28a22f18b">Brooklyn Funk Essentials</artist>
+      <name>Stay Good</name>
+      <mbid>2dc7486b-addd-4055-8e4c-fa87cb3cb03a</mbid>
+      <playcount>1</playcount>
+      <url>https://www.last.fm/music/Brooklyn+Funk+Essentials/Stay+Good</url>
+    </album>
+    <album rank="17">
+      <artist mbid="fa7b9055-3703-473a-8a09-adf2fe031a24">Cake</artist>
+      <name>Fashion Nugget</name>
+      <mbid>0ab3de7f-4966-4f47-b34d-f5eb284b9ac7</mbid>
+      <playcount>1</playcount>
+      <url>https://www.last.fm/music/Cake/Fashion+Nugget</url>
+    </album>
+    <album rank="18">
+      <artist mbid="7b7b1e6f-e73e-41a0-9d72-8f0b30c6992d">Chumbawamba</artist>
+      <name>Tubthumper</name>
+      <mbid>0b5f7ace-9ed1-421f-9d76-68105143b186</mbid>
+      <playcount>1</playcount>
+      <url>https://www.last.fm/music/Chumbawamba/Tubthumper</url>
+    </album>
+    <album rank="19">
+      <artist mbid="8996b655-fbad-4018-b430-1bd8fab43235">Crazy Town</artist>
+      <name>The Gift of Game</name>
+      <mbid>391945ae-7a6b-4e53-a72c-e20019860881</mbid>
+      <playcount>1</playcount>
+      <url>https://www.last.fm/music/Crazy+Town/The+Gift+of+Game</url>
+    </album>
+    <album rank="20">
+      <artist mbid="109958eb-a335-4c5e-907e-597ff4c6af46">Creedence Clearwater Revival</artist>
+      <name>Willy And The Poor Boys (Expanded Edition)</name>
+      <mbid></mbid>
+      <playcount>1</playcount>
+      <url>https://www.last.fm/music/Creedence+Clearwater+Revival/Willy+And+The+Poor+Boys+(Expanded+Edition)</url>
+    </album>
+    <album rank="21">
+      <artist mbid="8538e728-ca0b-4321-b7e5-cff6565dd4c0">Depeche Mode</artist>
+      <name>Violator (Deluxe)</name>
+      <mbid></mbid>
+      <playcount>1</playcount>
+      <url>https://www.last.fm/music/Depeche+Mode/Violator+(Deluxe)</url>
+    </album>
+    <album rank="22">
+      <artist mbid="d1353a0c-26fb-4318-a116-defde9c7c9ad">Dido</artist>
+      <name>No Angel</name>
+      <mbid>0c6e834f-ef5e-4c65-9b4e-b3db823d75bd</mbid>
+      <playcount>1</playcount>
+      <url>https://www.last.fm/music/Dido/No+Angel</url>
+    </album>
+    <album rank="23">
+      <artist mbid="b03fc204-7564-4ceb-8b9a-aaac372a8911">Dionne Farris</artist>
+      <name>Wild Seed - Wild Flower</name>
+      <mbid>d669713b-3492-4483-847f-3828142cc4c0</mbid>
+      <playcount>1</playcount>
+      <url>https://www.last.fm/music/Dionne+Farris/Wild+Seed+-+Wild+Flower</url>
+    </album>
+    <album rank="24">
+      <artist mbid="ca39d50f-9885-420e-88d6-9c3f64038773">Everlast</artist>
+      <name>Whitey Ford Sings the Blues</name>
+      <mbid>1e4d0890-9ee0-4020-a9dc-8528208fd3ab</mbid>
+      <playcount>1</playcount>
+      <url>https://www.last.fm/music/Everlast/Whitey+Ford+Sings+the+Blues</url>
+    </album>
+    <album rank="25">
+      <artist mbid="67f66c07-6e61-4026-ade5-7e782fad3a5d">Foo Fighters</artist>
+      <name>In Your Honor</name>
+      <mbid>03d2661d-efbf-4932-acba-d068848be739</mbid>
+      <playcount>1</playcount>
+      <url>https://www.last.fm/music/Foo+Fighters/In+Your+Honor</url>
+    </album>
+    <album rank="26">
+      <artist mbid="67f66c07-6e61-4026-ade5-7e782fad3a5d">Foo Fighters</artist>
+      <name>One By One (Expanded Edition)</name>
+      <mbid></mbid>
+      <playcount>1</playcount>
+      <url>https://www.last.fm/music/Foo+Fighters/One+By+One+(Expanded+Edition)</url>
+    </album>
+    <album rank="27">
+      <artist mbid="e0e1a584-dd0a-4bd1-88d1-c4c62895039d">Foster the People</artist>
+      <name>Torches</name>
+      <mbid>041a07bf-55df-48fc-80a8-7924f5d01f0a</mbid>
+      <playcount>1</playcount>
+      <url>https://www.last.fm/music/Foster+the+People/Torches</url>
+    </album>
+    <album rank="28">
+      <artist mbid="084308bd-1654-436f-ba03-df6697104e19">Green Day</artist>
+      <name>Nimrod</name>
+      <mbid></mbid>
+      <playcount>1</playcount>
+      <url>https://www.last.fm/music/Green+Day/Nimrod</url>
+    </album>
+    <album rank="29">
+      <artist mbid="34e10b51-b5c6-4bc1-b70e-f05f141eda1e">John Denver</artist>
+      <name>The John Denver Collection, Vol 1: Take Me Home Country Roads</name>
+      <mbid></mbid>
+      <playcount>1</playcount>
+      <url>https://www.last.fm/music/John+Denver/The+John+Denver+Collection,+Vol+1:+Take+Me+Home+Country+Roads</url>
+    </album>
+    <album rank="30">
+      <artist mbid="ac865b2e-bba8-4f5a-8756-dd40d5e39f46">Korn</artist>
+      <name>Follow the Leader</name>
+      <mbid>04c77734-4d5c-4b91-bd0d-27be62f2e67b</mbid>
+      <playcount>1</playcount>
+      <url>https://www.last.fm/music/Korn/Follow+the+Leader</url>
+    </album>
+    <album rank="31">
+      <artist mbid="6f033da5-396f-4381-a581-1f38c2d0a2d4">Meredith Brooks</artist>
+      <name>Blurring the Edges</name>
+      <mbid>6f8755dd-3dcb-3b79-a910-34eb10eb3ab8</mbid>
+      <playcount>1</playcount>
+      <url>https://www.last.fm/music/Meredith+Brooks/Blurring+the+Edges</url>
+    </album>
+    <album rank="32">
+      <artist mbid="60530915-9371-4b16-bc31-5c4456317ae0">Natalie Imbruglia</artist>
+      <name>Left of the Middle</name>
+      <mbid>04f5007e-9271-4532-9089-543b1ba8ffd0</mbid>
+      <playcount>1</playcount>
+      <url>https://www.last.fm/music/Natalie+Imbruglia/Left+of+the+Middle</url>
+    </album>
+    <album rank="33">
+      <artist mbid="">Nirvana</artist>
+      <name>Nevermind (Remastered)</name>
+      <mbid></mbid>
+      <playcount>1</playcount>
+      <url>https://www.last.fm/music/Nirvana/Nevermind+(Remastered)</url>
+    </album>
+    <album rank="34">
+      <artist mbid="">Oasis</artist>
+      <name>(What&apos;s The Story) Morning Glory? (Deluxe Remastered Edition)</name>
+      <mbid></mbid>
+      <playcount>1</playcount>
+      <url>https://www.last.fm/music/Oasis/(What%27s+The+Story)+Morning+Glory%3F+(Deluxe+Remastered+Edition)</url>
+    </album>
+    <album rank="35">
+      <artist mbid="">OMC</artist>
+      <name>How Bizarre (Deluxe)</name>
+      <mbid></mbid>
+      <playcount>1</playcount>
+      <url>https://www.last.fm/music/OMC/How+Bizarre+(Deluxe)</url>
+    </album>
+    <album rank="36">
+      <artist mbid="17d218e4-3c75-45af-88f9-d47ed2f75e39">Santana</artist>
+      <name>Supernatural (Legacy Edition)</name>
+      <mbid>e3b677dc-bd20-4126-82f0-406e3d4eab39</mbid>
+      <playcount>1</playcount>
+      <url>https://www.last.fm/music/Santana/Supernatural+(Legacy+Edition)</url>
+    </album>
+    <album rank="37">
+      <artist mbid="17d218e4-3c75-45af-88f9-d47ed2f75e39">Santana</artist>
+      <name>Supernatural (Remastered)</name>
+      <mbid></mbid>
+      <playcount>1</playcount>
+      <url>https://www.last.fm/music/Santana/Supernatural+(Remastered)</url>
+    </album>
+    <album rank="38">
+      <artist mbid="c2c70ed6-5f10-445c-969f-2c16bc9a4c2e">Sixpence None the Richer</artist>
+      <name>Sixpence None the Richer</name>
+      <mbid>24efdbe1-a15d-4cc0-a6d7-59bd1ebbdcc3</mbid>
+      <playcount>1</playcount>
+      <url>https://www.last.fm/music/Sixpence+None+the+Richer/Sixpence+None+the+Richer</url>
+    </album>
+    <album rank="39">
+      <artist mbid="34720a3f-df00-43d7-916e-877bdb930e98">Stardust</artist>
+      <name>Music Sounds Better With You</name>
+      <mbid>1061c7a9-0d10-4bb5-aaeb-b3763077b129</mbid>
+      <playcount>1</playcount>
+      <url>https://www.last.fm/music/Stardust/Music+Sounds+Better+With+You</url>
+    </album>
+    <album rank="40">
+      <artist mbid="6386ddff-0d13-4685-9f0a-a82bf022fb1c">Supergrass</artist>
+      <name>I Should Coco (20th Anniversary Collector&apos;s Edition)</name>
+      <mbid></mbid>
+      <playcount>1</playcount>
+      <url>https://www.last.fm/music/Supergrass/I+Should+Coco+(20th+Anniversary+Collector%27s+Edition)</url>
+    </album>
+    <album rank="41">
+      <artist mbid="f8364fea-e139-4e9b-9f95-2081dc7a91b6">Tal Bachman</artist>
+      <name>Tal Bachman</name>
+      <mbid>09a3a8d2-4059-46b9-9150-938490b5c36f</mbid>
+      <playcount>1</playcount>
+      <url>https://www.last.fm/music/Tal+Bachman/Tal+Bachman</url>
+    </album>
+    <album rank="42">
+      <artist mbid="3e55d51d-687f-4a9d-af96-2fabccf802e5">The Cardigans</artist>
+      <name>First Band On The Moon (Remastered)</name>
+      <mbid></mbid>
+      <playcount>1</playcount>
+      <url>https://www.last.fm/music/The+Cardigans/First+Band+On+The+Moon+(Remastered)</url>
+    </album>
+    <album rank="43">
+      <artist mbid="c98d40fd-f6cf-4b26-883e-eaa515ee2851">The Cranberries</artist>
+      <name>Everybody Else Is Doing It, So Why Can&apos;t We?</name>
+      <mbid>000b188f-549f-4c11-a5fb-024fbfdb7a13</mbid>
+      <playcount>1</playcount>
+      <url>https://www.last.fm/music/The+Cranberries/Everybody+Else+Is+Doing+It,+So+Why+Can%27t+We%3F</url>
+    </album>
+    <album rank="44">
+      <artist mbid="e2c00c56-8365-4160-9f40-a64682917633">The Goo Goo Dolls</artist>
+      <name>Dizzy Up the Girl</name>
+      <mbid></mbid>
+      <playcount>1</playcount>
+      <url>https://www.last.fm/music/The+Goo+Goo+Dolls/Dizzy+Up+the+Girl</url>
+    </album>
+    <album rank="45">
+      <artist mbid="f82f3a3e-29c2-42ca-b589-bc5dc210fa9e">The Kooks</artist>
+      <name>Junk Of The Heart (Happy)</name>
+      <mbid>60404ae5-165a-48bc-9d24-c52bf36ae1cb</mbid>
+      <playcount>1</playcount>
+      <url>https://www.last.fm/music/The+Kooks/Junk+Of+The+Heart+(Happy)</url>
+    </album>
+    <album rank="46">
+      <artist mbid="23a03e33-a603-404e-bcbf-2c00159d7067">The Offspring</artist>
+      <name>Ixnay on the Hombre</name>
+      <mbid>0ba11e1e-a3f8-47fd-ac5e-6a391b273576</mbid>
+      <playcount>1</playcount>
+      <url>https://www.last.fm/music/The+Offspring/Ixnay+on+the+Hombre</url>
+    </album>
+    <album rank="47">
+      <artist mbid="23a03e33-a603-404e-bcbf-2c00159d7067">The Offspring</artist>
+      <name>Smash</name>
+      <mbid>021b8436-4c5f-3aa0-ac08-3ebf6470ada3</mbid>
+      <playcount>1</playcount>
+      <url>https://www.last.fm/music/The+Offspring/Smash</url>
+    </album>
+    <album rank="48">
+      <artist mbid="">The Verve</artist>
+      <name>Urban Hymns (Remastered 2016)</name>
+      <mbid></mbid>
+      <playcount>1</playcount>
+      <url>https://www.last.fm/music/The+Verve/Urban+Hymns+(Remastered+2016)</url>
+    </album>
+    <album rank="49">
+      <artist mbid="741a2892-1c5d-402f-a769-2096356c77d7">Wheatus</artist>
+      <name>Wheatus</name>
+      <mbid>650d8d70-e2c4-4e22-bc5a-d298adcba788</mbid>
+      <playcount>1</playcount>
+      <url>https://www.last.fm/music/Wheatus/Wheatus</url>
+    </album>
+    <album rank="50">
+      <artist mbid="b9068fde-91c8-48bf-8655-8d74c24ef4c5">White Town</artist>
+      <name>Women In Technology</name>
+      <mbid>06cf1467-1631-423a-b680-072225a7cc4f</mbid>
+      <playcount>1</playcount>
+      <url>https://www.last.fm/music/White+Town/Women+In+Technology</url>
     </album>
   </weeklyalbumchart>
 </lfm>

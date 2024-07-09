@@ -2,8 +2,6 @@
 {
     using System.Text;
 
-    using CryptoMD5 = System.Security.Cryptography.MD5;
-
     /// <summary>
     /// MD5 helper class.
     /// </summary>
@@ -26,20 +24,9 @@
         /// <returns></returns>
         public static string ComputeHash(byte[] data)
         {
-            return ComputeHash(data, data.Length);
-        }
+            var md5 = System.Security.Cryptography.MD5.Create();
 
-        /// <summary>
-        /// Returns the MD5 hash of a byte array.
-        /// </summary>
-        /// <param name="data"></param>
-        /// <param name="size"></param>
-        /// <returns></returns>
-        public static string ComputeHash(byte[] data, int size)
-        {
-            var hashAlgorithm = CryptoMD5.Create();
-
-            var buffer = hashAlgorithm.ComputeHash(data, 0, size);
+            var buffer = md5.ComputeHash(data, 0, data.Length);
 
             var sb = new StringBuilder();
 

@@ -5,7 +5,6 @@ namespace Hqub.Lastfm
     static class Utilities
     {
         public const string LASTFM_SECURE = "https://www.last.fm/";
-        public const string LASTFM = "http://www.last.fm/";
 
         public static DateTime TimestampToDateTime(long timestamp, DateTimeKind kind = DateTimeKind.Utc)
         {

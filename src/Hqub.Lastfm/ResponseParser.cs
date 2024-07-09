@@ -343,19 +343,7 @@ namespace Hqub.Lastfm
             }
             else
             {
-                var s = new Statistics();
-
-                if ((e = node.Element("listeners")) != null)
-                {
-                    s.Listeners = int.Parse(e.Value);
-                }
-
-                if ((e = node.Element("playcount")) != null)
-                {
-                    s.PlayCount = int.Parse(e.Value);
-                }
-
-                album.Statistics = s;
+                album.Statistics = ParseStatistics(node);
             }
 
             if ((e = node.Element("tags")) != null)
@@ -440,19 +428,7 @@ namespace Hqub.Lastfm
             }
             else
             {
-                var s = new Statistics();
-
-                if ((e = node.Element("listeners")) != null)
-                {
-                    s.Listeners = int.Parse(e.Value);
-                }
-
-                if ((e = node.Element("playcount")) != null)
-                {
-                    s.PlayCount = int.Parse(e.Value);
-                }
-
-                artist.Statistics = s;
+                artist.Statistics = ParseStatistics(node);
             }
 
             if ((e = node.Element("similar")) != null)
@@ -522,12 +498,12 @@ namespace Hqub.Lastfm
 
             if ((e = node.Element("listeners")) != null)
             {
-                stats.Listeners = int.Parse(e.Value);
+                stats.Listeners = long.Parse(e.Value);
             }
 
             if ((e = node.Element("playcount")) != null)
             {
-                stats.PlayCount = int.Parse(e.Value);
+                stats.PlayCount = long.Parse(e.Value);
             }
 
             return stats;
@@ -660,19 +636,7 @@ namespace Hqub.Lastfm
             }
             else
             {
-                var s = new Statistics();
-
-                if ((e = node.Element("listeners")) != null)
-                {
-                    s.Listeners = int.Parse(e.Value);
-                }
-
-                if ((e = node.Element("playcount")) != null)
-                {
-                    s.PlayCount = int.Parse(e.Value);
-                }
-
-                track.Statistics = s;
+                track.Statistics = ParseStatistics(node);
             }
 
             if ((e = node.Element("tags")) != null)

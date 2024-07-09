@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<lfm status="ok"><topartists tag="rock" page="1" perPage="10" totalPages="16438" total="164375"><artist rank="1"><name>Coldplay</name>
+<lfm status="ok"><topartists tag="rock" page="1" perPage="10" totalPages="17640" total="176397"><artist rank="1"><name>Coldplay</name>
 <mbid>cc197bad-dc9c-440d-a5b5-d52ba2e14234</mbid>
 <url>https://www.last.fm/music/Coldplay</url>
 <streamable>0</streamable>
@@ -19,27 +19,7 @@
 <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
 <image size="mega">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
 </artist>
-<artist rank="3"><name>Red Hot Chili Peppers</name>
-<mbid>8bfac288-ccc5-448d-9573-c33ea2aa5c30</mbid>
-<url>https://www.last.fm/music/Red+Hot+Chili+Peppers</url>
-<streamable>0</streamable>
-<image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-<image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-<image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-<image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-<image size="mega">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-</artist>
-<artist rank="4"><name>David Bowie</name>
-<mbid>5441c29d-3602-4898-b1a1-b77fa23b8e50</mbid>
-<url>https://www.last.fm/music/David+Bowie</url>
-<streamable>0</streamable>
-<image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-<image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-<image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-<image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-<image size="mega">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-</artist>
-<artist rank="5"><name>Paramore</name>
+<artist rank="3"><name>Paramore</name>
 <mbid>728ea90d-279b-4201-a8c4-597830883150</mbid>
 <url>https://www.last.fm/music/Paramore</url>
 <streamable>0</streamable>
@@ -49,7 +29,37 @@
 <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
 <image size="mega">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
 </artist>
-<artist rank="6"><name>Foo Fighters</name>
+<artist rank="4"><name>Red Hot Chili Peppers</name>
+<mbid>8bfac288-ccc5-448d-9573-c33ea2aa5c30</mbid>
+<url>https://www.last.fm/music/Red+Hot+Chili+Peppers</url>
+<streamable>0</streamable>
+<image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+<image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+<image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+<image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+<image size="mega">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+</artist>
+<artist rank="5"><name>My Chemical Romance</name>
+<mbid>c07f0676-9143-4217-8a9f-4c26bd636f13</mbid>
+<url>https://www.last.fm/music/My+Chemical+Romance</url>
+<streamable>0</streamable>
+<image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+<image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+<image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+<image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+<image size="mega">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+</artist>
+<artist rank="6"><name>David Bowie</name>
+<mbid>5441c29d-3602-4898-b1a1-b77fa23b8e50</mbid>
+<url>https://www.last.fm/music/David+Bowie</url>
+<streamable>0</streamable>
+<image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+<image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+<image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+<image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+<image size="mega">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+</artist>
+<artist rank="7"><name>Foo Fighters</name>
 <mbid>67f66c07-6e61-4026-ade5-7e782fad3a5d</mbid>
 <url>https://www.last.fm/music/Foo+Fighters</url>
 <streamable>0</streamable>
@@ -59,9 +69,9 @@
 <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
 <image size="mega">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
 </artist>
-<artist rank="7"><name>Kings of Leon</name>
-<mbid>6ffb8ea9-2370-44d8-b678-e9237bbd347b</mbid>
-<url>https://www.last.fm/music/Kings+of+Leon</url>
+<artist rank="8"><name>Panic! at the Disco</name>
+<mbid>b9472588-93f3-4922-a1a2-74082cdf9ce8</mbid>
+<url>https://www.last.fm/music/Panic%21+at+the+Disco</url>
 <streamable>0</streamable>
 <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
 <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
@@ -69,19 +79,9 @@
 <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
 <image size="mega">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
 </artist>
-<artist rank="8"><name>U2</name>
-<mbid>a3cb23fc-acd3-4ce0-8f36-1e5aa6a18432</mbid>
-<url>https://www.last.fm/music/U2</url>
-<streamable>0</streamable>
-<image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-<image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-<image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-<image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-<image size="mega">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-</artist>
-<artist rank="9"><name>My Chemical Romance</name>
-<mbid>c07f0676-9143-4217-8a9f-4c26bd636f13</mbid>
-<url>https://www.last.fm/music/My+Chemical+Romance</url>
+<artist rank="9"><name>Weezer</name>
+<mbid>6fe07aa5-fec0-4eca-a456-f29bff451b04</mbid>
+<url>https://www.last.fm/music/Weezer</url>
 <streamable>0</streamable>
 <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
 <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>

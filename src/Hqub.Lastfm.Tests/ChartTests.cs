@@ -21,7 +21,7 @@
         {
             var artists = await client.Chart.GetTopArtistsAsync(limit: 10);
 
-            Assert.Greater(artists.Count, 0);
+            Assert.That(artists, Is.Not.Empty);
         }
 
         [Test]
@@ -29,7 +29,7 @@
         {
             var tags = await client.Chart.GetTopTagsAsync(limit: 10);
 
-            Assert.Greater(tags.Count, 0);
+            Assert.That(tags, Is.Not.Empty);
         }
 
         [Test]
@@ -37,7 +37,7 @@
         {
             var tracks = await client.Chart.GetTopTracksAsync(limit: 10);
 
-            Assert.Greater(tracks.Count, 0);
+            Assert.That(tracks, Is.Not.Empty);
         }
     }
 }
