@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <lfm status="ok">
-  <artists user="RJ" page="1" perPage="10" totalPages="1167" total="11661">
+  <artists user="RJ" page="1" perPage="10" totalPages="1245" total="12449">
     <artist>
       <name>Dream Theater</name>
-      <playcount>1859</playcount>
+      <playcount>1860</playcount>
       <tagcount>0</tagcount>
       <mbid>28503ab7-8bf2-4666-a7bd-2644bfc7cb1d</mbid>
       <url>https://www.last.fm/music/Dream+Theater</url>
@@ -16,7 +16,7 @@
     </artist>
     <artist>
       <name>Dire Straits</name>
-      <playcount>1634</playcount>
+      <playcount>1662</playcount>
       <tagcount>0</tagcount>
       <mbid>614e3804-7d34-41ba-857f-811bad7c2b7a</mbid>
       <url>https://www.last.fm/music/Dire+Straits</url>
@@ -29,7 +29,7 @@
     </artist>
     <artist>
       <name>Snoop Dogg</name>
-      <playcount>1177</playcount>
+      <playcount>1181</playcount>
       <tagcount>0</tagcount>
       <mbid>f90e8b26-9e52-4669-a5c9-e28529c47894</mbid>
       <url>https://www.last.fm/music/Snoop+Dogg</url>
@@ -42,7 +42,7 @@
     </artist>
     <artist>
       <name>Miles Davis</name>
-      <playcount>977</playcount>
+      <playcount>978</playcount>
       <tagcount>0</tagcount>
       <mbid>561d854a-6a28-4aa7-8c99-323e6ce46c2a</mbid>
       <url>https://www.last.fm/music/Miles+Davis</url>
@@ -55,7 +55,7 @@
     </artist>
     <artist>
       <name>Metallica</name>
-      <playcount>911</playcount>
+      <playcount>939</playcount>
       <tagcount>0</tagcount>
       <mbid>65f4f0c5-ef9e-490c-aee3-909e7ae6b2ab</mbid>
       <url>https://www.last.fm/music/Metallica</url>
@@ -68,7 +68,7 @@
     </artist>
     <artist>
       <name>Pink Floyd</name>
-      <playcount>845</playcount>
+      <playcount>878</playcount>
       <tagcount>0</tagcount>
       <mbid>83d91898-7763-47d7-b03b-b92132375c47</mbid>
       <url>https://www.last.fm/music/Pink+Floyd</url>
@@ -80,11 +80,11 @@
       <image size="mega">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
     </artist>
     <artist>
-      <name>Womb Sounds Heartbeat</name>
-      <playcount>796</playcount>
+      <name>Rage Against the Machine</name>
+      <playcount>844</playcount>
       <tagcount>0</tagcount>
-      <mbid></mbid>
-      <url>https://www.last.fm/music/Womb+Sounds+Heartbeat</url>
+      <mbid>3798b104-01cb-484c-a3b0-56adc6399b80</mbid>
+      <url>https://www.last.fm/music/Rage+Against+the+Machine</url>
       <streamable>0</streamable>
       <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
       <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
@@ -93,11 +93,11 @@
       <image size="mega">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
     </artist>
     <artist>
-      <name>Rage Against the Machine</name>
-      <playcount>763</playcount>
+      <name>Dr. Dre</name>
+      <playcount>778</playcount>
       <tagcount>0</tagcount>
-      <mbid>3798b104-01cb-484c-a3b0-56adc6399b80</mbid>
-      <url>https://www.last.fm/music/Rage+Against+the+Machine</url>
+      <mbid>5f6ab597-f57a-40da-be9e-adad48708203</mbid>
+      <url>https://www.last.fm/music/Dr.+Dre</url>
       <streamable>0</streamable>
       <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
       <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
@@ -119,11 +119,11 @@
       <image size="mega">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
     </artist>
     <artist>
-      <name>Dr. Dre</name>
-      <playcount>748</playcount>
+      <name>Blue Sky Black Death</name>
+      <playcount>717</playcount>
       <tagcount>0</tagcount>
-      <mbid>5f6ab597-f57a-40da-be9e-adad48708203</mbid>
-      <url>https://www.last.fm/music/Dr.+Dre</url>
+      <mbid>1b8ed32a-294c-4224-a770-2c20b8a5b0c1</mbid>
+      <url>https://www.last.fm/music/Blue+Sky+Black+Death</url>
       <streamable>0</streamable>
       <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
       <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>

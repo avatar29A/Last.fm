@@ -7,7 +7,7 @@
 <name>indie</name>
 <url>https://www.last.fm/tag/indie</url>
 </tag>
-<tag><count>94</count>
+<tag><count>92</count>
 <name>seen live</name>
 <url>https://www.last.fm/tag/seen+live</url>
 </tag>
@@ -19,7 +19,7 @@
 <name>folk</name>
 <url>https://www.last.fm/tag/folk</url>
 </tag>
-<tag><count>56</count>
+<tag><count>57</count>
 <name>indie rock</name>
 <url>https://www.last.fm/tag/indie+rock</url>
 </tag>
@@ -39,7 +39,7 @@
 <name>american</name>
 <url>https://www.last.fm/tag/american</url>
 </tag>
-<tag><count>8</count>
+<tag><count>9</count>
 <name>folk rock</name>
 <url>https://www.last.fm/tag/folk+rock</url>
 </tag>
@@ -56,32 +56,32 @@
 <url>https://www.last.fm/tag/pay+attention</url>
 </tag>
 <tag><count>6</count>
-<name>alternative rock</name>
-<url>https://www.last.fm/tag/alternative+rock</url>
-</tag>
-<tag><count>6</count>
 <name>alternative country</name>
 <url>https://www.last.fm/tag/alternative+country</url>
 </tag>
 <tag><count>6</count>
-<name>singer-songwriter</name>
-<url>https://www.last.fm/tag/singer-songwriter</url>
+<name>alternative rock</name>
+<url>https://www.last.fm/tag/alternative+rock</url>
 </tag>
 <tag><count>6</count>
 <name>indie folk</name>
 <url>https://www.last.fm/tag/indie+folk</url>
+</tag>
+<tag><count>6</count>
+<name>singer-songwriter</name>
+<url>https://www.last.fm/tag/singer-songwriter</url>
 </tag>
 <tag><count>5</count>
 <name>USA</name>
 <url>https://www.last.fm/tag/USA</url>
 </tag>
 <tag><count>5</count>
-<name>instrumental</name>
-<url>https://www.last.fm/tag/instrumental</url>
-</tag>
-<tag><count>5</count>
 <name>mariachi</name>
 <url>https://www.last.fm/tag/mariachi</url>
+</tag>
+<tag><count>5</count>
+<name>instrumental</name>
+<url>https://www.last.fm/tag/instrumental</url>
 </tag>
 <tag><count>5</count>
 <name>post-rock</name>
@@ -111,7 +111,7 @@
 <name>90s</name>
 <url>https://www.last.fm/tag/90s</url>
 </tag>
-<tag><count>4</count>
+<tag><count>3</count>
 <name>00s</name>
 <url>https://www.last.fm/tag/00s</url>
 </tag>
@@ -124,6 +124,10 @@
 <url>https://www.last.fm/tag/tucson</url>
 </tag>
 <tag><count>3</count>
+<name>tex-mex</name>
+<url>https://www.last.fm/tag/tex-mex</url>
+</tag>
+<tag><count>3</count>
 <name>Desert</name>
 <url>https://www.last.fm/tag/Desert</url>
 </tag>
@@ -132,18 +136,14 @@
 <url>https://www.last.fm/tag/desert+rock</url>
 </tag>
 <tag><count>3</count>
-<name>tex-mex</name>
-<url>https://www.last.fm/tag/tex-mex</url>
-</tag>
-<tag><count>3</count>
 <name>latin</name>
 <url>https://www.last.fm/tag/latin</url>
 </tag>
-<tag><count>2</count>
+<tag><count>3</count>
 <name>roots rock</name>
 <url>https://www.last.fm/tag/roots+rock</url>
 </tag>
-<tag><count>2</count>
+<tag><count>3</count>
 <name>mexican</name>
 <url>https://www.last.fm/tag/mexican</url>
 </tag>
@@ -210,6 +210,10 @@
 <tag><count>1</count>
 <name>post rock</name>
 <url>https://www.last.fm/tag/post+rock</url>
+</tag>
+<tag><count>1</count>
+<name>tejano</name>
+<url>https://www.last.fm/tag/tejano</url>
 </tag>
 <tag><count>1</count>
 <name>duyster</name>

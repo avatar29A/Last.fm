@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <lfm status="ok"><results for="Feast of Wire"><opensearch:Query role="request" searchTerms="Feast of Wire" startPage="1"></opensearch:Query>
-<opensearch:totalResults>482</opensearch:totalResults>
+<opensearch:totalResults>570</opensearch:totalResults>
 <opensearch:startIndex>0</opensearch:startIndex>
 <opensearch:itemsPerPage>10</opensearch:itemsPerPage>
 <albummatches><album><name>Feast of Wire</name>
 <artist>Calexico</artist>
 <url>https://www.last.fm/music/Calexico/Feast+of+Wire</url>
-<image size="small">https://lastfm.freetls.fastly.net/i/u/34s/4c09ab7ac9eb4fbcad2166c86b69ded9.png</image>
-<image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/4c09ab7ac9eb4fbcad2166c86b69ded9.png</image>
-<image size="large">https://lastfm.freetls.fastly.net/i/u/174s/4c09ab7ac9eb4fbcad2166c86b69ded9.png</image>
-<image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/4c09ab7ac9eb4fbcad2166c86b69ded9.png</image>
+<image size="small">https://lastfm.freetls.fastly.net/i/u/34s/ebb5772adeef4b22669af3147f756211.png</image>
+<image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/ebb5772adeef4b22669af3147f756211.png</image>
+<image size="large">https://lastfm.freetls.fastly.net/i/u/174s/ebb5772adeef4b22669af3147f756211.png</image>
+<image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/ebb5772adeef4b22669af3147f756211.png</image>
 <streamable>0</streamable>
 <mbid>1d22deda-5427-4b32-83c3-d36a369c2070</mbid>
 </album>
@@ -30,6 +30,26 @@
 <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/6a1ee3109c2b4a8c957c2b3b988fdffd.png</image>
 <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/6a1ee3109c2b4a8c957c2b3b988fdffd.png</image>
 <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/6a1ee3109c2b4a8c957c2b3b988fdffd.png</image>
+<streamable>0</streamable>
+<mbid></mbid>
+</album>
+<album><name>Feast of Wire (20th Anniversary Remastered Deluxe Edition)</name>
+<artist>Calexico</artist>
+<url>https://www.last.fm/music/Calexico/Feast+of+Wire+(20th+Anniversary+Remastered+Deluxe+Edition)</url>
+<image size="small">https://lastfm.freetls.fastly.net/i/u/34s/64584b39f8bdd02afe492ae99541151f.png</image>
+<image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/64584b39f8bdd02afe492ae99541151f.png</image>
+<image size="large">https://lastfm.freetls.fastly.net/i/u/174s/64584b39f8bdd02afe492ae99541151f.png</image>
+<image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/64584b39f8bdd02afe492ae99541151f.png</image>
+<streamable>0</streamable>
+<mbid></mbid>
+</album>
+<album><name>Feast of Wire (20th Anniversary Deluxe Edition)</name>
+<artist>Calexico</artist>
+<url>https://www.last.fm/music/Calexico/Feast+of+Wire+(20th+Anniversary+Deluxe+Edition)</url>
+<image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2d056d2d18aba5b3c8846a4261528743.png</image>
+<image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2d056d2d18aba5b3c8846a4261528743.png</image>
+<image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2d056d2d18aba5b3c8846a4261528743.png</image>
+<image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2d056d2d18aba5b3c8846a4261528743.png</image>
 <streamable>0</streamable>
 <mbid></mbid>
 </album>
@@ -76,26 +96,6 @@
 <album><name>Feast Of Wire [Japan]</name>
 <artist>Calexico</artist>
 <url>https://www.last.fm/music/Calexico/Feast+Of+Wire+%5BJapan%5D</url>
-<image size="small"></image>
-<image size="medium"></image>
-<image size="large"></image>
-<image size="extralarge"></image>
-<streamable>0</streamable>
-<mbid></mbid>
-</album>
-<album><name>Feast of Wire (Deluxe Version)</name>
-<artist>Calexico</artist>
-<url>https://www.last.fm/music/Calexico/Feast+of+Wire+(Deluxe+Version)</url>
-<image size="small"></image>
-<image size="medium"></image>
-<image size="large"></image>
-<image size="extralarge"></image>
-<streamable>0</streamable>
-<mbid></mbid>
-</album>
-<album><name>Calexico-07 Feast of wire</name>
-<artist>Calexico</artist>
-<url>https://www.last.fm/music/Calexico/Calexico-07+Feast+of+wire</url>
 <image size="small"></image>
 <image size="medium"></image>
 <image size="large"></image>

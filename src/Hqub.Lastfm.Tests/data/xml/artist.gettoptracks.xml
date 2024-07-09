@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<lfm status="ok"><toptracks artist="Calexico" page="1" perPage="10" totalPages="2610" total="26098"><track rank="1"><name>Two Silver Trees</name>
-<playcount>509545</playcount>
-<listeners>114600</listeners>
+<lfm status="ok"><toptracks artist="Calexico" page="1" perPage="10" totalPages="2708" total="27072"><track rank="1"><name>Two Silver Trees</name>
+<playcount>526274</playcount>
+<listeners>117144</listeners>
 <mbid>375ca9ac-c041-4de4-85a8-240aeb5369ce</mbid>
 <url>https://www.last.fm/music/Calexico/_/Two+Silver+Trees</url>
 <streamable>0</streamable>
@@ -15,8 +15,8 @@
 <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
 </track>
 <track rank="2"><name>Alone Again Or</name>
-<playcount>325993</playcount>
-<listeners>76720</listeners>
+<playcount>412254</playcount>
+<listeners>92012</listeners>
 <mbid>10e83307-34f9-4adc-9879-4c76f0b60668</mbid>
 <url>https://www.last.fm/music/Calexico/_/Alone+Again+Or</url>
 <streamable>0</streamable>
@@ -30,8 +30,8 @@
 <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
 </track>
 <track rank="3"><name>Sunken Waltz</name>
-<playcount>345442</playcount>
-<listeners>74239</listeners>
+<playcount>373632</playcount>
+<listeners>80944</listeners>
 <mbid>11940b11-601c-49b5-b038-08d63bf3ac75</mbid>
 <url>https://www.last.fm/music/Calexico/_/Sunken+Waltz</url>
 <streamable>0</streamable>
@@ -44,24 +44,9 @@
 <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
 <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
 </track>
-<track rank="4"><name>Victor Jara&apos;s Hands</name>
-<playcount>350857</playcount>
-<listeners>73370</listeners>
-<mbid>bc362902-1c63-4dec-a5d6-583f9d2ae519</mbid>
-<url>https://www.last.fm/music/Calexico/_/Victor+Jara%27s+Hands</url>
-<streamable>0</streamable>
-<artist><name>Calexico</name>
-<mbid>5e372a49-5672-4fb8-ba14-18c90780c4f9</mbid>
-<url>https://www.last.fm/music/Calexico</url>
-</artist>
-<image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-<image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-<image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-<image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-</track>
-<track rank="5"><name>Black Heart</name>
-<playcount>314171</playcount>
-<listeners>70812</listeners>
+<track rank="4"><name>Black Heart</name>
+<playcount>346855</playcount>
+<listeners>77953</listeners>
 <mbid>993bb2ce-79b5-4937-be67-2e66934bf195</mbid>
 <url>https://www.last.fm/music/Calexico/_/Black+Heart</url>
 <streamable>0</streamable>
@@ -74,9 +59,24 @@
 <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
 <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
 </track>
+<track rank="5"><name>Victor Jara&apos;s Hands</name>
+<playcount>364941</playcount>
+<listeners>75692</listeners>
+<mbid>bc362902-1c63-4dec-a5d6-583f9d2ae519</mbid>
+<url>https://www.last.fm/music/Calexico/_/Victor+Jara%27s+Hands</url>
+<streamable>0</streamable>
+<artist><name>Calexico</name>
+<mbid>5e372a49-5672-4fb8-ba14-18c90780c4f9</mbid>
+<url>https://www.last.fm/music/Calexico</url>
+</artist>
+<image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+<image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+<image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+<image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+</track>
 <track rank="6"><name>The News About William</name>
-<playcount>325049</playcount>
-<listeners>66934</listeners>
+<playcount>335131</playcount>
+<listeners>68583</listeners>
 <mbid>f3f7694f-816a-4ffb-8565-6059d3e12fc4</mbid>
 <url>https://www.last.fm/music/Calexico/_/The+News+About+William</url>
 <streamable>0</streamable>
@@ -90,8 +90,8 @@
 <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
 </track>
 <track rank="7"><name>Cruel</name>
-<playcount>283071</playcount>
-<listeners>64787</listeners>
+<playcount>290544</playcount>
+<listeners>66429</listeners>
 <mbid>8f1f58e8-6e29-4bd7-970a-3f8b1f3a3fb2</mbid>
 <url>https://www.last.fm/music/Calexico/_/Cruel</url>
 <streamable>0</streamable>
@@ -105,8 +105,8 @@
 <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
 </track>
 <track rank="8"><name>Man Made Lake</name>
-<playcount>261137</playcount>
-<listeners>56874</listeners>
+<playcount>269333</playcount>
+<listeners>58208</listeners>
 <mbid>09260044-ec69-4a9f-b3c3-1f432295b162</mbid>
 <url>https://www.last.fm/music/Calexico/_/Man+Made+Lake</url>
 <streamable>0</streamable>
@@ -119,11 +119,10 @@
 <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
 <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
 </track>
-<track rank="9"><name>Writer&apos;s Minor Holiday</name>
-<playcount>234101</playcount>
-<listeners>53022</listeners>
-<mbid>7246ee4c-5e93-41b4-88c0-f274234537a3</mbid>
-<url>https://www.last.fm/music/Calexico/_/Writer%27s+Minor+Holiday</url>
+<track rank="9"><name>House Of Valparaiso</name>
+<playcount>270574</playcount>
+<listeners>54813</listeners>
+<url>https://www.last.fm/music/Calexico/_/House+Of+Valparaiso</url>
 <streamable>0</streamable>
 <artist><name>Calexico</name>
 <mbid>5e372a49-5672-4fb8-ba14-18c90780c4f9</mbid>
@@ -134,10 +133,11 @@
 <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
 <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
 </track>
-<track rank="10"><name>House Of Valparaiso</name>
-<playcount>258571</playcount>
-<listeners>52349</listeners>
-<url>https://www.last.fm/music/Calexico/_/House+Of+Valparaiso</url>
+<track rank="10"><name>Writer&apos;s Minor Holiday</name>
+<playcount>239169</playcount>
+<listeners>53825</listeners>
+<mbid>7246ee4c-5e93-41b4-88c0-f274234537a3</mbid>
+<url>https://www.last.fm/music/Calexico/_/Writer%27s+Minor+Holiday</url>
 <streamable>0</streamable>
 <artist><name>Calexico</name>
 <mbid>5e372a49-5672-4fb8-ba14-18c90780c4f9</mbid>

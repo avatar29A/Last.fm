@@ -1,28 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <lfm status="ok">
-  <toptracks user="RJ" page="1" perPage="10" totalPages="5222" total="52220">
+  <toptracks user="RJ" page="1" perPage="10" totalPages="5536" total="55354">
     <track rank="1">
-      <name>Einschlafhilfe Baby Sleepy - 60 Minuten</name>
-      <duration>3590</duration>
-      <playcount>796</playcount>
-      <mbid></mbid>
-      <url>https://www.last.fm/music/Womb+Sounds+Heartbeat/_/Einschlafhilfe+Baby+Sleepy+-+60+Minuten</url>
-      <streamable fulltrack="0">0</streamable>
-      <artist>
-        <name>Womb Sounds Heartbeat</name>
-        <mbid></mbid>
-        <url>https://www.last.fm/music/Womb+Sounds+Heartbeat</url>
-      </artist>
-      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-    </track>
-    <track rank="2">
       <name>Sultans of Swing</name>
-      <duration>346</duration>
-      <playcount>96</playcount>
-      <mbid>000d4079-ce5e-3694-a409-9564e9c26977</mbid>
+      <duration>393</duration>
+      <playcount>100</playcount>
+      <mbid></mbid>
       <url>https://www.last.fm/music/Dire+Straits/_/Sultans+of+Swing</url>
       <streamable fulltrack="0">0</streamable>
       <artist>
@@ -35,28 +18,28 @@
       <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
       <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
     </track>
-    <track rank="3">
-      <name>Superstition</name>
-      <duration>280</duration>
-      <playcount>58</playcount>
-      <mbid>01ae8e92-7483-3bba-92df-6593159cb035</mbid>
-      <url>https://www.last.fm/music/Stevie+Wonder/_/Superstition</url>
+    <track rank="2">
+      <name>Blah Blah Blah</name>
+      <duration>183</duration>
+      <playcount>75</playcount>
+      <mbid></mbid>
+      <url>https://www.last.fm/music/Armin+van+Buuren/_/Blah+Blah+Blah</url>
       <streamable fulltrack="0">0</streamable>
       <artist>
-        <name>Stevie Wonder</name>
-        <mbid>1ee18fb3-18a6-4c7f-8ba0-bc41cdd0462e</mbid>
-        <url>https://www.last.fm/music/Stevie+Wonder</url>
+        <name>Armin van Buuren</name>
+        <mbid>477b8c0c-c5fc-4ad2-b5b2-191f0bf2a9df</mbid>
+        <url>https://www.last.fm/music/Armin+van+Buuren</url>
       </artist>
       <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
       <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
       <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
       <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
     </track>
-    <track rank="4">
+    <track rank="3">
       <name>I Wish You Were Here</name>
-      <duration>265</duration>
-      <playcount>56</playcount>
-      <mbid>10f2e742-41cb-43f9-9a9a-21602a3267db</mbid>
+      <duration>0</duration>
+      <playcount>62</playcount>
+      <mbid>793595fe-433f-456f-bb7f-2eb0a0e67094</mbid>
       <url>https://www.last.fm/music/Alpha+Blondy/_/I+Wish+You+Were+Here</url>
       <streamable fulltrack="0">0</streamable>
       <artist>
@@ -69,11 +52,62 @@
       <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
       <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
     </track>
+    <track rank="4">
+      <name>Regulate</name>
+      <duration>248</duration>
+      <playcount>62</playcount>
+      <mbid></mbid>
+      <url>https://www.last.fm/music/Warren+G/_/Regulate</url>
+      <streamable fulltrack="0">0</streamable>
+      <artist>
+        <name>Warren G</name>
+        <mbid>85d7666c-d3ce-4e2c-8b1b-f20db7cdae4f</mbid>
+        <url>https://www.last.fm/music/Warren+G</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+    </track>
     <track rank="5">
+      <name>Superstition</name>
+      <duration>240</duration>
+      <playcount>58</playcount>
+      <mbid>4b6a95b7-7c68-4358-9438-bc0ccff58590</mbid>
+      <url>https://www.last.fm/music/Stevie+Wonder/_/Superstition</url>
+      <streamable fulltrack="0">0</streamable>
+      <artist>
+        <name>Stevie Wonder</name>
+        <mbid>1ee18fb3-18a6-4c7f-8ba0-bc41cdd0462e</mbid>
+        <url>https://www.last.fm/music/Stevie+Wonder</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+    </track>
+    <track rank="6">
+      <name>Brown Eyed Girl</name>
+      <duration>184</duration>
+      <playcount>58</playcount>
+      <mbid>0e1fe20e-0293-49f5-8db5-792cff58bfae</mbid>
+      <url>https://www.last.fm/music/Van+Morrison/_/Brown+Eyed+Girl</url>
+      <streamable fulltrack="0">0</streamable>
+      <artist>
+        <name>Van Morrison</name>
+        <mbid>a41ac10f-0a56-4672-9161-b83f9b223559</mbid>
+        <url>https://www.last.fm/music/Van+Morrison</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+    </track>
+    <track rank="7">
       <name>Pull Me Under</name>
-      <duration>518</duration>
+      <duration>533</duration>
       <playcount>56</playcount>
-      <mbid>00bcd880-1757-3791-bb88-a47727ffd681</mbid>
+      <mbid></mbid>
       <url>https://www.last.fm/music/Dream+Theater/_/Pull+Me+Under</url>
       <streamable fulltrack="0">0</streamable>
       <artist>
@@ -86,11 +120,28 @@
       <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
       <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
     </track>
-    <track rank="6">
-      <name>Another Day</name>
-      <duration>262</duration>
+    <track rank="8">
+      <name>Walk of Life</name>
+      <duration>250</duration>
       <playcount>55</playcount>
-      <mbid>0406b540-8af6-3786-985c-803e1c3007b0</mbid>
+      <mbid></mbid>
+      <url>https://www.last.fm/music/Dire+Straits/_/Walk+of+Life</url>
+      <streamable fulltrack="0">0</streamable>
+      <artist>
+        <name>Dire Straits</name>
+        <mbid>614e3804-7d34-41ba-857f-811bad7c2b7a</mbid>
+        <url>https://www.last.fm/music/Dire+Straits</url>
+      </artist>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+    </track>
+    <track rank="9">
+      <name>Another Day</name>
+      <duration>263</duration>
+      <playcount>55</playcount>
+      <mbid></mbid>
       <url>https://www.last.fm/music/Dream+Theater/_/Another+Day</url>
       <streamable fulltrack="0">0</streamable>
       <artist>
@@ -103,68 +154,17 @@
       <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
       <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
     </track>
-    <track rank="7">
+    <track rank="10">
       <name>The Pusher</name>
       <duration>343</duration>
       <playcount>55</playcount>
-      <mbid>0070f347-4407-350b-a740-f0db04b6c1dc</mbid>
+      <mbid></mbid>
       <url>https://www.last.fm/music/Steppenwolf/_/The+Pusher</url>
       <streamable fulltrack="0">0</streamable>
       <artist>
         <name>Steppenwolf</name>
         <mbid>12ff8858-bfcb-4812-a8dd-7e9debf0cbee</mbid>
         <url>https://www.last.fm/music/Steppenwolf</url>
-      </artist>
-      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-    </track>
-    <track rank="8">
-      <name>Learning to Live</name>
-      <duration>690</duration>
-      <playcount>54</playcount>
-      <mbid>001146a5-a701-4eab-aa27-f42e118fadaf</mbid>
-      <url>https://www.last.fm/music/Dream+Theater/_/Learning+to+Live</url>
-      <streamable fulltrack="0">0</streamable>
-      <artist>
-        <name>Dream Theater</name>
-        <mbid>28503ab7-8bf2-4666-a7bd-2644bfc7cb1d</mbid>
-        <url>https://www.last.fm/music/Dream+Theater</url>
-      </artist>
-      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-    </track>
-    <track rank="9">
-      <name>Take the Time</name>
-      <duration>501</duration>
-      <playcount>54</playcount>
-      <mbid>0d3ff6f7-178e-3287-b7f1-315f8bc50fd5</mbid>
-      <url>https://www.last.fm/music/Dream+Theater/_/Take+the+Time</url>
-      <streamable fulltrack="0">0</streamable>
-      <artist>
-        <name>Dream Theater</name>
-        <mbid>28503ab7-8bf2-4666-a7bd-2644bfc7cb1d</mbid>
-        <url>https://www.last.fm/music/Dream+Theater</url>
-      </artist>
-      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-      <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-    </track>
-    <track rank="10">
-      <name>Three Minute Warning</name>
-      <duration>1707</duration>
-      <playcount>54</playcount>
-      <mbid>a07866c7-c945-3aec-8143-1e31547453ca</mbid>
-      <url>https://www.last.fm/music/Liquid+Tension+Experiment/_/Three+Minute+Warning</url>
-      <streamable fulltrack="0">0</streamable>
-      <artist>
-        <name>Liquid Tension Experiment</name>
-        <mbid>bc641be9-ca36-4c61-9394-5230433f6646</mbid>
-        <url>https://www.last.fm/music/Liquid+Tension+Experiment</url>
       </artist>
       <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
       <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>

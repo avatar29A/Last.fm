@@ -1,105 +1,555 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <lfm status="ok">
-  <weeklytrackchart user="RJ" from="1593777600" to="1594382400">
+  <weeklytrackchart user="RJ" from="1719748800" to="1720353600">
     <track rank="1">
-      <artist mbid="">Womb Sounds Heartbeat</artist>
-      <name>Einschlafhilfe Baby Sleepy - 60 Minuten</name>
-      <mbid></mbid>
-      <playcount>44</playcount>
+      <artist mbid="280d9262-c2fd-4875-a971-13a28a22f18b">Brooklyn Funk Essentials</artist>
+      <name>I Got Cash</name>
+      <mbid>8d5b619c-9051-3ad5-ac05-fc4257e6fd46</mbid>
+      <playcount>3</playcount>
       <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
       <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
       <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-      <url>https://www.last.fm/music/Womb+Sounds+Heartbeat/_/Einschlafhilfe+Baby+Sleepy+-+60+Minuten</url>
+      <url>https://www.last.fm/music/Brooklyn+Funk+Essentials/_/I+Got+Cash</url>
     </track>
     <track rank="2">
-      <artist mbid="3e30aebd-0557-4cfd-8fb9-3945afa5d72b">Annie Lennox</artist>
-      <name>Walking on Broken Glass</name>
-      <mbid>03453771-a403-4da2-bc2a-998e31623549</mbid>
-      <playcount>1</playcount>
+      <artist mbid="5ccb9a53-092d-4806-b337-470a582893d7">Lit</artist>
+      <name>My Own Worst Enemy</name>
+      <mbid>fed16a39-2342-4b70-a1f9-3d23e84a50a5</mbid>
+      <playcount>3</playcount>
       <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
       <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
       <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-      <url>https://www.last.fm/music/Annie+Lennox/_/Walking+on+Broken+Glass</url>
+      <url>https://www.last.fm/music/Lit/_/My+Own+Worst+Enemy</url>
     </track>
     <track rank="3">
-      <artist mbid="bd13909f-1c29-4c27-a874-d4aaf27c5b1a">Fleetwood Mac</artist>
-      <name>Everywhere</name>
-      <mbid>01e6d909-0f99-4208-ad72-234f7d7089b2</mbid>
-      <playcount>1</playcount>
+      <artist mbid="280d9262-c2fd-4875-a971-13a28a22f18b">Brooklyn Funk Essentials</artist>
+      <name>Blow Your Brains Out</name>
+      <mbid>8a617449-48f3-3d9d-a8b1-2365a5f5d7a1</mbid>
+      <playcount>2</playcount>
       <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
       <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
       <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-      <url>https://www.last.fm/music/Fleetwood+Mac/_/Everywhere</url>
+      <url>https://www.last.fm/music/Brooklyn+Funk+Essentials/_/Blow+Your+Brains+Out</url>
     </track>
     <track rank="4">
-      <artist mbid="">Mark Ronson</artist>
-      <name>Valerie (Feat. Amy Winehouse) - Version Revisited</name>
+      <artist mbid="67f66c07-6e61-4026-ade5-7e782fad3a5d">Foo Fighters</artist>
+      <name>Big Me</name>
+      <mbid>c1e396a0-4813-48c5-81dd-1010a3cebeb9</mbid>
+      <playcount>2</playcount>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <url>https://www.last.fm/music/Foo+Fighters/_/Big+Me</url>
+    </track>
+    <track rank="5">
+      <artist mbid="67f66c07-6e61-4026-ade5-7e782fad3a5d">Foo Fighters</artist>
+      <name>Learn to Fly</name>
+      <mbid></mbid>
+      <playcount>2</playcount>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <url>https://www.last.fm/music/Foo+Fighters/_/Learn+to+Fly</url>
+    </track>
+    <track rank="6">
+      <artist mbid="67f66c07-6e61-4026-ade5-7e782fad3a5d">Foo Fighters</artist>
+      <name>My Hero</name>
+      <mbid>31db9d84-c626-4f37-9216-e62e64b79bd7</mbid>
+      <playcount>2</playcount>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <url>https://www.last.fm/music/Foo+Fighters/_/My+Hero</url>
+    </track>
+    <track rank="7">
+      <artist mbid="084308bd-1654-436f-ba03-df6697104e19">Green Day</artist>
+      <name>When I Come Around</name>
+      <mbid>4efc9188-8f6f-4c82-909e-da4fc01c9684</mbid>
+      <playcount>2</playcount>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <url>https://www.last.fm/music/Green+Day/_/When+I+Come+Around</url>
+    </track>
+    <track rank="8">
+      <artist mbid="6ffb8ea9-2370-44d8-b678-e9237bbd347b">Kings of Leon</artist>
+      <name>Use Somebody</name>
+      <mbid>787d77e9-dac1-4ae3-a5f4-0ebba532f362</mbid>
+      <playcount>2</playcount>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <url>https://www.last.fm/music/Kings+of+Leon/_/Use+Somebody</url>
+    </track>
+    <track rank="9">
+      <artist mbid="1bcb61f3-ca9c-4a26-b16e-0547ad6c21be">Spin Doctors</artist>
+      <name>Two Princes</name>
+      <mbid>c974df91-798b-403b-ba91-e7e36b87473c</mbid>
+      <playcount>2</playcount>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <url>https://www.last.fm/music/Spin+Doctors/_/Two+Princes</url>
+    </track>
+    <track rank="10">
+      <artist mbid="">Sublime</artist>
+      <name>What I Got</name>
+      <mbid>e8f8e03e-92d8-4041-be31-24b89d6f4016</mbid>
+      <playcount>2</playcount>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <url>https://www.last.fm/music/Sublime/_/What+I+Got</url>
+    </track>
+    <track rank="11">
+      <artist mbid="efef848b-63e4-4323-8ef7-69a48fbdd51d">4 Non Blondes</artist>
+      <name>What&apos;s Up?</name>
       <mbid></mbid>
       <playcount>1</playcount>
       <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
       <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
       <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-      <url>https://www.last.fm/music/Mark+Ronson/_/Valerie+(Feat.+Amy+Winehouse)+-+Version+Revisited</url>
+      <url>https://www.last.fm/music/4+Non+Blondes/_/What%27s+Up%3F</url>
     </track>
-    <track rank="5">
-      <artist mbid="">Postman Pat</artist>
-      <name>Jess The Cat</name>
-      <mbid>25b321cc-f4f0-32ea-b89a-33281805e12e</mbid>
+    <track rank="12">
+      <artist mbid="66c662b6-6e2f-4930-8610-912e24c63ed1">AC/DC</artist>
+      <name>You Shook Me All Night Long</name>
+      <mbid></mbid>
       <playcount>1</playcount>
       <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
       <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
       <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-      <url>https://www.last.fm/music/Postman+Pat/_/Jess+The+Cat</url>
+      <url>https://www.last.fm/music/AC%2FDC/_/You+Shook+Me+All+Night+Long</url>
     </track>
-    <track rank="6">
-      <artist mbid="">Postman Pat</artist>
-      <name>Mrs Goggins</name>
-      <mbid>60beb07a-182f-3fce-8b46-e366c68137c0</mbid>
+    <track rank="13">
+      <artist mbid="">Alanis Morissette</artist>
+      <name>Ironic - 2015 Remaster</name>
+      <mbid></mbid>
       <playcount>1</playcount>
       <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
       <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
       <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-      <url>https://www.last.fm/music/Postman+Pat/_/Mrs+Goggins</url>
+      <url>https://www.last.fm/music/Alanis+Morissette/_/Ironic+-+2015+Remaster</url>
     </track>
-    <track rank="7">
-      <artist mbid="">Postman Pat</artist>
-      <name>SDS Theme Tune</name>
-      <mbid>008b6281-5feb-4b67-9371-c1b51296d3ba</mbid>
+    <track rank="14">
+      <artist mbid="4bdcee62-4902-4773-8cd1-e252e2e31225">Alanis Morissette</artist>
+      <name>You Oughta Know - 2015 Remaster</name>
+      <mbid>05d71671-a837-401a-a88a-9e09bbafea87</mbid>
       <playcount>1</playcount>
       <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
       <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
       <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-      <url>https://www.last.fm/music/Postman+Pat/_/SDS+Theme+Tune</url>
+      <url>https://www.last.fm/music/Alanis+Morissette/_/You+Oughta+Know+-+2015+Remaster</url>
     </track>
-    <track rank="8">
-      <artist mbid="">Postman Pat</artist>
-      <name>Ted Glen</name>
-      <mbid>2174ecf5-8154-382e-8d95-4c9ff14c79e1</mbid>
+    <track rank="15">
+      <artist mbid="6b28ecf0-94e6-48bb-aa2a-5ede325b675b">Blues Traveler</artist>
+      <name>Run-Around</name>
+      <mbid>125b6be9-f94f-4437-b7c4-b8f095c6641c</mbid>
       <playcount>1</playcount>
       <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
       <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
       <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-      <url>https://www.last.fm/music/Postman+Pat/_/Ted+Glen</url>
+      <url>https://www.last.fm/music/Blues+Traveler/_/Run-Around</url>
     </track>
-    <track rank="9">
-      <artist mbid="55704c38-224f-4b75-b29f-d43653f8bc9a">Primal Scream</artist>
-      <name>Movin&apos; On Up</name>
-      <mbid>05a2792f-491c-4380-8f74-3ecd29fa4ab5</mbid>
+    <track rank="16">
+      <artist mbid="280d9262-c2fd-4875-a971-13a28a22f18b">Brooklyn Funk Essentials</artist>
+      <name>Miss Mess</name>
+      <mbid>c56c6792-0188-4911-b81c-bb37c39180f3</mbid>
       <playcount>1</playcount>
       <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
       <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
       <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-      <url>https://www.last.fm/music/Primal+Scream/_/Movin%27+On+Up</url>
+      <url>https://www.last.fm/music/Brooklyn+Funk+Essentials/_/Miss+Mess</url>
     </track>
-    <track rank="10">
-      <artist mbid="a41ac10f-0a56-4672-9161-b83f9b223559">Van Morrison</artist>
-      <name>Brown Eyed Girl</name>
-      <mbid>004325a6-7305-36f8-a360-da6cf5a4563d</mbid>
+    <track rank="17">
+      <artist mbid="280d9262-c2fd-4875-a971-13a28a22f18b">Brooklyn Funk Essentials</artist>
+      <name>Take The L Train</name>
+      <mbid>50909708-ebbf-33a6-ad56-9465c0f1dac2</mbid>
       <playcount>1</playcount>
       <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
       <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
       <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-      <url>https://www.last.fm/music/Van+Morrison/_/Brown+Eyed+Girl</url>
+      <url>https://www.last.fm/music/Brooklyn+Funk+Essentials/_/Take+The+L+Train</url>
+    </track>
+    <track rank="18">
+      <artist mbid="280d9262-c2fd-4875-a971-13a28a22f18b">Brooklyn Funk Essentials</artist>
+      <name>To My Peeps</name>
+      <mbid>e74d0e27-9810-33b7-a9de-c1cfc5a8b0f4</mbid>
+      <playcount>1</playcount>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <url>https://www.last.fm/music/Brooklyn+Funk+Essentials/_/To+My+Peeps</url>
+    </track>
+    <track rank="19">
+      <artist mbid="fa7b9055-3703-473a-8a09-adf2fe031a24">Cake</artist>
+      <name>The Distance</name>
+      <mbid>d21bc558-7985-446c-9ae5-baab147637dd</mbid>
+      <playcount>1</playcount>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <url>https://www.last.fm/music/Cake/_/The+Distance</url>
+    </track>
+    <track rank="20">
+      <artist mbid="7b7b1e6f-e73e-41a0-9d72-8f0b30c6992d">Chumbawamba</artist>
+      <name>Tubthumping</name>
+      <mbid>620f07e8-79e8-3b8b-bf86-eb18544434cf</mbid>
+      <playcount>1</playcount>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <url>https://www.last.fm/music/Chumbawamba/_/Tubthumping</url>
+    </track>
+    <track rank="21">
+      <artist mbid="8996b655-fbad-4018-b430-1bd8fab43235">Crazy Town</artist>
+      <name>Butterfly</name>
+      <mbid></mbid>
+      <playcount>1</playcount>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <url>https://www.last.fm/music/Crazy+Town/_/Butterfly</url>
+    </track>
+    <track rank="22">
+      <artist mbid="109958eb-a335-4c5e-907e-597ff4c6af46">Creedence Clearwater Revival</artist>
+      <name>Fortunate Son</name>
+      <mbid>4cafa79c-8754-4c90-b3d4-cde5d1487be6</mbid>
+      <playcount>1</playcount>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <url>https://www.last.fm/music/Creedence+Clearwater+Revival/_/Fortunate+Son</url>
+    </track>
+    <track rank="23">
+      <artist mbid="8538e728-ca0b-4321-b7e5-cff6565dd4c0">Depeche Mode</artist>
+      <name>Enjoy the Silence</name>
+      <mbid></mbid>
+      <playcount>1</playcount>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <url>https://www.last.fm/music/Depeche+Mode/_/Enjoy+the+Silence</url>
+    </track>
+    <track rank="24">
+      <artist mbid="d1353a0c-26fb-4318-a116-defde9c7c9ad">Dido</artist>
+      <name>Thank You</name>
+      <mbid>bc50dd79-d3c3-4c00-8421-2afaf1e24ceb</mbid>
+      <playcount>1</playcount>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <url>https://www.last.fm/music/Dido/_/Thank+You</url>
+    </track>
+    <track rank="25">
+      <artist mbid="b03fc204-7564-4ceb-8b9a-aaac372a8911">Dionne Farris</artist>
+      <name>I Know</name>
+      <mbid>0c8ae976-c9df-49b9-a582-1542031f9b1b</mbid>
+      <playcount>1</playcount>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <url>https://www.last.fm/music/Dionne+Farris/_/I+Know</url>
+    </track>
+    <track rank="26">
+      <artist mbid="ca39d50f-9885-420e-88d6-9c3f64038773">Everlast</artist>
+      <name>What It&apos;s Like</name>
+      <mbid>ecc4ec9d-986a-4491-a59e-2b4e46f1e110</mbid>
+      <playcount>1</playcount>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <url>https://www.last.fm/music/Everlast/_/What+It%27s+Like</url>
+    </track>
+    <track rank="27">
+      <artist mbid="516cef4d-0718-4007-9939-f9b38af3f784">Fall Out Boy</artist>
+      <name>Dance, Dance</name>
+      <mbid></mbid>
+      <playcount>1</playcount>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <url>https://www.last.fm/music/Fall+Out+Boy/_/Dance,+Dance</url>
+    </track>
+    <track rank="28">
+      <artist mbid="516cef4d-0718-4007-9939-f9b38af3f784">Fall Out Boy</artist>
+      <name>Sugar, We&apos;re Goin Down</name>
+      <mbid></mbid>
+      <playcount>1</playcount>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <url>https://www.last.fm/music/Fall+Out+Boy/_/Sugar,+We%27re+Goin+Down</url>
+    </track>
+    <track rank="29">
+      <artist mbid="67f66c07-6e61-4026-ade5-7e782fad3a5d">Foo Fighters</artist>
+      <name>All My Life</name>
+      <mbid>d9d90f1f-0c13-4197-bbc6-b981ad958ae1</mbid>
+      <playcount>1</playcount>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <url>https://www.last.fm/music/Foo+Fighters/_/All+My+Life</url>
+    </track>
+    <track rank="30">
+      <artist mbid="67f66c07-6e61-4026-ade5-7e782fad3a5d">Foo Fighters</artist>
+      <name>Best of You</name>
+      <mbid>935e594f-f3ff-4fb1-9b25-aa1bb8a9d8d4</mbid>
+      <playcount>1</playcount>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <url>https://www.last.fm/music/Foo+Fighters/_/Best+of+You</url>
+    </track>
+    <track rank="31">
+      <artist mbid="e0e1a584-dd0a-4bd1-88d1-c4c62895039d">Foster the People</artist>
+      <name>Pumped Up Kicks</name>
+      <mbid></mbid>
+      <playcount>1</playcount>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <url>https://www.last.fm/music/Foster+the+People/_/Pumped+Up+Kicks</url>
+    </track>
+    <track rank="32">
+      <artist mbid="084308bd-1654-436f-ba03-df6697104e19">Green Day</artist>
+      <name>Basket Case</name>
+      <mbid></mbid>
+      <playcount>1</playcount>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <url>https://www.last.fm/music/Green+Day/_/Basket+Case</url>
+    </track>
+    <track rank="33">
+      <artist mbid="084308bd-1654-436f-ba03-df6697104e19">Green Day</artist>
+      <name>Hitchin&apos; a Ride</name>
+      <mbid>ad13ce84-cc0f-421c-a622-a5f6cc12571f</mbid>
+      <playcount>1</playcount>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <url>https://www.last.fm/music/Green+Day/_/Hitchin%27+a+Ride</url>
+    </track>
+    <track rank="34">
+      <artist mbid="34e10b51-b5c6-4bc1-b70e-f05f141eda1e">John Denver</artist>
+      <name>Take Me Home, Country Roads</name>
+      <mbid></mbid>
+      <playcount>1</playcount>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <url>https://www.last.fm/music/John+Denver/_/Take+Me+Home,+Country+Roads</url>
+    </track>
+    <track rank="35">
+      <artist mbid="ac865b2e-bba8-4f5a-8756-dd40d5e39f46">Korn</artist>
+      <name>Freak on a Leash</name>
+      <mbid>7495649c-ed7d-4c21-9a8b-1bc207f45c3d</mbid>
+      <playcount>1</playcount>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <url>https://www.last.fm/music/Korn/_/Freak+on+a+Leash</url>
+    </track>
+    <track rank="36">
+      <artist mbid="6f033da5-396f-4381-a581-1f38c2d0a2d4">Meredith Brooks</artist>
+      <name>Bitch</name>
+      <mbid></mbid>
+      <playcount>1</playcount>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <url>https://www.last.fm/music/Meredith+Brooks/_/Bitch</url>
+    </track>
+    <track rank="37">
+      <artist mbid="60530915-9371-4b16-bc31-5c4456317ae0">Natalie Imbruglia</artist>
+      <name>Torn</name>
+      <mbid></mbid>
+      <playcount>1</playcount>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <url>https://www.last.fm/music/Natalie+Imbruglia/_/Torn</url>
+    </track>
+    <track rank="38">
+      <artist mbid="">Nirvana</artist>
+      <name>Come as You Are</name>
+      <mbid>486a6cd7-f064-4aba-8dcd-2295a7c2fc14</mbid>
+      <playcount>1</playcount>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <url>https://www.last.fm/music/Nirvana/_/Come+as+You+Are</url>
+    </track>
+    <track rank="39">
+      <artist mbid="">Oasis</artist>
+      <name>Wonderwall - Remastered</name>
+      <mbid></mbid>
+      <playcount>1</playcount>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <url>https://www.last.fm/music/Oasis/_/Wonderwall+-+Remastered</url>
+    </track>
+    <track rank="40">
+      <artist mbid="">OMC</artist>
+      <name>How Bizarre</name>
+      <mbid>b3e5fe92-90df-4fbd-a415-8a0523691ecf</mbid>
+      <playcount>1</playcount>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <url>https://www.last.fm/music/OMC/_/How+Bizarre</url>
+    </track>
+    <track rank="41">
+      <artist mbid="17d218e4-3c75-45af-88f9-d47ed2f75e39">Santana</artist>
+      <name>Maria Maria (feat. The Product G&amp;B)</name>
+      <mbid></mbid>
+      <playcount>1</playcount>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <url>https://www.last.fm/music/Santana/_/Maria+Maria+(feat.+The+Product+G&amp;B)</url>
+    </track>
+    <track rank="42">
+      <artist mbid="17d218e4-3c75-45af-88f9-d47ed2f75e39">Santana</artist>
+      <name>Smooth (feat. Rob Thomas)</name>
+      <mbid>4d14cc27-57a9-3196-9eb7-2bef0d2e066f</mbid>
+      <playcount>1</playcount>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <url>https://www.last.fm/music/Santana/_/Smooth+(feat.+Rob+Thomas)</url>
+    </track>
+    <track rank="43">
+      <artist mbid="c2c70ed6-5f10-445c-969f-2c16bc9a4c2e">Sixpence None the Richer</artist>
+      <name>Kiss Me</name>
+      <mbid></mbid>
+      <playcount>1</playcount>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <url>https://www.last.fm/music/Sixpence+None+the+Richer/_/Kiss+Me</url>
+    </track>
+    <track rank="44">
+      <artist mbid="">Stardust</artist>
+      <name>Music Sounds Better With You - Radio Edit</name>
+      <mbid></mbid>
+      <playcount>1</playcount>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <url>https://www.last.fm/music/Stardust/_/Music+Sounds+Better+With+You+-+Radio+Edit</url>
+    </track>
+    <track rank="45">
+      <artist mbid="">Supergrass</artist>
+      <name>Alright - 2015 Remaster</name>
+      <mbid></mbid>
+      <playcount>1</playcount>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <url>https://www.last.fm/music/Supergrass/_/Alright+-+2015+Remaster</url>
+    </track>
+    <track rank="46">
+      <artist mbid="f8364fea-e139-4e9b-9f95-2081dc7a91b6">Tal Bachman</artist>
+      <name>She&apos;s So High</name>
+      <mbid>2b1d83f4-0c81-4a56-9d78-79ee6bbc685c</mbid>
+      <playcount>1</playcount>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <url>https://www.last.fm/music/Tal+Bachman/_/She%27s+So+High</url>
+    </track>
+    <track rank="47">
+      <artist mbid="3e55d51d-687f-4a9d-af96-2fabccf802e5">The Cardigans</artist>
+      <name>Lovefool</name>
+      <mbid></mbid>
+      <playcount>1</playcount>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <url>https://www.last.fm/music/The+Cardigans/_/Lovefool</url>
+    </track>
+    <track rank="48">
+      <artist mbid="c98d40fd-f6cf-4b26-883e-eaa515ee2851">The Cranberries</artist>
+      <name>Dreams</name>
+      <mbid>71795dfd-3420-4fec-a684-ba6e8d32451c</mbid>
+      <playcount>1</playcount>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <url>https://www.last.fm/music/The+Cranberries/_/Dreams</url>
+    </track>
+    <track rank="49">
+      <artist mbid="e2c00c56-8365-4160-9f40-a64682917633">The Goo Goo Dolls</artist>
+      <name>Iris</name>
+      <mbid>cef4d7e6-5f96-40ad-8841-e870a06e36e1</mbid>
+      <playcount>1</playcount>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <url>https://www.last.fm/music/The+Goo+Goo+Dolls/_/Iris</url>
+    </track>
+    <track rank="50">
+      <artist mbid="f82f3a3e-29c2-42ca-b589-bc5dc210fa9e">The Kooks</artist>
+      <name>Pumped Up Kicks - BBC Live Version</name>
+      <mbid></mbid>
+      <playcount>1</playcount>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <url>https://www.last.fm/music/The+Kooks/_/Pumped+Up+Kicks+-+BBC+Live+Version</url>
+    </track>
+    <track rank="51">
+      <artist mbid="23a03e33-a603-404e-bcbf-2c00159d7067">The Offspring</artist>
+      <name>All I Want</name>
+      <mbid>6d324717-8a7c-3144-8b98-ad961bb78d91</mbid>
+      <playcount>1</playcount>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <url>https://www.last.fm/music/The+Offspring/_/All+I+Want</url>
+    </track>
+    <track rank="52">
+      <artist mbid="23a03e33-a603-404e-bcbf-2c00159d7067">The Offspring</artist>
+      <name>Come Out and Play</name>
+      <mbid>d1ac4e85-81c2-4f89-84d1-2596df3f2a8c</mbid>
+      <playcount>1</playcount>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <url>https://www.last.fm/music/The+Offspring/_/Come+Out+and+Play</url>
+    </track>
+    <track rank="53">
+      <artist mbid="d4d17620-fd97-4574-92a8-a2cb7e72ce42">The Verve</artist>
+      <name>Bitter Sweet Symphony - Remastered 2016</name>
+      <mbid>0ca8d9fa-7b69-441a-8a6d-5619d8f720c1</mbid>
+      <playcount>1</playcount>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <url>https://www.last.fm/music/The+Verve/_/Bitter+Sweet+Symphony+-+Remastered+2016</url>
+    </track>
+    <track rank="54">
+      <artist mbid="741a2892-1c5d-402f-a769-2096356c77d7">Wheatus</artist>
+      <name>Teenage Dirtbag</name>
+      <mbid>4d566c66-1f60-4506-ab9e-19078a90572d</mbid>
+      <playcount>1</playcount>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <url>https://www.last.fm/music/Wheatus/_/Teenage+Dirtbag</url>
+    </track>
+    <track rank="55">
+      <artist mbid="b9068fde-91c8-48bf-8655-8d74c24ef4c5">White Town</artist>
+      <name>Your Woman</name>
+      <mbid></mbid>
+      <playcount>1</playcount>
+      <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+      <url>https://www.last.fm/music/White+Town/_/Your+Woman</url>
     </track>
   </weeklytrackchart>
 </lfm>

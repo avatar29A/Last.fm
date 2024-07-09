@@ -1,67 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<lfm status="ok"><artists page="1" perPage="10" totalPages="320605" total="3206050"><artist><name>The Weeknd</name>
-<playcount>119914510</playcount>
-<listeners>1576337</listeners>
-<mbid>c8b03190-306c-4120-bb0b-6f2ebfc06ea9</mbid>
-<url>https://www.last.fm/music/The+Weeknd</url>
-<streamable>0</streamable>
-<image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-<image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-<image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-<image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-<image size="mega">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-</artist>
-<artist><name>Lady Gaga</name>
-<playcount>333410888</playcount>
-<listeners>4053531</listeners>
-<mbid>650e7db6-b795-4eb5-a702-5ea2fc46c848</mbid>
-<url>https://www.last.fm/music/Lady+Gaga</url>
-<streamable>0</streamable>
-<image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-<image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-<image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-<image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-<image size="mega">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-</artist>
-<artist><name>Kanye West</name>
-<playcount>295684818</playcount>
-<listeners>4618903</listeners>
-<mbid>164f0d73-1234-4e2c-8743-d77bf2191051</mbid>
-<url>https://www.last.fm/music/Kanye+West</url>
-<streamable>0</streamable>
-<image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-<image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-<image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-<image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-<image size="mega">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-</artist>
-<artist><name>Dua Lipa</name>
-<playcount>55392463</playcount>
-<listeners>778809</listeners>
-<mbid></mbid>
-<url>https://www.last.fm/music/Dua+Lipa</url>
-<streamable>0</streamable>
-<image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-<image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-<image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-<image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-<image size="mega">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-</artist>
-<artist><name>Drake</name>
-<playcount>170392277</playcount>
-<listeners>3602701</listeners>
-<mbid>b49b81cc-d5b7-4bdd-aadb-385df8de69a6</mbid>
-<url>https://www.last.fm/music/Drake</url>
-<streamable>0</streamable>
-<image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-<image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-<image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-<image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-<image size="mega">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-</artist>
-<artist><name>Billie Eilish</name>
-<playcount>64672202</playcount>
-<listeners>827704</listeners>
+<lfm status="ok"><artists page="1" perPage="10" totalPages="577035" total="5770344"><artist><name>Billie Eilish</name>
+<playcount>442924555</playcount>
+<listeners>3002566</listeners>
 <mbid></mbid>
 <url>https://www.last.fm/music/Billie+Eilish</url>
 <streamable>0</streamable>
@@ -71,21 +11,9 @@
 <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
 <image size="mega">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
 </artist>
-<artist><name>Ariana Grande</name>
-<playcount>161165885</playcount>
-<listeners>1332957</listeners>
-<mbid>f4fdbb4c-e4b7-47a0-b83b-d91bbfcfa387</mbid>
-<url>https://www.last.fm/music/Ariana+Grande</url>
-<streamable>0</streamable>
-<image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-<image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-<image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-<image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-<image size="mega">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
-</artist>
 <artist><name>Kendrick Lamar</name>
-<playcount>128125038</playcount>
-<listeners>1676729</listeners>
+<playcount>568021363</playcount>
+<listeners>3754579</listeners>
 <mbid>381086ea-f511-4aba-bdf9-71c753dc5077</mbid>
 <url>https://www.last.fm/music/Kendrick+Lamar</url>
 <streamable>0</streamable>
@@ -95,11 +23,11 @@
 <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
 <image size="mega">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
 </artist>
-<artist><name>Post Malone</name>
-<playcount>57077830</playcount>
-<listeners>843372</listeners>
-<mbid></mbid>
-<url>https://www.last.fm/music/Post+Malone</url>
+<artist><name>Sabrina Carpenter</name>
+<playcount>151654025</playcount>
+<listeners>1807358</listeners>
+<mbid>1882fe91-cdd9-49c9-9956-8e06a3810bd4</mbid>
+<url>https://www.last.fm/music/Sabrina+Carpenter</url>
 <streamable>0</streamable>
 <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
 <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
@@ -107,11 +35,83 @@
 <image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
 <image size="mega">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
 </artist>
-<artist><name>The Beatles</name>
-<playcount>551939068</playcount>
-<listeners>3867365</listeners>
-<mbid>b10bbbfc-cf9e-42e0-be17-e2c3e1d2600d</mbid>
-<url>https://www.last.fm/music/The+Beatles</url>
+<artist><name>The Weeknd</name>
+<playcount>671989517</playcount>
+<listeners>4008761</listeners>
+<mbid>c8b03190-306c-4120-bb0b-6f2ebfc06ea9</mbid>
+<url>https://www.last.fm/music/The+Weeknd</url>
+<streamable>0</streamable>
+<image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+<image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+<image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+<image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+<image size="mega">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+</artist>
+<artist><name>Taylor Swift</name>
+<playcount>2456794275</playcount>
+<listeners>4714093</listeners>
+<mbid>20244d07-534f-4eff-b4d4-930878889970</mbid>
+<url>https://www.last.fm/music/Taylor+Swift</url>
+<streamable>0</streamable>
+<image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+<image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+<image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+<image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+<image size="mega">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+</artist>
+<artist><name>Kanye West</name>
+<playcount>1055050746</playcount>
+<listeners>6666758</listeners>
+<mbid>164f0d73-1234-4e2c-8743-d77bf2191051</mbid>
+<url>https://www.last.fm/music/Kanye+West</url>
+<streamable>0</streamable>
+<image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+<image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+<image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+<image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+<image size="mega">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+</artist>
+<artist><name>Lana Del Rey</name>
+<playcount>992838757</playcount>
+<listeners>4117969</listeners>
+<mbid>b7539c32-53e7-4908-bda3-81449c367da6</mbid>
+<url>https://www.last.fm/music/Lana+Del+Rey</url>
+<streamable>0</streamable>
+<image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+<image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+<image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+<image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+<image size="mega">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+</artist>
+<artist><name>Tyler, the Creator</name>
+<playcount>541121446</playcount>
+<listeners>2965842</listeners>
+<mbid>f6beac20-5dfe-4d1f-ae02-0b0a740aafd6</mbid>
+<url>https://www.last.fm/music/Tyler,+the+Creator</url>
+<streamable>0</streamable>
+<image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+<image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+<image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+<image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+<image size="mega">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+</artist>
+<artist><name>Drake</name>
+<playcount>715600949</playcount>
+<listeners>5615331</listeners>
+<mbid>b49b81cc-d5b7-4bdd-aadb-385df8de69a6</mbid>
+<url>https://www.last.fm/music/Drake</url>
+<streamable>0</streamable>
+<image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+<image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+<image size="large">https://lastfm.freetls.fastly.net/i/u/174s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+<image size="extralarge">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+<image size="mega">https://lastfm.freetls.fastly.net/i/u/300x300/2a96cbd8b46e442fc41c2b86b821562f.png</image>
+</artist>
+<artist><name>Ariana Grande</name>
+<playcount>662031086</playcount>
+<listeners>3335155</listeners>
+<mbid>f4fdbb4c-e4b7-47a0-b83b-d91bbfcfa387</mbid>
+<url>https://www.last.fm/music/Ariana+Grande</url>
 <streamable>0</streamable>
 <image size="small">https://lastfm.freetls.fastly.net/i/u/34s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
 <image size="medium">https://lastfm.freetls.fastly.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png</image>
