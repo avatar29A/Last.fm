@@ -25,13 +25,13 @@
         {
             var tag = await client.Tag.GetInfoAsync(data["tag"]);
 
-            Assert.NotNull(tag.Name);
-            //Assert.NotNull(tag.Url);
+            Assert.That(tag.Name, Is.Not.Null);
+            //Assert.That(tag.Url, Is.Not.Null);
 
-            Assert.NotNull(tag.Wiki);
+            Assert.That(tag.Wiki, Is.Not.Null);
 
-            Assert.Greater(tag.Total, 0);
-            Assert.Greater(tag.Reach, 0);
+            Assert.That(tag.Total, Is.GreaterThan(0));
+            Assert.That(tag.Reach, Is.GreaterThan(0));
         }
 
         [Test]
@@ -39,7 +39,7 @@
         {
             var albums = await client.Tag.GetTopAlbumsAsync(data["tag"]);
 
-            Assert.Greater(albums.Count, 0);
+            Assert.That(albums, Is.Not.Empty);
         }
 
         [Test]
@@ -47,7 +47,7 @@
         {
             var artists = await client.Tag.GetTopArtistsAsync(data["tag"]);
 
-            Assert.Greater(artists.Count, 0);
+            Assert.That(artists, Is.Not.Empty);
         }
 
         [Test]
@@ -55,7 +55,7 @@
         {
             var tags = await client.Tag.GetTopTagsAsync();
 
-            Assert.Greater(tags.Count, 0);
+            Assert.That(tags, Is.Not.Empty);
         }
 
         [Test]
@@ -63,7 +63,7 @@
         {
             var tracks = await client.Tag.GetTopTracksAsync(data["tag"]);
 
-            Assert.Greater(tracks.Count, 0);
+            Assert.That(tracks, Is.Not.Empty);
         }
     }
 }

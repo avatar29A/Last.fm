@@ -25,8 +25,8 @@
         {
             var artist = await client.Artist.GetCorrectionAsync("guns%20and%20roses");
 
-            Assert.NotNull(artist.Name);
-            Assert.NotNull(artist.Url);
+            Assert.That(artist.Name, Is.Not.Null);
+            Assert.That(artist.Url, Is.Not.Null);
         }
 
         [Test]
@@ -34,18 +34,18 @@
         {
             var artist = await client.Artist.GetInfoAsync(data["artist"]);
 
-            Assert.NotNull(artist.Name);
-            Assert.NotNull(artist.Url);
-            Assert.NotNull(artist.MBID);
+            Assert.That(artist.Name, Is.Not.Null);
+            Assert.That(artist.Url, Is.Not.Null);
+            Assert.That(artist.MBID, Is.Not.Null);
 
-            Assert.Greater(artist.Statistics.PlayCount, 0);
-            Assert.Greater(artist.Statistics.Listeners, 0);
+            Assert.That(artist.Statistics.PlayCount, Is.GreaterThan(0));
+            Assert.That(artist.Statistics.Listeners, Is.GreaterThan(0));
 
-            Assert.Greater(artist.Images.Count, 0);
-            Assert.Greater(artist.Similar.Count, 0);
-            Assert.Greater(artist.Tags.Count, 0);
+            Assert.That(artist.Images, Is.Not.Empty);
+            Assert.That(artist.Similar, Is.Not.Empty);
+            Assert.That(artist.Tags, Is.Not.Empty);
 
-            Assert.NotNull(artist.Biography);
+            Assert.That(artist.Biography, Is.Not.Null);
         }
 
         [Test]
@@ -53,7 +53,7 @@
         {
             var artists = await client.Artist.GetSimilarAsync(data["artist"], 10);
 
-            Assert.Greater(artists.Count, 0);
+            Assert.That(artists, Is.Not.Empty);
         }
 
         [Test]
@@ -61,7 +61,7 @@
         {
             var tags = await client.Artist.GetTagsAsync("RJ", "red hot chili peppers");
 
-            Assert.Greater(tags.Count, 0);
+            Assert.That(tags, Is.Not.Empty);
         }
 
         [Test]
@@ -69,7 +69,7 @@
         {
             var tags = await client.Artist.GetTopAlbumsAsync(data["artist"]);
 
-            Assert.Greater(tags.Count, 0);
+            Assert.That(tags, Is.Not.Empty);
         }
 
         [Test]
@@ -77,7 +77,7 @@
         {
             var tags = await client.Artist.GetTopTagsAsync(data["artist"]);
 
-            Assert.Greater(tags.Count, 0);
+            Assert.That(tags, Is.Not.Empty);
         }
 
         [Test]
@@ -85,7 +85,7 @@
         {
             var tags = await client.Artist.GetTopTracksAsync(data["artist"]);
 
-            Assert.Greater(tags.Count, 0);
+            Assert.That(tags, Is.Not.Empty);
         }
 
         [Test]
@@ -93,9 +93,9 @@
         {
             var response = await client.Artist.SearchAsync(data["artist"], limit: 10);
 
-            Assert.Greater(response.Items.Count, 0);
-            Assert.NotNull(response.PageInfo);
-            Assert.Greater(response.PageInfo.Total, 0);
+            Assert.That(response.Items, Is.Not.Empty);
+            Assert.That(response.PageInfo, Is.Not.Null);
+            Assert.That(response.PageInfo.Total, Is.GreaterThan(0));
         }
     }
 }

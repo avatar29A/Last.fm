@@ -12,10 +12,13 @@
     <age>0</age>
     <gender>n</gender>
     <subscriber>1</subscriber>
-    <playcount>132755</playcount>
+    <playcount>142503</playcount>
     <playlists>0</playlists>
     <bootstrap>0</bootstrap>
     <registered unixtime="1037793040">1037793040</registered>
     <type>alum</type>
+    <artist_count>12450</artist_count>
+    <album_count>25678</album_count>
+    <track_count>55354</track_count>
   </user>
 </lfm>

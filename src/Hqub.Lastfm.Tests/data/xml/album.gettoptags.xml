@@ -15,7 +15,7 @@
 <name>albums I own</name>
 <url>https://www.last.fm/tag/albums+I+own</url>
 </tag>
-<tag><count>29</count>
+<tag><count>34</count>
 <name>2003</name>
 <url>https://www.last.fm/tag/2003</url>
 </tag>
@@ -70,6 +70,10 @@
 <tag><count>10</count>
 <name>2000s</name>
 <url>https://www.last.fm/tag/2000s</url>
+</tag>
+<tag><count>10</count>
+<name>calexico</name>
+<url>https://www.last.fm/tag/calexico</url>
 </tag>
 <tag><count>10</count>
 <name>cosmic American music</name>
@@ -170,10 +174,6 @@
 <tag><count>5</count>
 <name>neko case</name>
 <url>https://www.last.fm/tag/neko+case</url>
-</tag>
-<tag><count>5</count>
-<name>calexico</name>
-<url>https://www.last.fm/tag/calexico</url>
 </tag>
 <tag><count>5</count>
 <name>tex-mex</name>

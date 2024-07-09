@@ -25,9 +25,9 @@
         {
             var response = await client.Track.SearchAsync(data["track"], data["artist"], limit: 10);
 
-            Assert.Greater(response.Items.Count, 0);
-            Assert.NotNull(response.PageInfo);
-            Assert.Greater(response.PageInfo.Total, 0);
+            Assert.That(response.Items, Is.Not.Empty);
+            Assert.That(response.PageInfo, Is.Not.Null);
+            Assert.That(response.PageInfo.Total, Is.GreaterThan(0));
         }
 
         [Test]
@@ -35,10 +35,10 @@
         {
             var track = await client.Track.GetCorrectionAsync("Mrbrownston", "guns%20and%20roses");
 
-            Assert.NotNull(track.Name);
-            Assert.NotNull(track.Url);
+            Assert.That(track.Name, Is.Not.Null);
+            Assert.That(track.Url, Is.Not.Null);
 
-            Assert.NotNull(track.Artist);
+            Assert.That(track.Artist, Is.Not.Null);
         }
 
         [Test]
@@ -46,17 +46,17 @@
         {
             var track = await client.Track.GetInfoAsync(data["track"], data["artist"]);
 
-            Assert.NotNull(track.Name);
-            Assert.NotNull(track.Url);
-            Assert.NotNull(track.MBID);
+            Assert.That(track.Name, Is.Not.Null);
+            Assert.That(track.Url, Is.Not.Null);
+            Assert.That(track.MBID, Is.Not.Null);
 
-            Assert.NotNull(track.Artist);
-            Assert.NotNull(track.Album);
-            Assert.NotNull(track.Tags);
-            Assert.NotNull(track.Wiki);
+            Assert.That(track.Artist, Is.Not.Null);
+            Assert.That(track.Album, Is.Not.Null);
+            Assert.That(track.Tags, Is.Not.Null);
+            Assert.That(track.Wiki, Is.Not.Null);
 
-            Assert.Greater(track.Statistics.PlayCount, 0);
-            Assert.Greater(track.Statistics.Listeners, 0);
+            Assert.That(track.Statistics.PlayCount, Is.GreaterThan(0));
+            Assert.That(track.Statistics.Listeners, Is.GreaterThan(0));
         }
 
         [Test]
@@ -64,7 +64,7 @@
         {
             var tracks = await client.Track.GetSimilarAsync(data["track"], data["artist"], 10);
 
-            Assert.Greater(tracks.Count, 0);
+            Assert.That(tracks, Is.Not.Empty);
         }
 
         [Test]
@@ -72,7 +72,7 @@
         {
             var tags = await client.Track.GetTagsAsync("RJ", "Hells Bells", "AC/DC");
 
-            Assert.Greater(tags.Count, 0);
+            Assert.That(tags, Is.Not.Empty);
         }
 
         [Test]
@@ -80,7 +80,7 @@
         {
             var tags = await client.Track.GetTopTagsAsync(data["track"], data["artist"]);
 
-            Assert.Greater(tags.Count, 0);
+            Assert.That(tags, Is.Not.Empty);
         }
     }
 }
