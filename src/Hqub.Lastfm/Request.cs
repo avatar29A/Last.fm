@@ -58,6 +58,11 @@ namespace Hqub.Lastfm
 
         public async Task<XDocument> GetAsync(CancellationToken ct = default, bool secure = false)
         {
+            if (session.Authenticated)
+            {
+                Parameters["sk"] = session.SessionKey;
+            }
+            
             try
             {
                 var query = Parameters.ToString();
@@ -131,7 +136,7 @@ namespace Hqub.Lastfm
         {
             var sb = new StringBuilder();
 
-            foreach (var item in Parameters)
+            foreach (var item in Parameters.OrderBy(r=>r.Key))
             {
                 sb.Append(item.Key);
                 sb.Append(item.Value);

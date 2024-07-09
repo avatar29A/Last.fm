@@ -210,11 +210,13 @@ namespace Hqub.Lastfm
 
             request.Parameters["token"] = token;
 
+            request.Sign();
+
             var doc = await request.PostAsync();
 
             token = null;
 
-            Session.SessionKey = doc.Root.Element("key").Value;
+            Session.SessionKey = doc.Root.Element("session").Element("key").Value;
         }
 
         #endregion

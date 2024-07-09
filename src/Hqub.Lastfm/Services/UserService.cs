@@ -15,7 +15,7 @@ namespace Hqub.Lastfm.Services
         }
 
         /// <inheritdoc />
-        public async Task<User> GetInfoAsync(string user)
+        public async Task<User> GetInfoAsync(string user = null)
         {
             var request = client.CreateRequest("user.getInfo");
 
@@ -29,7 +29,7 @@ namespace Hqub.Lastfm.Services
         }
 
         /// <inheritdoc />
-        public async Task<PagedResponse<User>> GetFriendsAsync(string user, bool recenttracks = false, int page = 1, int limit = 50)
+        public async Task<PagedResponse<User>> GetFriendsAsync(string user = null, bool recenttracks = false, int page = 1, int limit = 50)
         {
             var request = client.CreateRequest("user.getFriends");
 
@@ -55,7 +55,7 @@ namespace Hqub.Lastfm.Services
         }
 
         /// <inheritdoc />
-        public async Task<PagedResponse<Track>> GetLovedTracksAsync(string user, int page = 1, int limit = 50)
+        public async Task<PagedResponse<Track>> GetLovedTracksAsync(string user = null, int page = 1, int limit = 50)
         {
             var request = client.CreateRequest("user.getLovedTracks");
 
@@ -78,7 +78,7 @@ namespace Hqub.Lastfm.Services
         // TODO: user.getPersonalTags
 
         /// <inheritdoc />
-        public async Task<PagedResponse<Track>> GetRecentTracksAsync(string user, DateTime? from = null, DateTime? to = null, int page = 1, int limit = 50)
+        public async Task<PagedResponse<Track>> GetRecentTracksAsync(string user = null, DateTime? from = null, DateTime? to = null, int page = 1, int limit = 50)
         {
             // TODO: user.getRecentTracks 'extended' parameter
 
@@ -111,7 +111,7 @@ namespace Hqub.Lastfm.Services
         }
 
         /// <inheritdoc />
-        public async Task<PagedResponse<Album>> GetTopAlbumsAsync(string user, Period period = Period.Overall, int page = 1, int limit = 50)
+        public async Task<PagedResponse<Album>> GetTopAlbumsAsync(string user = null, Period period = Period.Overall, int page = 1, int limit = 50)
         {
             var request = client.CreateRequest("user.getTopAlbums");
 
@@ -134,13 +134,8 @@ namespace Hqub.Lastfm.Services
         }
 
         /// <inheritdoc />
-        public async Task<PagedResponse<Artist>> GetTopArtistsAsync(string user, Period period = Period.Overall, int page = 1, int limit = 50)
+        public async Task<PagedResponse<Artist>> GetTopArtistsAsync(string user = null, Period period = Period.Overall, int page = 1, int limit = 50)
         {
-            if (string.IsNullOrEmpty(user))
-            {
-                throw new ArgumentException("The user name is required.", nameof(user));
-            }
-
             var request = client.CreateRequest("user.getTopArtists");
 
             SetUser(request, user);
@@ -162,7 +157,7 @@ namespace Hqub.Lastfm.Services
         }
 
         /// <inheritdoc />
-        public async Task<PagedResponse<Track>> GetTopTracksAsync(string user, Period period = Period.Overall, int page = 1, int limit = 50)
+        public async Task<PagedResponse<Track>> GetTopTracksAsync(string user = null, Period period = Period.Overall, int page = 1, int limit = 50)
         {
             var request = client.CreateRequest("user.getTopTracks");
 
@@ -185,7 +180,7 @@ namespace Hqub.Lastfm.Services
         }
 
         /// <inheritdoc />
-        public async Task<List<Tag>> GetTopTagsAsync(string user, int limit = 0)
+        public async Task<List<Tag>> GetTopTagsAsync(string user = null, int limit = 0)
         {
             var request = client.CreateRequest("user.getTopTags");
 
@@ -204,7 +199,7 @@ namespace Hqub.Lastfm.Services
         }
 
         /// <inheritdoc />
-        public async Task<List<ChartTimeSpan>> GetWeeklyChartListAsync(string user)
+        public async Task<List<ChartTimeSpan>> GetWeeklyChartListAsync(string user = null)
         {
             var request = client.CreateRequest("user.getWeeklyChartList");
 
@@ -218,7 +213,7 @@ namespace Hqub.Lastfm.Services
         }
 
         /// <inheritdoc />
-        public async Task<ChartResponse<Album>> GetWeeklyAlbumChartAsync(string user, DateTime? from = null, DateTime? to = null)
+        public async Task<ChartResponse<Album>> GetWeeklyAlbumChartAsync(string user = null, DateTime? from = null, DateTime? to = null)
         {
             var request = client.CreateRequest("user.getWeeklyAlbumChart");
 
@@ -247,7 +242,7 @@ namespace Hqub.Lastfm.Services
         }
 
         /// <inheritdoc />
-        public async Task<ChartResponse<Artist>> GetWeeklyArtistChartAsync(string user, DateTime? from = null, DateTime? to = null)
+        public async Task<ChartResponse<Artist>> GetWeeklyArtistChartAsync(string user = null, DateTime? from = null, DateTime? to = null)
         {
             var request = client.CreateRequest("user.getWeeklyArtistChart");
 
@@ -276,7 +271,7 @@ namespace Hqub.Lastfm.Services
         }
 
         /// <inheritdoc />
-        public async Task<ChartResponse<Track>> GetWeeklyTrackChartAsync(string user, DateTime? from = null, DateTime? to = null)
+        public async Task<ChartResponse<Track>> GetWeeklyTrackChartAsync(string user = null, DateTime? from = null, DateTime? to = null)
         {
             var request = client.CreateRequest("user.getWeeklyTrackChart");
 
@@ -310,7 +305,7 @@ namespace Hqub.Lastfm.Services
 
             if (empty && !client.Session.Authenticated)
             {
-                throw new ArgumentException("The user name is required.", nameof(user));
+                throw new ArgumentException("User must be authetnicated or the user name is required.", nameof(user));
             }
 
             if (!empty)
