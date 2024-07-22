@@ -83,6 +83,21 @@
         /// </summary>
         public Statistics Statistics { get; set; }
 
+        /// <summary>
+        /// Gets or sets user playcount (available only with track.getInfo).
+        /// </summary>
+        public int UserPlayCount { get; set; }
+
+        /// <summary>
+        /// Gets or sets user loved status (available only with track.getInfo).
+        /// </summary>
+        public bool UserLoved { get; set; }
+
+        /// <summary>
+        /// Gets or sets now playing status (available only for users, i.e. user.getRecentTracks).
+        /// </summary>
+        public bool NowPlaying { get; internal set; }
+
         #endregion
     }
 }

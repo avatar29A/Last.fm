@@ -613,9 +613,7 @@ namespace Hqub.Lastfm
 
             if ((a = node.Attribute("nowplaying")) != null)
             {
-                // TODO: nowplaying
-
-                //track.NowPlaying = a.Value.Equals("true", StringComparison.OrdinalIgnoreCase);
+                track.NowPlaying = a.Value.Equals("true", StringComparison.OrdinalIgnoreCase);
             }
 
             if ((e = node.Element("date")) != null)
@@ -679,6 +677,16 @@ namespace Hqub.Lastfm
             if ((e = node.Element("wiki")) != null)
             {
                 track.Wiki = ParseWiki(e);
+            }
+
+            if ((e = node.Element("userplaycount")) != null)
+            {
+                track.UserPlayCount = int.Parse(e.Value);
+            }
+
+            if ((e = node.Element("userloved")) != null)
+            {
+                track.UserLoved = int.Parse(e.Value) == 1;
             }
 
             track.Images = ParseImages(node.Elements("image"));
