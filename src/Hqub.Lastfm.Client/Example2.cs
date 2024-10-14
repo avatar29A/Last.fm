@@ -37,6 +37,13 @@ namespace Hqub.Lastfm.Client
             {
                 Console.WriteLine("    {0,3} {1,5}  {2}", i++, item.Count, item.Name.ToLower());
             }
+
+            if (Program.TEST_MUSICBRAINZ && !string.IsNullOrEmpty(album.MBID))
+            {
+                var mbid = album.MBID;
+
+                var mb_info = await client.Album.GetInfoByMbidAsync(mbid);
+            }
         }
     }
 }

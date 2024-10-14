@@ -22,6 +22,7 @@
     <RepositoryUrl>https://github.com/avatar29A/Last.fm.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageReleaseNotes></PackageReleaseNotes>
+    <LangVersion>8</LangVersion>
   </PropertyGroup>
 
 </Project>

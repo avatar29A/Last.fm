@@ -38,6 +38,18 @@
         Task<Album> GetInfoAsync(string artist, string album, bool autocorrect = true);
 
         /// <summary>
+        /// Get the metadata for an album.
+        /// </summary>
+        /// <param name="mbid">The MusicBrainz id of the album.</param>
+        /// <returns></returns>
+        /// <remarks>
+        /// This service does not require authentication.
+        /// 
+        /// https://www.last.fm/api/show/album.getInfo
+        /// </remarks>
+        Task<Album> GetInfoByMbidAsync(string mbid);
+
+        /// <summary>
         /// Get the tags applied by an individual user to an album on Last.fm.
         /// </summary>
         /// <param name="artist">The artist name.</param>
