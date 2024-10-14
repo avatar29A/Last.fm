@@ -39,6 +39,18 @@
         Task<Track> GetInfoAsync(string track, string artist, bool autocorrect = true);
 
         /// <summary>
+        /// Get the metadata for a track.
+        /// </summary>
+        /// <param name="mbid">The MusicBrainz id of the track.</param>
+        /// <returns></returns>
+        /// <remarks>
+        /// This service does not require authentication.
+        /// 
+        /// https://www.last.fm/api/show/track.getInfo
+        /// </remarks>
+        Task<Track> GetInfoByMbidAsync(string mbid);
+
+        /// <summary>
         /// Use the last.fm corrections data to check whether the supplied track has a correction to a canonical track.
         /// </summary>
         /// <param name="track">The track name.</param>
@@ -52,7 +64,7 @@
         Task<Track> GetCorrectionAsync(string track, string artist);
 
         /// <summary>
-        /// Get all the artists similar to this track.
+        /// Get all the tracks similar to this track.
         /// </summary>
         /// <param name="track">The track name.</param>
         /// <param name="artist">The artist name.</param>
@@ -65,6 +77,19 @@
         /// https://www.last.fm/api/show/track.getSimilar
         /// </remarks>
         Task<List<Track>> GetSimilarAsync(string track, string artist, int limit = 30, bool autocorrect = true);
+
+        /// <summary>
+        /// Get all the tracks similar to this track.
+        /// </summary>
+        /// <param name="mbid">The MusicBrainz id of the track.</param>
+        /// <param name="limit">Limit the number of similar tracks returned (optional).</param>
+        /// <returns></returns>
+        /// <remarks>
+        /// This service does not require authentication.
+        /// 
+        /// https://www.last.fm/api/show/track.getSimilar
+        /// </remarks>
+        Task<List<Track>> GetSimilarByMbidAsync(string mbid, int limit = 30);
 
         /// <summary>
         /// Get the tags applied by an individual user to a track on Last.fm.

@@ -10,6 +10,9 @@ namespace Hqub.Lastfm.Client
 {
     class Program
     {
+        // Enable testing of MusicBrainz endpoints
+        internal const bool TEST_MUSICBRAINZ = false;
+
         private static void Main(string[] args)
         {
             //FetchTestData.DownloadAsync(@"./", "---api-key---").Wait();

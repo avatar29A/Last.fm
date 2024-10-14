@@ -53,6 +53,16 @@ namespace Hqub.Lastfm.Client
             {
                 Console.WriteLine("    {0,3} {1,5}  {2}", i++, item.Count, item.Name.ToLower());
             }
+
+            if (Program.TEST_MUSICBRAINZ && !string.IsNullOrEmpty(track.MBID))
+            {
+                var mbid = track.MBID;
+
+                var mb_info = await client.Track.GetInfoByMbidAsync(mbid);
+                var mb_similar = await client.Track.GetSimilarByMbidAsync(mbid);
+
+                if (mb_similar.Count != similar.Count) throw new Exception("Track.GetSimilarByMbidAsync failed");
+            }
         }
     }
 }
