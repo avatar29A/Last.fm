@@ -44,22 +44,15 @@
         }
 
         /// <inheritdoc />
-        public async Task<Track> GetInfoAsync(string track, string artist, bool autocorrect = true)
+        public Task<Track> GetInfoAsync(string track, string artist, bool autocorrect = true)
         {
-            var request = client.CreateRequest("track.getInfo");
+            return GetInfoAsync(track, artist, null, autocorrect);
+        }
 
-            SetParameters(request, track, artist, null, autocorrect);
-
-            if (!string.IsNullOrEmpty(client.Language))
-            {
-                request.Parameters["lang"] = client.Language;
-            }
-
-            var doc = await request.GetAsync();
-
-            var s = ResponseParser.Default;
-
-            return s.ReadObject<Track>(doc.Root.Element("track"));
+        /// <inheritdoc />
+        public Task<Track> GetInfoByMbidAsync(string mbid)
+        {
+            return GetInfoAsync(null, null, mbid, false);
         }
 
         /// <inheritdoc />
@@ -77,19 +70,15 @@
         }
 
         /// <inheritdoc />
-        public async Task<List<Track>> GetSimilarAsync(string track, string artist, int limit = 30, bool autocorrect = true)
+        public Task<List<Track>> GetSimilarAsync(string track, string artist, int limit = 30, bool autocorrect = true)
         {
-            var request = client.CreateRequest("track.getSimilar");
+            return GetSimilarAsync(track, artist, null, limit, autocorrect);
+        }
 
-            SetParameters(request, track, artist, null, autocorrect);
-
-            request.Parameters["limit"] = limit.ToString();
-
-            var doc = await request.GetAsync();
-
-            var s = ResponseParser.Default;
-
-            return s.ReadObjects<Track>(doc, "/lfm/similartracks/track");
+        /// <inheritdoc />
+        public Task<List<Track>> GetSimilarByMbidAsync(string mbid, int limit = 30)
+        {
+            return GetSimilarAsync(null, null, mbid, limit, false);
         }
 
         /// <inheritdoc />
@@ -97,7 +86,7 @@
         {
             if (string.IsNullOrEmpty(user))
             {
-                throw new ArgumentException("User name is reqired.", nameof(user));
+                throw new ArgumentException("User name is required.", nameof(user));
             }
 
             var request = client.CreateRequest("track.getTags");
@@ -242,20 +231,63 @@
 
         #endregion
 
-        private void SetParameters(Request request, string track, string artist, string mbid, bool autocorrect = false)
+#nullable enable
+        private async Task<Track> GetInfoAsync(string? track, string? artist, string? mbid, bool autocorrect = true)
         {
-            if (string.IsNullOrEmpty(track))
+            var request = client.CreateRequest("track.getInfo");
+
+            SetParameters(request, track, artist, mbid, autocorrect);
+
+            if (!string.IsNullOrEmpty(client.Language))
             {
-                throw new ArgumentException("Track name is required.", nameof(track));
+                request.Parameters["lang"] = client.Language;
             }
 
-            if (string.IsNullOrEmpty(artist))
+            var doc = await request.GetAsync();
+
+            var s = ResponseParser.Default;
+
+            return s.ReadObject<Track>(doc.Root.Element("track"));
+        }
+
+        private async Task<List<Track>> GetSimilarAsync(string? track, string? artist, string? mbid, int limit = 30, bool autocorrect = true)
+        {
+            var request = client.CreateRequest("track.getSimilar");
+
+            SetParameters(request, track, artist, mbid, autocorrect);
+
+            request.Parameters["limit"] = limit.ToString();
+
+            var doc = await request.GetAsync();
+
+            var s = ResponseParser.Default;
+
+            return s.ReadObjects<Track>(doc, "/lfm/similartracks/track");
+        }
+
+        private void SetParameters(Request request, string? track, string? artist, string? mbid, bool autocorrect = false)
+        {
+            bool missingMbid = string.IsNullOrEmpty(mbid);
+
+            if (missingMbid && string.IsNullOrEmpty(track))
             {
-                throw new ArgumentException("Artist name is required.", nameof(artist));
+                throw new ArgumentException("Track name or MBID is required.", nameof(track));
             }
 
-            request.Parameters["artist"] = artist;
-            request.Parameters["track"] = track;
+            if (missingMbid && string.IsNullOrEmpty(artist))
+            {
+                throw new ArgumentException("Artist name or MBID is required.", nameof(artist));
+            }
+
+            if (missingMbid)
+            {
+                request.Parameters["artist"] = artist;
+                request.Parameters["track"] = track;
+            }
+            else
+            {
+                request.Parameters["mbid"] = mbid;
+            }
 
             if (autocorrect)
             {
@@ -267,5 +299,6 @@
                 request.Parameters["mbid"] = mbid;
             }
         }
+#nullable disable
     }
 }

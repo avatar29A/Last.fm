@@ -37,22 +37,15 @@
         }
 
         /// <inheritdoc />
-        public async Task<Album> GetInfoAsync(string artist, string album, bool autocorrect = true)
+        public Task<Album> GetInfoAsync(string artist, string album, bool autocorrect = true)
         {
-            var request = client.CreateRequest("album.getInfo");
+            return GetInfoAsync(artist, album, null, autocorrect);
+        }
 
-            SetParameters(request, artist, album, null, autocorrect);
-
-            if (!string.IsNullOrEmpty(client.Language))
-            {
-                request.Parameters["lang"] = client.Language;
-            }
-
-            var doc = await request.GetAsync();
-
-            var s = ResponseParser.Default;
-
-            return s.ReadObject<Album>(doc.Root.Element("album"));
+        /// <inheritdoc />
+        public Task<Album> GetInfoByMbidAsync(string mbid)
+        {
+            return GetInfoAsync(null, null, mbid, false);
         }
 
         /// <inheritdoc />
@@ -60,7 +53,7 @@
         {
             if (string.IsNullOrEmpty(user))
             {
-                throw new ArgumentException("User name is reqired.", nameof(user));
+                throw new ArgumentException("User name is required.", nameof(user));
             }
 
             var request = client.CreateRequest("album.getTags");
@@ -130,30 +123,54 @@
 
         #endregion
 
-        private void SetParameters(Request request, string artist, string album, string mbid, bool autocorrect = false)
+#nullable enable
+        private async Task<Album> GetInfoAsync(string? artist, string? album, string? mbid, bool autocorrect = true)
         {
-            if (string.IsNullOrEmpty(artist))
+            var request = client.CreateRequest("album.getInfo");
+
+            SetParameters(request, artist, album, mbid, autocorrect);
+
+            if (!string.IsNullOrEmpty(client.Language))
             {
-                throw new ArgumentNullException(nameof(artist));
+                request.Parameters["lang"] = client.Language;
             }
 
-            if (string.IsNullOrEmpty(album))
+            var doc = await request.GetAsync();
+
+            var s = ResponseParser.Default;
+
+            return s.ReadObject<Album>(doc.Root.Element("album"));
+        }
+
+        private void SetParameters(Request request, string? artist, string? album, string? mbid, bool autocorrect = false)
+        {
+
+            bool missingMbid = string.IsNullOrEmpty(mbid);
+
+            if (missingMbid && string.IsNullOrEmpty(artist))
             {
-                throw new ArgumentNullException(nameof(album));
+                throw new ArgumentException("Artist name or MBID is required.", nameof(artist));
+            }
+            if (missingMbid && string.IsNullOrEmpty(album))
+            {
+                throw new ArgumentException("Album name or MBID is required.", nameof(album));
             }
 
-            request.Parameters["artist"] = artist;
-            request.Parameters["album"] = album;
+            if (missingMbid)
+            {
+                request.Parameters["artist"] = artist;
+                request.Parameters["album"] = album;
+            }
+            else
+            {
+                request.Parameters["mbid"] = mbid;
+            }
 
             if (autocorrect)
             {
                 request.Parameters["autocorrect"] = "1";
             }
-
-            if (!string.IsNullOrEmpty(mbid))
-            {
-                request.Parameters["mbid"] = mbid;
-            }
         }
+#nullable disable
     }
 }

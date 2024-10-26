@@ -37,22 +37,15 @@
         }
 
         /// <inheritdoc />
-        public async Task<Artist> GetInfoAsync(string artist, bool autocorrect = true)
+        public Task<Artist> GetInfoAsync(string artist, bool autocorrect = true)
         {
-            var request = client.CreateRequest("artist.getInfo");
+            return GetInfoAsync(artist, null, autocorrect);
+        }
 
-            SetParameters(request, artist, null, autocorrect);
-
-            if (!string.IsNullOrEmpty(client.Language))
-            {
-                request.Parameters["lang"] = client.Language;
-            }
-
-            var doc = await request.GetAsync();
-
-            var s = ResponseParser.Default;
-
-            return s.ReadObject<Artist>(doc.Root.Element("artist"));
+        /// <inheritdoc />
+        public Task<Artist> GetInfoByMbidAsync(string mbid)
+        {
+            return GetInfoAsync(null, mbid, false);
         }
 
         /// <inheritdoc />
@@ -70,19 +63,15 @@
         }
 
         /// <inheritdoc />
-        public async Task<List<Artist>> GetSimilarAsync(string artist, int limit = 30, bool autocorrect = true)
+        public Task<List<Artist>> GetSimilarAsync(string artist, int limit = 30, bool autocorrect = true)
         {
-            var request = client.CreateRequest("artist.getSimilar");
+            return GetSimilarAsync(artist, null, limit, autocorrect);
+        }
 
-            SetParameters(request, artist, null, autocorrect);
-
-            request.Parameters["limit"] = limit.ToString();
-
-            var doc = await request.GetAsync();
-
-            var s = ResponseParser.Default;
-
-            return s.ReadObjects<Artist>(doc, "/lfm/similarartists/artist");
+        /// <inheritdoc />
+        public Task<List<Artist>> GetSimilarByMbidAsync(string mbid, int limit = 30)
+        {
+            return GetSimilarAsync(null, mbid, limit, false);
         }
 
         /// <inheritdoc />
@@ -90,7 +79,7 @@
         {
             if (string.IsNullOrEmpty(user))
             {
-                throw new ArgumentException("User name is reqired.", nameof(user));
+                throw new ArgumentException("User name is required.", nameof(user));
             }
 
             var request = client.CreateRequest("artist.getTags");
@@ -107,59 +96,39 @@
         }
 
         /// <inheritdoc />
-        public async Task<PagedResponse<Album>> GetTopAlbumsAsync(string artist, bool autocorrect = true, int page = 1, int limit = 50)
+        public Task<PagedResponse<Album>> GetTopAlbumsAsync(string artist, bool autocorrect = true, int page = 1, int limit = 50)
         {
-            var request = client.CreateRequest("artist.getTopAlbums");
-
-            SetParameters(request, artist, null, autocorrect);
-
-            request.SetPagination(limit, 50, page, 1);
-
-            var doc = await request.GetAsync();
-
-            var s = ResponseParser.Default;
-
-            var response = new PagedResponse<Album>();
-
-            response.items = s.ReadObjects<Album>(doc, "/lfm/topalbums/album");
-            response.PageInfo = s.ParsePageInfo(doc.Root.Element("topalbums"));
-
-            return response;
+            return GetTopAlbumsAsync(artist, null, false, page, limit);
         }
 
         /// <inheritdoc />
-        public async Task<List<Tag>> GetTopTagsAsync(string artist, bool autocorrect = true)
+        public Task<PagedResponse<Album>> GetTopAlbumsByMbidAsync(string mbid, int page = 1, int limit = 50)
         {
-            var request = client.CreateRequest("artist.getTopTags");
-
-            SetParameters(request, artist, null, autocorrect);
-
-            var doc = await request.GetAsync();
-
-            var s = ResponseParser.Default;
-
-            return s.ReadObjects<Tag>(doc, "/lfm/toptags/tag");
+            return GetTopAlbumsAsync(null, mbid, false, page, limit);
         }
 
         /// <inheritdoc />
-        public async Task<PagedResponse<Track>> GetTopTracksAsync(string artist, bool autocorrect = true, int page = 1, int limit = 50)
+        public Task<List<Tag>> GetTopTagsAsync(string artist, bool autocorrect = true)
         {
-            var request = client.CreateRequest("artist.getTopTracks");
+            return GetTopTagsAsync(artist, null, autocorrect);
+        }
 
-            SetParameters(request, artist, null, autocorrect);
+        /// <inheritdoc />
+        public Task<List<Tag>> GetTopTagsByMbidAsync(string mbid)
+        {
+            return GetTopTagsAsync(null, mbid, false);
+        }
 
-            request.SetPagination(limit, 50, page, 1);
+        /// <inheritdoc />
+        public Task<PagedResponse<Track>> GetTopTracksAsync(string artist, bool autocorrect = true, int page = 1, int limit = 50)
+        {
+            return GetTopTracksAsync(artist, null, autocorrect, page, limit);
+        }
 
-            var doc = await request.GetAsync();
-
-            var s = ResponseParser.Default;
-
-            var response = new PagedResponse<Track>();
-
-            response.items = s.ReadObjects<Track>(doc, "/lfm/toptracks/track");
-            response.PageInfo = s.ParsePageInfo(doc.Root.Element("toptracks"));
-
-            return response;
+        /// <inheritdoc />
+        public Task<PagedResponse<Track>> GetTopTracksByMbidAsync(string mbid, int page = 1, int limit = 50)
+        {
+            return GetTopTracksAsync(null, mbid, false, page, limit);
         }
 
         #region Authenticated
@@ -202,24 +171,116 @@
 
         #endregion
 
-        private void SetParameters(Request request, string artist, string mbid, bool autocorrect = false)
+#nullable enable
+        private async Task<Artist> GetInfoAsync(string? artist, string? mbid, bool autocorrect = true)
         {
-            if (string.IsNullOrEmpty(artist))
+            var request = client.CreateRequest("artist.getInfo");
+
+            SetParameters(request, artist, mbid, autocorrect);
+
+            if (!string.IsNullOrEmpty(client.Language))
             {
-                throw new ArgumentNullException(nameof(artist));
+                request.Parameters["lang"] = client.Language;
             }
 
-            request.Parameters["artist"] = artist;
+            var doc = await request.GetAsync();
+
+            var s = ResponseParser.Default;
+
+            return s.ReadObject<Artist>(doc.Root.Element("artist"));
+        }
+
+        private async Task<List<Artist>> GetSimilarAsync(string? artist, string? mbid, int limit = 30, bool autocorrect = true)
+        {
+            var request = client.CreateRequest("artist.getSimilar");
+
+            SetParameters(request, artist, mbid, autocorrect);
+
+            request.Parameters["limit"] = limit.ToString();
+
+            var doc = await request.GetAsync();
+
+            var s = ResponseParser.Default;
+
+            return s.ReadObjects<Artist>(doc, "/lfm/similarartists/artist");
+        }
+
+        private async Task<PagedResponse<Album>> GetTopAlbumsAsync(string? artist, string? mbid, bool autocorrect = true, int page = 1, int limit = 50)
+        {
+            var request = client.CreateRequest("artist.getTopAlbums");
+
+            SetParameters(request, artist, mbid, autocorrect);
+
+            request.SetPagination(limit, 50, page, 1);
+
+            var doc = await request.GetAsync();
+
+            var s = ResponseParser.Default;
+
+            var response = new PagedResponse<Album>();
+
+            response.items = s.ReadObjects<Album>(doc, "/lfm/topalbums/album");
+            response.PageInfo = s.ParsePageInfo(doc.Root.Element("topalbums"));
+
+            return response;
+        }
+
+        private async Task<List<Tag>> GetTopTagsAsync(string? artist, string? mbid, bool autocorrect = true)
+        {
+            var request = client.CreateRequest("artist.getTopTags");
+
+            SetParameters(request, artist, mbid, autocorrect);
+
+            var doc = await request.GetAsync();
+
+            var s = ResponseParser.Default;
+
+            return s.ReadObjects<Tag>(doc, "/lfm/toptags/tag");
+        }
+
+        private async Task<PagedResponse<Track>> GetTopTracksAsync(string? artist, string? mbid, bool autocorrect = true, int page = 1, int limit = 50)
+        {
+            var request = client.CreateRequest("artist.getTopTracks");
+
+            SetParameters(request, artist, mbid, autocorrect);
+
+            request.SetPagination(limit, 50, page, 1);
+
+            var doc = await request.GetAsync();
+
+            var s = ResponseParser.Default;
+
+            var response = new PagedResponse<Track>();
+
+            response.items = s.ReadObjects<Track>(doc, "/lfm/toptracks/track");
+            response.PageInfo = s.ParsePageInfo(doc.Root.Element("toptracks"));
+
+            return response;
+        }
+
+        private void SetParameters(Request request, string? artist, string? mbid, bool autocorrect = false)
+        {
+            bool missingMbid = string.IsNullOrEmpty(mbid);
+
+            if (missingMbid && string.IsNullOrEmpty(artist))
+            {
+                throw new ArgumentException("Artist name or MBID is required.", nameof(artist));
+            }
+
+            if (missingMbid)
+            {
+                request.Parameters["artist"] = artist;
+            }
+            else
+            {
+                request.Parameters["mbid"] = mbid;
+            }
 
             if (autocorrect)
             {
                 request.Parameters["autocorrect"] = "1";
             }
-
-            if (!string.IsNullOrEmpty(mbid))
-            {
-                request.Parameters["mbid"] = mbid;
-            }
         }
+#nullable disable
     }
 }
