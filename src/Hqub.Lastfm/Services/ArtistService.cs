@@ -171,8 +171,8 @@
 
         #endregion
 
-        /// <inheritdoc />
-        public async Task<Artist> GetInfoAsync(string? artist, string? mbid, bool autocorrect = true)
+#nullable enable
+        private async Task<Artist> GetInfoAsync(string? artist, string? mbid, bool autocorrect = true)
         {
             var request = client.CreateRequest("artist.getInfo");
 
@@ -190,7 +190,6 @@
             return s.ReadObject<Artist>(doc.Root.Element("artist"));
         }
 
-        /// <inheritdoc />
         private async Task<List<Artist>> GetSimilarAsync(string? artist, string? mbid, int limit = 30, bool autocorrect = true)
         {
             var request = client.CreateRequest("artist.getSimilar");
@@ -206,7 +205,6 @@
             return s.ReadObjects<Artist>(doc, "/lfm/similarartists/artist");
         }
 
-        /// <inheritdoc />
         private async Task<PagedResponse<Album>> GetTopAlbumsAsync(string? artist, string? mbid, bool autocorrect = true, int page = 1, int limit = 50)
         {
             var request = client.CreateRequest("artist.getTopAlbums");
@@ -227,7 +225,6 @@
             return response;
         }
 
-        /// <inheritdoc />
         private async Task<List<Tag>> GetTopTagsAsync(string? artist, string? mbid, bool autocorrect = true)
         {
             var request = client.CreateRequest("artist.getTopTags");
@@ -241,7 +238,6 @@
             return s.ReadObjects<Tag>(doc, "/lfm/toptags/tag");
         }
 
-        /// <inheritdoc />
         private async Task<PagedResponse<Track>> GetTopTracksAsync(string? artist, string? mbid, bool autocorrect = true, int page = 1, int limit = 50)
         {
             var request = client.CreateRequest("artist.getTopTracks");
@@ -285,5 +281,6 @@
                 request.Parameters["autocorrect"] = "1";
             }
         }
+#nullable disable
     }
 }

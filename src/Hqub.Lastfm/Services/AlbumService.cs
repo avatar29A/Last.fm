@@ -123,6 +123,7 @@
 
         #endregion
 
+#nullable enable
         private async Task<Album> GetInfoAsync(string? artist, string? album, string? mbid, bool autocorrect = true)
         {
             var request = client.CreateRequest("album.getInfo");
@@ -170,5 +171,6 @@
                 request.Parameters["autocorrect"] = "1";
             }
         }
+#nullable disable
     }
 }

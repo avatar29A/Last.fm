@@ -231,6 +231,7 @@
 
         #endregion
 
+#nullable enable
         private async Task<Track> GetInfoAsync(string? track, string? artist, string? mbid, bool autocorrect = true)
         {
             var request = client.CreateRequest("track.getInfo");
@@ -249,7 +250,6 @@
             return s.ReadObject<Track>(doc.Root.Element("track"));
         }
 
-        /// <inheritdoc />
         private async Task<List<Track>> GetSimilarAsync(string? track, string? artist, string? mbid, int limit = 30, bool autocorrect = true)
         {
             var request = client.CreateRequest("track.getSimilar");
@@ -265,7 +265,7 @@
             return s.ReadObjects<Track>(doc, "/lfm/similartracks/track");
         }
 
-        private void SetParameters(Request request, string track, string artist, string mbid, bool autocorrect = false)
+        private void SetParameters(Request request, string? track, string? artist, string? mbid, bool autocorrect = false)
         {
             bool missingMbid = string.IsNullOrEmpty(mbid);
 
@@ -299,5 +299,6 @@
                 request.Parameters["mbid"] = mbid;
             }
         }
+#nullable disable
     }
 }
