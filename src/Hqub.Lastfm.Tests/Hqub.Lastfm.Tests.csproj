@@ -12,6 +12,7 @@
     <None Remove="data\xml\album.gettoptags.xml" />
     <None Remove="data\xml\album.search.xml" />
     <None Remove="data\xml\artist.getcorrection.xml" />
+    <None Remove="data\xml\artist.getinfo.mbid.xml" />
     <None Remove="data\xml\artist.getinfo.xml" />
     <None Remove="data\xml\artist.getsimilar.xml" />
     <None Remove="data\xml\artist.gettags.xml" />
@@ -58,6 +59,7 @@
     <EmbeddedResource Include="data\xml\album.gettoptags.xml" />
     <EmbeddedResource Include="data\xml\album.search.xml" />
     <EmbeddedResource Include="data\xml\artist.getcorrection.xml" />
+    <EmbeddedResource Include="data\xml\artist.getinfo.mbid.xml" />
     <EmbeddedResource Include="data\xml\artist.getinfo.xml" />
     <EmbeddedResource Include="data\xml\artist.getsimilar.xml" />
     <EmbeddedResource Include="data\xml\artist.gettags.xml" />
