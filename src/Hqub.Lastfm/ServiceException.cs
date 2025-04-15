@@ -112,10 +112,10 @@ namespace Hqub.Lastfm
                 case 27:
                     return "Deprecated - This type of request is no longer supported.";
                 case 29:
-                    return "Rate Limit Exceded - Your IP has made too many requests in a short period, exceeding our API guidelines.";
+                    return "Rate Limit Exceeded - Your IP has made too many requests in a short period, exceeding our API guidelines.";
             }
 
-            return "This error does not exist.";
+            return "The provided error code does not exist.";
         }
     }
 }

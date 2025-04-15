@@ -78,7 +78,7 @@ namespace Hqub.Lastfm
 
                     if (ResponseParser.Default.TryParseResponseError(doc, out string message, out int error))
                     {
-                        throw new ServiceException(method, error, default, message);
+                        throw new ServiceException(method, error, message);
                     }
 
                     return doc;
@@ -90,16 +90,13 @@ namespace Hqub.Lastfm
                 {
                     stream = await response.Content.ReadAsStreamAsync().ConfigureAwait(false);
 
-                    if (!response.IsSuccessStatusCode)
-                    {
-                        throw CreateServiceException(stream, response);
-                    }
+                    var doc = GetXDocument(stream);
 
-                    var doc =  GetXDocument(stream);
+                    var responseContainsError = ResponseParser.Default.TryParseResponseError(doc, out string message, out int error);
 
-                    if (ResponseParser.Default.TryParseResponseError(doc, out string message, out int error))
+                    if (!response.IsSuccessStatusCode || responseContainsError)
                     {
-                        throw new ServiceException(method, error, response.StatusCode, message);
+                        throw new ServiceException(method, error, response.StatusCode, message ?? response.ReasonPhrase);
                     }
 
                     // Reset the stream position before caching.
@@ -130,9 +127,13 @@ namespace Hqub.Lastfm
             {
                 var stream = await response.Content.ReadAsStreamAsync().ConfigureAwait(false);
 
-                if (!response.IsSuccessStatusCode)
+                var doc = GetXDocument(stream);
+
+                var responseContainsError = ResponseParser.Default.TryParseResponseError(doc, out string message, out int error);
+
+                if (!response.IsSuccessStatusCode || responseContainsError)
                 {
-                    throw CreateServiceException(stream, response);
+                    throw new ServiceException(method, error, response.StatusCode, message ?? response.ReasonPhrase);
                 }
 
                 return GetXDocument(stream);
@@ -191,18 +192,6 @@ namespace Hqub.Lastfm
             var xreader = XmlReader.Create(treader, settings);
 
             return XDocument.Load(xreader);
-        }
-
-        private ServiceException CreateServiceException(Stream stream, HttpResponseMessage response)
-        {
-            var doc = GetXDocument(stream);
-
-            if (ResponseParser.Default.TryParseResponseError(doc, out string message, out int error))
-            {
-                return new ServiceException(method, error, response.StatusCode, message ?? response.ReasonPhrase);
-            }
-
-            return new ServiceException(method, 0, response.StatusCode, response.ReasonPhrase);
         }
 
         private bool IsSearchRequest()
