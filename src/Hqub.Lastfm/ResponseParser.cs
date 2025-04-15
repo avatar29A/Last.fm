@@ -142,6 +142,8 @@ namespace Hqub.Lastfm
 
             var e = doc.Descendants("lfm").FirstOrDefault();
 
+            if (e == null) return false;
+
             string status = e.HasAttributes ? e.Attribute("status").Value : string.Empty;
 
             if (status == "failed")
