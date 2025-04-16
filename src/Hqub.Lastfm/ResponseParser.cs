@@ -135,6 +135,34 @@ namespace Hqub.Lastfm
             return info;
         }
 
+        internal bool TryParseResponseError(XDocument doc, out string message, out int code)
+        {
+            code = 0;
+            message = null;
+
+            var e = doc.Descendants("lfm").FirstOrDefault();
+
+            if (e == null) return false;
+
+            string status = e.HasAttributes ? e.Attribute("status").Value : string.Empty;
+
+            if (status == "failed")
+            {
+                var error = e.Element("error");
+
+                if (error != null)
+                {
+                    message = error.Value;
+
+                    int.TryParse(error.Attribute("code").Value, out code);
+
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
         internal PageInfo ParsePageInfo(XElement node)
         {
             var info = new PageInfo();

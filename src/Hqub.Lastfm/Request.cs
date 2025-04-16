@@ -69,11 +69,19 @@ namespace Hqub.Lastfm
 
                 if (await cache.TryGetCachedItem(query, out Stream stream).ConfigureAwait(false))
                 {
-                    var result = GetXDocument(stream);
+                    var doc = GetXDocument(stream);
 
                     stream.Close();
 
-                    return result;
+                    // NOTE: the following check is not necessary since an error response should not
+                    // be written to the cache. The code is required by the unit tests, though.
+
+                    if (ResponseParser.Default.TryParseResponseError(doc, out string message, out int error))
+                    {
+                        throw new ServiceException(method, error, message);
+                    }
+
+                    return doc;
                 }
 
                 var url = GetRequestString(secure, query);
@@ -82,17 +90,21 @@ namespace Hqub.Lastfm
                 {
                     stream = await response.Content.ReadAsStreamAsync().ConfigureAwait(false);
 
-                    if (!response.IsSuccessStatusCode)
+                    var doc = GetXDocument(stream);
+
+                    var responseContainsError = ResponseParser.Default.TryParseResponseError(doc, out string message, out int error);
+
+                    if (!response.IsSuccessStatusCode || responseContainsError)
                     {
-                        throw CreateServiceException(stream, response);
+                        throw new ServiceException(method, error, response.StatusCode, message ?? response.ReasonPhrase);
                     }
+
+                    // Reset the stream position before caching.
+                    stream.Position = 0;
 
                     await cache.Add(query, stream).ConfigureAwait(false);
 
-                    // Reset the stream position, in case the cache forgot to do so!
-                    stream.Position = 0;
-
-                    return GetXDocument(stream);
+                    return doc;
                 }
             }
             catch (Exception)
@@ -115,9 +127,13 @@ namespace Hqub.Lastfm
             {
                 var stream = await response.Content.ReadAsStreamAsync().ConfigureAwait(false);
 
-                if (!response.IsSuccessStatusCode)
+                var doc = GetXDocument(stream);
+
+                var responseContainsError = ResponseParser.Default.TryParseResponseError(doc, out string message, out int error);
+
+                if (!response.IsSuccessStatusCode || responseContainsError)
                 {
-                    throw CreateServiceException(stream, response);
+                    throw new ServiceException(method, error, response.StatusCode, message ?? response.ReasonPhrase);
                 }
 
                 return GetXDocument(stream);
@@ -176,37 +192,6 @@ namespace Hqub.Lastfm
             var xreader = XmlReader.Create(treader, settings);
 
             return XDocument.Load(xreader);
-        }
-
-        private ServiceException CreateServiceException(Stream stream, HttpResponseMessage response)
-        {
-            var doc = GetXDocument(stream);
-
-            var e = ParseResponseError(doc);
-
-            return new ServiceException(method, e.Error, response.StatusCode, e.Message ?? response.ReasonPhrase);
-        }
-
-        private ResponseError ParseResponseError(XDocument doc)
-        {
-            var e = doc.Descendants("lfm").FirstOrDefault();
-
-            string status = e.HasAttributes ? e.Attribute("status").Value : string.Empty;
-
-            var re = new ResponseError();
-
-            if (status == "failed")
-            {
-                var error = e.Element("error");
-
-                if (error != null)
-                {
-                    re.Error = int.Parse(error.Attribute("code").Value);
-                    re.Message = error.Value;
-                }
-            }
-
-            return re;
         }
 
         private bool IsSearchRequest()

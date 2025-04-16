@@ -35,6 +35,8 @@
 
             var path = string.Format(PATH_TEMPLATE, match.Groups[1].Value.ToLower());
 
+            path = PrepareSpecialCases(path, request);
+
             try
             {
                 stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(path);
@@ -47,6 +49,16 @@
             }
 
             return Task.FromResult(true);
+        }
+
+        private string PrepareSpecialCases(string path, string request)
+        {
+            if (path.EndsWith("artist.getinfo.xml") && request.Contains("mbid="))
+            {
+                return path.Replace("artist.getinfo.xml", "artist.getinfo.mbid.xml");
+            }
+
+            return path;
         }
     }
 }

@@ -49,6 +49,20 @@
         }
 
         [Test]
+        public void TestGetInfoByMbidWithError()
+        {
+            var mbid = "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee";
+
+            var exception = Assert.ThrowsAsync<ServiceException>(async () =>
+            {
+                var artist = await client.Artist.GetInfoByMbidAsync(mbid);
+            });
+
+            Assert.That(exception.ErrorCode, Is.EqualTo(6));
+            Assert.That(exception.Message, Is.EqualTo("The artist you supplied could not be found"));
+        }
+
+        [Test]
         public async Task TestGetSimilar()
         {
             var artists = await client.Artist.GetSimilarAsync(data["artist"], 10);
