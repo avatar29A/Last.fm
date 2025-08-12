@@ -136,7 +136,7 @@ namespace Hqub.Lastfm
                     throw new ServiceException(method, error, response.StatusCode, message ?? response.ReasonPhrase);
                 }
 
-                return GetXDocument(stream);
+                return doc;
             }
         }
 
